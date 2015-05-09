@@ -14,13 +14,33 @@
 			<h1>Animated menu icons &nbsp;&mdash;&nbsp; take your pick.</h1>
 
 			<?php
-			for( $i = 1; $i <= 10; $i++ ) {
+			for( $i = 0; $i <= 10; $i++ ) {
 			?>
 
 				<div class="icon" id="icon<?php echo $i; ?>">
 					<div class="line" id="line1"></div>
 					<div class="line" id="line2"></div>
 					<div class="line" id="line3"></div>
+				</div>
+
+			<?php
+			}
+			?>
+
+			<?php
+			for( $i = 11; $i <= 15; $i++ ) {
+			?>
+
+				<div class="icon" id="icon<?php echo $i; ?>">
+					<div class="line" id="line1">
+						<div class="line_inner" id="line_inner1"></div>
+					</div>
+					<div class="line" id="line2">
+						<div class="line_inner" id="line_inner2"></div>
+					</div>
+					<div class="line" id="line3">
+						<div class="line_inner" id="line_inner3"></div>
+					</div>
 				</div>
 
 			<?php
