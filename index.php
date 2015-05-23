@@ -11,42 +11,85 @@
 
 	<body>
 		<div id="container">
-			<h1>Animated menu icons &nbsp;&mdash;&nbsp; take your pick.</h1>
+			<div id="wrapper">
+				<h1>Animated menu icons &nbsp;&mdash;&nbsp; take your pick.</h1>
+				<h2><span>28 x 24 size, 3px lines, without circle</span></h2>
 
-			<?php
-			for( $i = 0; $i <= 10; $i++ ) {
-			?>
+				<div class="icon_container">
 
-				<div class="icon" id="icon<?php echo $i; ?>">
-					<div class="line" id="line1"></div>
-					<div class="line" id="line2"></div>
-					<div class="line" id="line3"></div>
+					<?php
+					for( $i = 1; $i <= 10; $i++ ) {
+					?>
+
+						<div class="icon type1 icon<?php echo $i; ?>">
+							<div class="line" id="line1"></div>
+							<div class="line" id="line2"></div>
+							<div class="line" id="line3"></div>
+						</div>
+
+					<?php
+					}
+
+					for( $i = 11; $i <= 15; $i++ ) {
+					?>
+
+						<div class="icon type1 icon<?php echo $i; ?>">
+							<div class="line_outer" id="line1">
+								<div class="line_inner" id="line_inner1"></div>
+							</div>
+							<div class="line_outer" id="line2">
+								<div class="line_inner" id="line_inner2"></div>
+							</div>
+							<div class="line_outer" id="line3">
+								<div class="line_inner" id="line_inner3"></div>
+							</div>
+						</div>
+
+					<?php
+					}
+					?>
+
 				</div>
 
-			<?php
-			}
-			?>
+				<h2><span>18 x 16 size, 2px lines, with circle</span></h2>
 
-			<?php
-			for( $i = 11; $i <= 15; $i++ ) {
-			?>
+				<div class="icon_container type2">
 
-				<div class="icon" id="icon<?php echo $i; ?>">
-					<div class="line" id="line1">
-						<div class="line_inner" id="line_inner1"></div>
-					</div>
-					<div class="line" id="line2">
-						<div class="line_inner" id="line_inner2"></div>
-					</div>
-					<div class="line" id="line3">
-						<div class="line_inner" id="line_inner3"></div>
-					</div>
+					<?php
+					for( $i = 1; $i <= 10; $i++ ) {
+					?>
+
+						<div class="icon type2 icon<?php echo $i; ?>">
+							<div class="line" id="line1"></div>
+							<div class="line" id="line2"></div>
+							<div class="line" id="line3"></div>
+						</div>
+
+					<?php
+					}
+
+					for( $i = 11; $i <= 15; $i++ ) {
+					?>
+
+						<div class="icon type2 icon<?php echo $i; ?>">
+							<div class="line_outer" id="line1">
+								<div class="line_inner" id="line_inner1"></div>
+							</div>
+							<div class="line_outer" id="line2">
+								<div class="line_inner" id="line_inner2"></div>
+							</div>
+							<div class="line_outer" id="line3">
+								<div class="line_inner" id="line_inner3"></div>
+							</div>
+						</div>
+
+					<?php
+					}
+					?>
+
 				</div>
 
-			<?php
-			}
-			?>
-
+			</div>
 		</div>
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
 		<script src="script.js" type="text/javascript"></script>
