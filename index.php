@@ -3,7 +3,7 @@
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link href="http://fonts.googleapis.com/css?family=Palanquin:400" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/main.css" rel="stylesheet" type="text/css" />
 		<title>Animated menu icons</title>
 	</head>
@@ -11,7 +11,7 @@
 	<body>
 		<div class="container">
 
-			<h1>Animated menu icons &nbsp;&#8729;&nbsp; take your pick.</h1>
+			<h1>Animated menu icons &nbsp;&bull;&nbsp; take your pick.</h1>
 
 			<div class="icons-container">
 
@@ -29,15 +29,17 @@
 
 							<div class="tabs">
 								<div class="tab-title active" data-tab=".tab-js">JS</div>
-								<div class="tab-title" data-tab=".tab-css">CSS</div>
+								<div class="tab-title" data-tab=".tab-css">SCSS</div>
 								<div class="tab-title" data-tab=".tab-html">HTML</div>
 								<div class="tab-content tab-js active">
-									<a href="https://github.com/luukdv/animated-menu-icons/blob/master/js/main.js">View</a>
+									<a target="_blank" href="https://github.com/luukdv/animated-menu-icons/blob/master/js/main.js">JavaScript</a>
 								</div>
 								<div class="tab-content tab-css">
-									<a href="https://github.com/luukdv/animated-menu-icons/blob/master/css/icons/icon<?php echo $i; ?>.scss">View</a>
+									<a target="_blank" href="https://github.com/luukdv/animated-menu-icons/blob/master/css/icons/icon<?php echo $i; ?>.scss">SCSS</a>
 								</div>
-								<div class="tab-content tab-html">HTML</div>
+								<div class="tab-content tab-html">
+									
+								</div>
 							</div>
 
 						</div>

@@ -10,33 +10,75 @@
 }
 
 .tabs {
-  background: $white;
+  background: rgb(100, 140, 255);
+  color: rgb(60, 60, 60);
   float: left;
   position: relative;
   left: -50%;
-  width: 200px;
+  width: 220px;
+  z-index: 1;
 }
 
 .tab-title {
-  background: gray;
+  background: rgb(80, 120, 200);
+  color: $white;
   cursor: pointer;
   float: left;
-  width: 33%;
+  padding: 10px 0;
+  width: 73px;
 
   &:nth-child(even) {
-    width: 34%;
+    width: 74px;
+
+    &:before {
+      background: rgb(80, 120, 200);
+      content: '';
+      height: 20px;
+      transform: rotate(45deg);
+      width: 20px;
+      display: block;
+      margin: 0 auto;
+      z-index: -1;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      right: 0;
+    }
   }
 
   &.active {
-    background: $white;
+    background: rgb(100, 140, 255);
     cursor: default;
+
+    &:before {
+      background: rgb(100, 140, 255);
+    }
   }
 }
 
 .tab-content {
   display: none;
+  padding: 30px 0;
+  float: left;
+  font-size: 14px;
+  width: 100%;
 
   &.active {
     display: block;
+  }
+
+  a {
+    background: $white;
+    color: rgb(60, 100, 160);
+    display: block;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

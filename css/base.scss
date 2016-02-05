@@ -1,8 +1,16 @@
 body {
   background: $gray;
+  color: $gray;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  font-weight: 500;
   line-height: 1.4;
   margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -28,10 +36,8 @@ body {
 
 h1 {
   color: $white;
-  font-size: 30px;
-  font-family: 'Palanquin', sans-serif;
   font-size: 25px;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0 0 40px 0;
   text-align: center;
 
