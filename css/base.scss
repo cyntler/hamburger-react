@@ -1,5 +1,5 @@
 body {
-  background: $background;
+  background: $gray;
   -webkit-font-smoothing: antialiased;
   line-height: 1.4;
   margin: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  color: $primary;
+  color: $white;
   font-size: 30px;
   font-family: 'Palanquin', sans-serif;
   font-size: 25px;
@@ -41,14 +41,15 @@ h1 {
   }
 }
 
-.icon_container {
+.icons-container {
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
 
-  .icon {
+  .icon-container {
     display: inline-block;
     margin: 8% 12%;
+    position: relative;
 
     @media(min-width: 601px) {
       margin: 8%;

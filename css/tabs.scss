@@ -1,0 +1,42 @@
+.tabs-container {
+  display: none;
+  left: 50%;
+  position: absolute;
+  top: 40px;
+
+  &.active {
+    display: block;
+  }
+}
+
+.tabs {
+  background: $white;
+  float: left;
+  position: relative;
+  left: -50%;
+  width: 200px;
+}
+
+.tab-title {
+  background: gray;
+  cursor: pointer;
+  float: left;
+  width: 33%;
+
+  &:nth-child(even) {
+    width: 34%;
+  }
+
+  &.active {
+    background: $white;
+    cursor: default;
+  }
+}
+
+.tab-content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
