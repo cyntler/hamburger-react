@@ -1,0 +1,23 @@
+.icon9 {
+  @include transition(0.4s cubic-bezier(0, 0, 0, 1));
+
+  .line {
+    @include transition(0.4s cubic-bezier(0, 0, 0, 1));
+  }
+
+  &.animate {
+    @include transform(rotateY(180deg));
+
+    .line1 {
+      @include transform(rotate(45deg) translate(7px, 7px));
+    }
+
+    .line2 {
+      @include transform(scale(0, 1) translate(150px, 0));
+    }
+
+    .line3 {
+      @include transform(rotate(-45deg) translate(7px, -7px));
+    }
+  }
+}

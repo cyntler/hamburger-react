@@ -1,0 +1,23 @@
+.icon7 {
+  @include transition(0.4s cubic-bezier(0, 0, 0, 1));
+
+  .line {
+    @include transition(0.4s cubic-bezier(0, 0, 0, 1));
+  }
+
+  &.animate {
+    @include transform(rotate(360deg));
+
+    .line1 {
+      @include transform(rotate(45deg) translate(7px, 7px));
+    }
+
+    .line2 {
+      opacity: 0;
+    }
+
+    .line3 {
+      @include transform(rotate(-45deg) translate(7px, -7px));
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.icon11 {
+  @include transition(0.2s 0.2s cubic-bezier(0, 0, 0, 1));
+
+  .line_outer {
+    @include transition(0.2s 0.4s cubic-bezier(0, 0, 0, 1));
+  }
+
+  .line_inner {
+    @include transition(0.2s cubic-bezier(0, 0, 0, 1));
+  }
+
+  &.animate {
+    @include transform(rotate(90deg));
+
+    .line_outer {
+      @include transition(0.2s cubic-bezier(0, 0, 0, 1));
+    }
+
+    .line_inner {
+      @include transition(0.2s 0.4s cubic-bezier(0, 0, 0, 1));
+    }
+
+    .line1 {
+      @include transform(translate(0, 10px));
+    }
+
+    .line2 {
+      opacity: 0;
+    }
+
+    .line3 {
+      @include transform(translate(0, -10px));
+    }
+
+    .line_inner1 {
+      @include transform(rotate(45deg));
+    }
+
+    .line_inner3 {
+      @include transform(rotate(-45deg));
+    }
+  }
+}

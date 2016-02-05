@@ -1,0 +1,57 @@
+body {
+  background: $background;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.container {
+  left: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: absolute;
+  top: 5%;
+  right: 0;
+
+  @media(min-width: 401px) {
+    top: 7.5%;
+  }
+
+  @media(min-width: 601px) {
+    top: 10%;
+  }
+
+  @media(min-width: 1001px) {
+    top: 15%;
+  }
+}
+
+h1 {
+  color: $primary;
+  font-size: 30px;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0 0 40px 0;
+  text-align: center;
+
+  @media(min-width: 601px) {
+    margin-bottom: 60px;
+    font-size: 30px;
+  }
+}
+
+.icon_container {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+
+  .icon {
+    display: inline-block;
+    margin: 8% 12%;
+
+    @media(min-width: 601px) {
+      margin: 8%;
+    }
+  }
+}
