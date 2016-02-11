@@ -15,56 +15,20 @@
 
 			<div class="icons-container">
 
-				<?php for ($i = 1; $i <= 10; $i++) { ?>
+				<?php
+					for ($i = 1; $i <= 15; $i++) {
 
-					<div class="icon-container">
+						$type = $i <= 10 ? 'basic' : 'complex';
 
-						<div class="icon icon<?php echo $i; ?>">
-							<div class="line line1"></div>
-							<div class="line line2"></div>
-							<div class="line line3"></div>
-						</div>
+						echo '<div class="icon-container">';
 
-						<div class="tabs-container">
+							include('partials/icons/' . $type . '/icon' . $i . '.html');
+							include('partials/tabs.php');
 
-							<div class="tabs">
-								<div class="tab-title active" data-tab=".tab-js">JS</div>
-								<div class="tab-title" data-tab=".tab-css">SCSS</div>
-								<div class="tab-title" data-tab=".tab-html">HTML</div>
-								<div class="tab-content tab-js active">
-									<a target="_blank" href="https://github.com/luukdv/animated-menu-icons/blob/master/js/main.js">JavaScript</a>
-								</div>
-								<div class="tab-content tab-css">
-									<a target="_blank" href="https://github.com/luukdv/animated-menu-icons/blob/master/css/icons/icon<?php echo $i; ?>.scss">SCSS</a>
-								</div>
-								<div class="tab-content tab-html">
-									
-								</div>
-							</div>
+						echo '</div>';
 
-						</div>
-
-					</div>
-
-				<?php } for ($i = 11; $i <= 15; $i++) { ?>
-
-					<div class="icon-container">
-
-						<div class="icon icon<?php echo $i; ?>">
-							<div class="line_outer line1">
-								<div class="line_inner line_inner1"></div>
-							</div>
-							<div class="line_outer line2">
-								<div class="line_inner line_inner2"></div>
-							</div>
-							<div class="line_outer line3">
-								<div class="line_inner line_inner3"></div>
-							</div>
-						</div>
-
-					</div>
-
-				<?php } ?>
+					}
+				?>
 
 			</div>
 

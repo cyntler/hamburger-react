@@ -2,7 +2,7 @@
   display: none;
   left: 50%;
   position: absolute;
-  top: 40px;
+  top: 50px;
 
   &.active {
     display: block;
@@ -11,24 +11,23 @@
 
 .tabs {
   background: rgb(100, 140, 255);
-  color: rgb(60, 60, 60);
+  color: $white;
   float: left;
   position: relative;
   left: -50%;
-  width: 220px;
+  width: 280px;
   z-index: 1;
 }
 
 .tab-title {
   background: rgb(80, 120, 200);
-  color: $white;
   cursor: pointer;
   float: left;
   padding: 10px 0;
-  width: 73px;
+  width: 93px;
 
   &:nth-child(even) {
-    width: 74px;
+    width: 94px;
 
     &:before {
       background: rgb(80, 120, 200);
@@ -58,27 +57,36 @@
 
 .tab-content {
   display: none;
-  padding: 30px 0;
+  padding: 30px;
   float: left;
-  font-size: 14px;
   width: 100%;
 
   &.active {
     display: block;
   }
 
+  p {
+    margin: 0 0 20px;
+    font-weight: 400;
+  }
+
   a {
     background: $white;
+    border-radius: 3px;
     color: rgb(60, 100, 160);
     display: block;
     font-weight: 500;
-    margin: 0 auto;
-    width: 50%;
     padding: 10px 20px;
     text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
 
     &:focus {
       outline: none;
+    }
+
+    &:hover {
+      background: rgb(60, 100, 160);
+      color: $white;
     }
   }
 }
