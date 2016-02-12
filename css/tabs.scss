@@ -1,20 +1,31 @@
-.tabs-container {
-  display: none;
-  left: 50%;
-  position: absolute;
-  top: 50px;
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
 
-  &.active {
-    display: block;
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
 .tabs {
+  animation: pop-in 0.2s 0.2s ease-out forwards;
   background: rgb(100, 140, 255);
   color: $white;
+  display: none;
   float: left;
-  position: relative;
-  left: -50%;
+  left: -126px;
+  position: absolute;
+  top: 50px;
+  transform: scale(0);
   width: 280px;
   z-index: 1;
 }

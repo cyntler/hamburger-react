@@ -20,7 +20,7 @@
 
 						$type = $i <= 10 ? 'basic' : 'complex';
 
-						echo '<div class="icon-container">';
+						echo '<div class="icon-container ' . $type . '">';
 
 							include('partials/icons/' . $type . '/icon' . $i . '.html');
 							include('partials/tabs.php');
@@ -35,7 +35,6 @@
 		</div>
 
 		<script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
-		<script src="js/icon.js" type="text/javascript"></script>
 		<script src="js/tabs.js" type="text/javascript"></script>
 	</body>
 
