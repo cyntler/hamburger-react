@@ -6,6 +6,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/main.css" rel="stylesheet" type="text/css" />
 		<title>Animated menu icons</title>
+		<script type="text/javascript"><?php include('js/analytics.js'); ?></script>
 	</head>
 
 	<body>
