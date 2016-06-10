@@ -111,7 +111,6 @@
   }
 
   p {
-    font-weight: 700;
     margin: ($height-small / 5.5) 0 0;
 
     @media(min-width: $break-large) {
@@ -121,6 +120,11 @@
     @media(min-width: $break-huge) {
       margin: ($height-huge / 5.5) 0 0;
     }
+  }
+
+  p,
+  a {
+    font-weight: 700;
   }
 
   .icon {
