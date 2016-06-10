@@ -1,18 +1,55 @@
+// Helper mixins
+@mixin transform($contents) {
+  -webkit-transform: $contents;
+  -ms-transform: $contents;
+  transform: $contents;
+}
+
+@mixin transition($contents) {
+  -webkit-transition: $contents;
+  -ms-transition: $contents;
+  transition: $contents;
+}
+
+// Icon styles
 .icon1 {
+  cursor: pointer;
+  height: 23px;
+  position: relative;
+  width: 28px;
+
   .line {
+    $margin: 10px;
+
     @include transition(0.4s cubic-bezier(0, 0, 0, 1));
+    background: white;
+    height: 3px;
+    position: absolute;
+    width: 28px;
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: $margin;
+    }
+
+    &:nth-child(3) {
+      top: $margin * 2;
+    }
   }
 
   &.animate {
-    .line1 {
+    .line:first-child {
       @include transform(rotate(45deg) translate(7px, 7px));
     }
 
-    .line2 {
+    .line:nth-child(2) {
       opacity: 0;
     }
 
-    .line3 {
+    .line:nth-child(3) {
       @include transform(rotate(-45deg) translate(7px, -7px));
     }
   }

@@ -1,7 +1,14 @@
-$(document).ready(function() {
+- function() {
+  var $icons = document.getElementsByClassName('icon'),
+      i;
 
-	$('.icon').click(function() {
-		$(this).toggleClass('animate');
-	});
+  for(i = 0; i < $icons.length; i++) {
+    - function(current) {
+      var $icon = $icons[current];
 
-});
+      $icon.addEventListener('click', function() {
+        $icon.classList.toggle('animate');
+      });
+    }(i);
+  }
+}();

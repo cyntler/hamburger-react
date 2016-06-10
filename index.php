@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Animated hamburger icons</title>
+    <script type="text/javascript"><?php include('js/analytics.js'); ?></script>
+  </head>
 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="css/main.css" rel="stylesheet" type="text/css" />
-		<title>Animated menu icons</title>
-		<script type="text/javascript"><?php include('js/analytics.js'); ?></script>
-	</head>
+  <body>
+    <section class="container icons">
+      <?php for ($i = 1; $i <= 15; $i++) { ?>
+        <div class="icon-container">
+          <p>
+            <strong><?php echo sprintf('%02d', $i); ?>. </strong>
+            <a target="_blank" href="https://github.com/luukdv/menu-icons/blob/master/partials/icons/icon<?php echo $i; ?>.html">HTML</a>
+            <?php echo '/'; ?>
+            <a target="_blank" href="https://github.com/luukdv/menu-icons/blob/master/css/icons/icon<?php echo $i; ?>.scss">SCSS</a>
+          </p>
 
-	<body>
-		<div class="container">
+          <?php include('partials/icons/icon' . $i . '.html'); ?>
+        </div>
+      <?php } ?>
+    </section>
 
-			<h1>Animated menu icons &nbsp;&bull;&nbsp; take your pick.</h1>
+    <section class="container description">
+      <div class="text">
+        <h1>Animated hamburger icons</h1>
 
-			<div class="icons-container">
+        <p>Take your pick, grab the HTML + SCSS, and add a class on click with some JS. For more information, visit <a target="_blank" href="https://github.com/luukdv/menu-icons">GitHub</a>.</p>
+      </div>
+    </section>
 
-				<?php
-					for ($i = 1; $i <= 15; $i++) {
-
-						$type = $i <= 10 ? 'basic' : 'complex';
-
-						echo '<div class="icon-container ' . $type . '">';
-
-							include('partials/icons/' . $type . '/icon' . $i . '.html');
-							include('partials/tabs.php');
-
-						echo '</div>';
-
-					}
-				?>
-
-			</div>
-
-		</div>
-
-		<script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
-		<script src="js/tabs.js" type="text/javascript"></script>
-	</body>
-
+    <script type="text/javascript"><?php include('js/icon.js'); ?></script>
+  </body>
 </html>
