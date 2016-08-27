@@ -47,16 +47,18 @@
   &.animate {
     @include transform(rotate(360deg));
 
-    .line:first-child {
-      @include transform(rotate(45deg) translate(7px, 7px));
-    }
+    .line {
+      &:first-child {
+        @include transform(rotate(45deg) translate(7px, 7px));
+      }
 
-    .line:nth-child(2) {
-      opacity: 0;
-    }
+      &:nth-child(2) {
+        opacity: 0;
+      }
 
-    .line:nth-child(3) {
-      @include transform(rotate(-45deg) translate(7px, -7px));
+      &:nth-child(3) {
+        @include transform(rotate(-45deg) translate(7px, -7px));
+      }
     }
   }
 }
