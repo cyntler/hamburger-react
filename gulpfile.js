@@ -1,9 +1,9 @@
 'use strict';
 
 var gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  cssnano = require('gulp-cssnano'),
-  util = require('gulp-util');
+    cssnano = require('gulp-cssnano'),
+    sass = require('gulp-sass'),
+    util = require('gulp-util');
 
 gulp.task('css', function() {
   gulp.src('css/main.scss')
