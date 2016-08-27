@@ -13,15 +13,17 @@
 
 // Icon styles
 .icon12 {
+  $line-height: 3px;
+  $line-margin: 7px;
+  $width: 28px;
+
   @include transition(0.2s 0.2s cubic-bezier(0, 0, 0, 1));
   cursor: pointer;
-  height: 23px;
+  height: (3 * $line-height) + (2 * $line-margin);
   position: relative;
-  width: 28px;
+  width: $width;
 
   .line-outer {
-    $margin: 10px;
-
     @include transition(0.2s 0.4s cubic-bezier(0, 0, 0, 1));
 
     &:first-child .line-inner {
@@ -29,20 +31,20 @@
     }
 
     &:nth-child(2) .line-inner {
-      top: $margin;
+      top: $line-margin + $line-height;
     }
 
     &:nth-child(3) .line-inner {
-      top: $margin * 2;
+      top: ($line-margin + $line-height) * 2;
     }
   }
 
   .line-inner {
     @include transition(0.2s cubic-bezier(0, 0, 0, 1));
     background: white;
-    height: 3px;
+    height: $line-height;
     position: absolute;
-    width: 28px;
+    width: $width;
   }
 
   &.animate {
