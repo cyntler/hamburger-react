@@ -13,31 +13,34 @@
 
 // Icon styles
 .icon6 {
+  $lines: 3;
+  $line-height: 3px;
+  $line-margin: 7px;
+  $width: 28px;
+
   @include transition(0.4s cubic-bezier(0, 0, 0, 1));
   cursor: pointer;
-  height: 23px;
+  height: (3 * $line-height) + (2 * $line-margin);
   position: relative;
-  width: 28px;
+  width: $width;
 
   .line {
-    $margin: 10px;
-
     @include transition(0.4s cubic-bezier(0, 0, 0, 1));
     background: white;
-    height: 3px;
+    height: $line-height;
     position: absolute;
-    width: 28px;
+    width: $width;
 
     &:first-child {
       top: 0;
     }
 
     &:nth-child(2) {
-      top: $margin;
+      top: $line-margin + $line-height;
     }
 
     &:nth-child(3) {
-      top: $margin * 2;
+      top: ($line-margin + $line-height) * 2;
     }
   }
 
