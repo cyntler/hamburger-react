@@ -1,4 +1,4 @@
-[![icons.menu](images/screenshot.png)](http://luuk.site/hamburger/)
+[![luuk.site/hamburger](images/screenshot.png)](http://luuk.site/hamburger/)
 
 # Animated hamburger icons
 
@@ -6,7 +6,7 @@ Hamburger icons with CSS-driven transitions. Created to be as performant, elegan
 
 ## Usage
 
-Visit [icons.menu](http://luuk.site/hamburger/), pick a hamburger and grab the HTML + SCSS. The only thing left is adding the `animate` class when clicking the hamburger.
+Visit [luuk.site/hamburger](http://luuk.site/hamburger/), pick a hamburger and grab the HTML + SCSS. The only thing left is adding the `animate` class when clicking the hamburger.
 
 ## Support
 
