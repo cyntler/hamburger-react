@@ -1,4 +1,4 @@
-[![luuk.site/hamburger](images/screenshot.png)](http://luuk.site/hamburger/)
+[![animated-hamburger-icons.netlify.com](images/screenshot.png)](https://animated-hamburger-icons.netlify.com)
 
 # Animated hamburger icons
 
@@ -6,7 +6,7 @@ Hamburger icons with CSS-driven transitions. Created to be as performant, elegan
 
 ## Usage
 
-Visit [luuk.site/hamburger](http://luuk.site/hamburger/), pick a hamburger and grab the HTML + SCSS. The only thing left is adding the `animate` class when clicking the hamburger.
+Visit [animated-hamburger-icons.netlify.com](https://animated-hamburger-icons.netlify.com), pick a hamburger and grab the HTML + SCSS. The only thing left is adding the `animate` class when clicking the hamburger.
 
 ## Support
 
