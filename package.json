@@ -1,11 +1,4 @@
 {
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-util": "^3.0.7"
-  },
-  "scripts": {
-    "postinstall": "gulp"
-  }
+  "name": "hamburger-react",
+  "version": "0.1.0-beta.1"
 }
