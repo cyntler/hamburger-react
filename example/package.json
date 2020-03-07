@@ -10,8 +10,6 @@
     "start": "parcel index.html"
   },
   "dependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
     "tailwindcss": "^1.2.0"
   }
 }
