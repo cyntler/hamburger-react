@@ -2,7 +2,7 @@
   "name": "hamburger-react",
   "version": "0.1.0-beta.1",
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   }
 }
