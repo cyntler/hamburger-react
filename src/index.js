@@ -4,13 +4,13 @@ export const Hamburger = ({
   onToggle,
 }) => {
   const area = 48
-  const width = 34
-  const room = (area - width) / 2
-  const line = Math.round(width / 10)
-  const margin = width / 4
-  const height = line * 3 + margin * 2
-  const topOffset = (area - height) / 2
-  const move = width / 4
+  const width = 32
+  const room = Math.round((area - width) / 2)
+  const barHeight = Math.round(width / 10)
+  const margin = Math.round(width / 4)
+  const height = barHeight * 3 + margin * 2
+  const topOffset = Math.round((area - height) / 2)
+  const move = width / 4.04
   const transition = 'transform 0.4s cubic-bezier(0, 0, 0, 1)'
 
   const [toggled, toggle] = useState(false)
@@ -23,9 +23,9 @@ export const Hamburger = ({
     toggle(!toggled)
   }
 
-  const lineStyles = {
+  const barStyles = {
     background: 'white',
-    height: `${line}px`,
+    height: `${barHeight}px`,
     left: `${room}px`,
     position: 'absolute',
     transition: 'transform 0.4s cubic-bezier(0, 0, 0, 1)',
@@ -51,18 +51,18 @@ export const Hamburger = ({
       onKeyUp={e => (e.key === 13 || e.keyCode === 13) && handler()}
     >
       <div style={{
-        ...lineStyles,
+        ...barStyles,
         top: `${topOffset}px`,
         transform: `${toggled ? `rotate(-45deg) translate(-${move}px, ${move}px)` : 'none'}`,
       }} />
       <div style={{
-        ...lineStyles,
-        top: `${topOffset + line + margin}px`,
+        ...barStyles,
+        top: `${topOffset + barHeight + margin}px`,
         transform: `${toggled ? 'scale(0, 1)' : 'none'}`,
       }} />
       <div style={{
-        ...lineStyles,
-        top: `${topOffset + line * 2 + margin * 2}px`,
+        ...barStyles,
+        top: `${topOffset + barHeight * 2 + margin * 2}px`,
         transform: `${toggled ? `rotate(45deg) translate(-${move}px, -${move}px)` : 'none'}`,
       }} />
     </div>
