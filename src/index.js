@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 
-export const Hamburger = ({ onToggle }) => {
+export const Hamburger = ({
+  onToggle,
+}) => {
   const area = 48
   const width = 34
-  const room = Math.round((area - width) / 2)
+  const room = (area - width) / 2
   const line = Math.round(width / 10)
-  const margin = Math.round(width / 4)
+  const margin = width / 4
   const height = line * 3 + margin * 2
-  const topOffset = Math.round((area - height) / 2)
-  const move = width / 4.04
+  const topOffset = (area - height) / 2
+  const move = width / 4
   const transition = 'transform 0.4s cubic-bezier(0, 0, 0, 1)'
 
   const [toggled, toggle] = useState(false)
