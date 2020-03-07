@@ -10,8 +10,16 @@ const topOffset = Math.round((area - height) / 2)
 const move = width / 4.04
 const transition = 'transform 0.4s cubic-bezier(0, 0, 0, 1)'
 
-export const Hamburger = () => {
-  const [toggled, toggle] = useState()
+export const Hamburger = ({ onToggle }) => {
+  const [toggled, toggle] = useState(false)
+
+  const handler = () => {
+    if (onToggle) {
+      onToggle(!toggled)
+    }
+
+    toggle(!toggled)
+  }
 
   return (
     <div
@@ -26,10 +34,10 @@ export const Hamburger = () => {
         transition: `${transition}`,
         width: `${area}px`,
       }}
-      onClick={() => toggle(!toggled)}
+      onClick={handler}
       role="button"
       tabIndex="0"
-      onKeyUp={e => (e.key === 13 || e.keyCode === 13) && toggle(!toggled)}
+      onKeyUp={e => (e.key === 13 || e.keyCode === 13) && handler()}
     >
       <Line styles={{
         top: `${topOffset}px`,
