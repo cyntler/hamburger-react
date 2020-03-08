@@ -2,18 +2,21 @@ import React, { useState } from 'react'
 
 export const Hamburger = ({
   onToggle,
+  size = 'm',
 }) => {
   const area = 48
-  const width = 32
+  const sizes = { xs: 16, s: 24, m: 32, l: 40, xl: 48 }
+  const width = sizes[size] ? sizes[size] : sizes['m']
   const room = Math.round((area - width) / 2)
-  const barHeight = Math.round(width / 10)
+  const barHeight = Math.round(width / 12)
   const margin = Math.round(width / 4)
   const height = barHeight * 3 + margin * 2
   const topOffset = Math.round((area - height) / 2)
-  const move = width / 4.04
+  const translations = { xs: 4.55, s: 4.25, m: 4.1, l: 4.35, xl: 4.25 }
+  const move = width / (translations[size] ? translations[size] : translations['m'])
   const transition = 'transform 0.4s cubic-bezier(0, 0, 0, 1)'
 
-  const [toggled, toggle] = useState(false)
+  const [toggled, toggle] = useState(true)
 
   const handler = () => {
     if (onToggle) {
