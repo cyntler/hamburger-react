@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 export const Hamburger = ({
+  color = '#000',
   direction = 'left',
   onToggle,
   size = 36,
@@ -34,7 +35,7 @@ export const Hamburger = ({
   }
 
   const barStyles = {
-    background: 'white',
+    background: color,
     height: `${barHeight}px`,
     left: `${room}px`,
     position: 'absolute',
