@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 export const Hamburger = ({
+  direction = 'left',
   onToggle,
   size = 36,
 }) => {
@@ -21,6 +22,7 @@ export const Hamburger = ({
   const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
   const translate = 4.6325
   const move = (width / translate) - (deviation / (4 / 3))
+  const left = direction === 'left'
   const transition = 'transform 0.4s cubic-bezier(0, 0, 0, 1)'
 
   const handler = () => {
@@ -48,7 +50,10 @@ export const Hamburger = ({
         height: `${area}px`,
         outline: 'none',
         position: 'relative',
-        transform: `${toggled ? 'rotate(-90deg)' : 'none'}`,
+        transform: `${toggled
+          ? `rotate(${90 * (left ? -1 : 1)}deg)`
+          : 'none'
+        }`,
         transition: `${transition}`,
         userSelect: 'none',
         width: `${area}px`,
@@ -61,17 +66,26 @@ export const Hamburger = ({
       <div style={{
         ...barStyles,
         top: `${topOffset}px`,
-        transform: `${toggled ? `rotate(-45deg) translate(-${move}px, ${move}px)` : 'none'}`,
+        transform: `${toggled
+          ? `rotate(${45 * (left ? -1 : 1)}deg) translate(${move * (left ? -1 : 1)}px, ${move}px)`
+          : 'none'
+        }`,
       }} />
       <div style={{
         ...barStyles,
         top: `${topOffset + barHeight + margin}px`,
-        transform: `${toggled ? 'scale(0, 1)' : 'none'}`,
+        transform: `${toggled ?
+          'scale(0, 1)'
+          : 'none'
+        }`,
       }} />
       <div style={{
         ...barStyles,
         top: `${topOffset + barHeight * 2 + margin * 2}px`,
-        transform: `${toggled ? `rotate(45deg) translate(-${move}px, -${move}px)` : 'none'}`,
+        transform: `${toggled
+          ? `rotate(${45 * (left ? 1 : -1)}deg) translate(${move * (left ? -1 : 1)}px, ${move * -1}px)`
+          : 'none'
+        }`,
       }} />
     </div>
   )
