@@ -14,7 +14,8 @@ export const Hamburger = ({
   const height = barHeight * 3 + margin * 2
   const topOffset = Math.round((area - height) / 2)
   const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
-  const move = (width / 4.6325) - (deviation / (4 / 3))
+  const translate = 4.6325
+  const move = (width / translate) - (deviation / (4 / 3))
   const transition = 'transform 0.4s cubic-bezier(0, 0, 0, 1)'
 
   const [toggled, toggle] = useState(false)
