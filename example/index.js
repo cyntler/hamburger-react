@@ -26,7 +26,7 @@ const Card = ({ children, title, subtitle, code }) => (
       <h3 className="leading-snug text-center text-gray-600 mb-4 text-sm">{subtitle}</h3>
       {children[0]}
     </div>
-    <code className="text-xs font-bold px-6 py-4 rounded bg-indigo-800 shadow-inner">
+    <code className="text-sm px-6 py-4 rounded bg-indigo-800 shadow-inner">
     {children[1]}
     </code>
   </div>
