@@ -5,11 +5,11 @@ import { Hamburger } from '../src'
 const Main = () => (
   <>
     <Card title="Default" subtitle="Direction: left">
-      <Hamburger color="white" />
+      <Hamburger size={36} color="white" />
       &lt;Hamburger /&gt;
     </Card>
     <Card title="Default" subtitle="Direction: right">
-      <Hamburger color="white" direction="right" />
+      <Hamburger size={36} color="white" direction="right" />
       <>
         <div>&lt;Hamburger</div>
         <div>&nbsp;&nbsp;direction="right"</div>
@@ -17,11 +17,11 @@ const Main = () => (
       </>
     </Card>
     <Card title="Default" subtitle="Direction: left">
-      <Hamburger color="white" />
+      <Hamburger size={36} color="white" />
       &lt;Hamburger /&gt;
     </Card>
     <Card title="Default" subtitle="Direction: right">
-      <Hamburger color="white" direction="right" />
+      <Hamburger size={36} color="white" direction="right" />
       <>
         <div>&lt;Hamburger</div>
         <div>&nbsp;&nbsp;direction="right"</div>

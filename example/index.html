@@ -33,18 +33,45 @@
             md:text-2xl
             lg:text-3xl
             font-medium
-          ">Usage & settings</h2>
+          ">Settings</h2>
           <code class="
             w-full
             max-w-xl
-            px-6
-            py-4
+            px-8
+            py-6
             text-lg
             rounded-lg
             bg-indigo-800
             shadow-inner
           ">
             <div>&lt;Hamburger</div>
+            <div class="flex items-center">
+              &nbsp;&nbsp;color="#000"
+              <span class="select-none text-sm text-indigo-300">&nbsp;// line color</span>
+            </div>
+            <div class="flex items-center">
+              &nbsp;&nbsp;direction="left"
+              <span class="select-none text-sm text-indigo-300">&nbsp;// animation direction</span>
+            </div>
+            <div class="flex items-center">
+              <div>&nbsp;&nbsp;onToggle={toggled => {</div>
+              <span class="select-none text-sm text-indigo-300">&nbsp;// callback</span>
+            </div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;if (toggled) {</div>
+            <div class="select-none text-sm text-indigo-300">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open menu
+            </div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;} else {</div>
+            <div class="select-none text-sm text-indigo-300">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close menu
+            </div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;}}</div>
+            <div class="flex items-center">
+              &nbsp;&nbsp;size={32}
+              <span class="select-none text-sm text-indigo-300">
+                &nbsp;// a size between 12 and 48
+              </span>
+            </div>
             <div>/&gt;</div>
           </code>
         </div>

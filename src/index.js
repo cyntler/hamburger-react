@@ -4,7 +4,7 @@ export const Hamburger = ({
   color = '#000',
   direction = 'left',
   onToggle,
-  size = 36,
+  size = 32,
 }) => {
   const [toggled, toggle] = useState(false)
 
