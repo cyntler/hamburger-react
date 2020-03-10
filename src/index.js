@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 export const Hamburger = ({
   color = '#000',
   direction = 'left',
-  onToggle,
+  rounded = false,
   size = 32,
+  onToggle,
 }) => {
   const [toggled, toggle] = useState(false)
 
@@ -41,6 +42,10 @@ export const Hamburger = ({
     position: 'absolute',
     transition: 'transform 0.4s cubic-bezier(0, 0, 0, 1)',
     width: `${width}px`,
+  }
+
+  if (rounded) {
+    barStyles['borderRadius'] = '9em'
   }
 
   return (
