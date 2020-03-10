@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Tilt = ({ o }) => (
   <div
-    className="hamburger-react"
+    className={o.name}
     style={{
       ...o.burgerStyles,
       transform: `${o.toggled

@@ -3,6 +3,7 @@ import { Fade } from './Fade'
 import { Tilt } from './Tilt'
 
 const area = 48
+const name = 'hamburger-react'
 const transition = '0.4s cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
@@ -72,6 +73,7 @@ export const Hamburger = ({
         isLeft,
         margin,
         move,
+        name,
         toggled,
         topOffset,
       }} />
@@ -84,6 +86,7 @@ export const Hamburger = ({
         isLeft,
         margin,
         move,
+        name,
         toggled,
         topOffset,
       }} />

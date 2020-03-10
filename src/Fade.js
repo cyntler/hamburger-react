@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Fade = ({ o }) => (
   <div
-    className="hamburger-react"
+    className={o.name}
     style={o.burgerStyles}
     onClick={o.handler}
     role="button"
