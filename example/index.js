@@ -6,26 +6,26 @@ const Main = () => (
   <>
     <Card title="Default" subtitle="Direction: left">
       <Hamburger color="white" />
-      {'<Hamburger />'}
+      &lt;Hamburger /&gt;
     </Card>
     <Card title="Default" subtitle="Direction: right">
       <Hamburger color="white" direction="right" />
       <>
-        <div>{'<Hamburger'}</div>
-        <div className="ml-4">direction="right"</div>
-        <div>{'/>'}</div>
+        <div>&lt;Hamburger</div>
+        <div>&nbsp;&nbsp;direction="right"</div>
+        <div>/&gt;</div>
       </>
     </Card>
     <Card title="Default" subtitle="Direction: left">
       <Hamburger color="white" />
-      {'<Hamburger />'}
+      &lt;Hamburger /&gt;
     </Card>
     <Card title="Default" subtitle="Direction: right">
       <Hamburger color="white" direction="right" />
       <>
-        <div>{'<Hamburger'}</div>
-        <div className="ml-4">direction="right"</div>
-        <div>{'/>'}</div>
+        <div>&lt;Hamburger</div>
+        <div>&nbsp;&nbsp;direction="right"</div>
+        <div>/&gt;</div>
       </>
     </Card>
   </>
