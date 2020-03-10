@@ -4,11 +4,11 @@ import { Hamburger } from '../src'
 
 const Main = () => (
   <>
-    <Card title="Default" subtitle="Direction: left">
+    <Card title="Tilt" subtitle="Direction: left">
       <Hamburger size={36} color="white" />
-      &lt;Hamburger /&gt;
+      <div>&lt;Hamburger /&gt;</div>
     </Card>
-    <Card title="Default" subtitle="Direction: right">
+    <Card title="Tilt" subtitle="Direction: right">
       <Hamburger size={36} color="white" direction="right" />
       <>
         <div>&lt;Hamburger</div>
@@ -16,14 +16,19 @@ const Main = () => (
         <div>/&gt;</div>
       </>
     </Card>
-    <Card title="Default" subtitle="Direction: left">
-      <Hamburger size={36} color="white" />
-      &lt;Hamburger /&gt;
-    </Card>
-    <Card title="Default" subtitle="Direction: right">
-      <Hamburger size={36} color="white" direction="right" />
+    <Card title="Fade" subtitle="Direction: left">
+      <Hamburger size={36} color="white" type="fade" />
       <>
         <div>&lt;Hamburger</div>
+        <div>&nbsp;&nbsp;type="fade"</div>
+        <div>/&gt;</div>
+      </>
+    </Card>
+    <Card title="Fade" subtitle="Direction: right">
+      <Hamburger size={36} color="white" direction="right" type="fade" />
+      <>
+        <div>&lt;Hamburger</div>
+        <div>&nbsp;&nbsp;type="fade"</div>
         <div>&nbsp;&nbsp;direction="right"</div>
         <div>/&gt;</div>
       </>

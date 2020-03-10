@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import { Fade } from './Fade'
 import { Tilt } from './Tilt'
 
 const area = 48
-const transition = 'transform 0.4s cubic-bezier(0, 0, 0, 1)'
+const transition = '0.4s cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
 export const Hamburger = ({
@@ -62,6 +63,18 @@ export const Hamburger = ({
   }
 
   switch (type) {
+    case 'fade':
+      return <Fade o={{
+        barHeight,
+        barStyles,
+        burgerStyles,
+        handler,
+        isLeft,
+        margin,
+        move,
+        toggled,
+        topOffset,
+      }} />
     default:
       return <Tilt o={{
         barHeight,

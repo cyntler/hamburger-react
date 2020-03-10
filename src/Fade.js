@@ -1,15 +1,9 @@
 import React from 'react'
 
-export const Tilt = ({ o }) => (
+export const Fade = ({ o }) => (
   <div
     className="hamburger-react"
-    style={{
-      ...o.burgerStyles,
-      transform: `${o.toggled
-        ? `rotate(${90 * (o.isLeft ? -1 : 1)}deg)`
-        : 'none'
-      }`,
-    }}
+    style={o.burgerStyles}
     onClick={o.handler}
     role="button"
     tabIndex="0"
@@ -26,9 +20,9 @@ export const Tilt = ({ o }) => (
     <div style={{
       ...o.barStyles,
       top: `${o.topOffset + o.barHeight + o.margin}px`,
-      transform: `${o.toggled
-        ? 'scale(0, 1)'
-        : 'none'
+      opacity: `${o.toggled
+        ? '0'
+        : '1'
       }`,
     }} />
     <div style={{
