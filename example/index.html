@@ -35,8 +35,10 @@
             font-medium
           ">Settings</h2>
           <code class="
+            text-indigo-100
             w-full
             max-w-xl
+            select-none
             px-8
             py-6
             text-lg
@@ -44,31 +46,46 @@
             bg-indigo-800
             shadow-inner
           ">
-            <div>&lt;Hamburger</div>
+            <div>&lt;<span class="text-yellow-400">Hamburger</span></div>
             <div class="flex items-center">
-              &nbsp;&nbsp;color="#000"
-              <span class="select-none text-sm text-indigo-300">&nbsp;// line color</span>
+              &nbsp;&nbsp;
+              <span class="text-purple-400">color</span>
+              ="
+              <span class="text-green-400">#000</span>
+              "
+              <span class="hidden md:inline text-sm text-indigo-400">&nbsp;// line color</span>
             </div>
             <div class="flex items-center">
-              &nbsp;&nbsp;direction="left"
-              <span class="select-none text-sm text-indigo-300">&nbsp;// animation direction</span>
+              &nbsp;&nbsp;
+              <span class="text-purple-400">direction</span>
+              ="
+              <span class="text-green-400">left</span>
+              "
+              <span class="hidden md:inline text-sm text-indigo-400">&nbsp;// animation direction</span>
             </div>
             <div class="flex items-center">
-              <div>&nbsp;&nbsp;onToggle={toggled => {</div>
-              <span class="select-none text-sm text-indigo-300">&nbsp;// callback</span>
+              &nbsp;&nbsp;
+              <span class="text-purple-400">onToggle</span>
+              ={<span class="text-orange-400">toggled</span>&nbsp;=> {
+              <span class="hidden md:inline text-sm text-indigo-400">&nbsp;// callback</span>
             </div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;if (toggled) {</div>
-            <div class="select-none text-sm text-indigo-300">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open menu
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;if (<span class="text-orange-400">toggled</span>) {</div>
+            <div class="text-sm text-indigo-400">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open menu
             </div>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;} else {</div>
-            <div class="select-none text-sm text-indigo-300">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close menu
+            <div class="text-sm text-indigo-400">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close menu
             </div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;}}</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+            <div>&nbsp;&nbsp;}</div>
             <div class="flex items-center">
-              &nbsp;&nbsp;size={32}
-              <span class="select-none text-sm text-indigo-300">
+              &nbsp;&nbsp;
+              <span class="text-purple-400">size</span>
+              ={
+              <span class="text-green-400">32</span>
+              }
+              <span class="hidden md:inline text-sm text-indigo-400">
                 &nbsp;// a size between 12 and 48
               </span>
             </div>

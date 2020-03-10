@@ -60,6 +60,7 @@ const Card = ({ children, title, subtitle, code }) => (
       {children[0]}
     </div>
     <code className="
+      text-indigo-100
       w-full
       xl:w-64
       max-w-xs
