@@ -37,16 +37,17 @@ const Card = ({ children, title, code }) => (
     bg-gray-800
     rounded-lg
     shadow-xl
-    py-8
+    pt-6
+    pb-8
     px-8
-    md:px-12
+    lg:px-12
     flex
     mb-6
     flex-col
     items-center
   ">
     <h2 className="mb-2 leading-snug text-center font-semibold flex items-center">
-      <span className="text-l mr-4 text-gray-400">Hamburger type:</span>
+      <span className="text-l mr-2 text-gray-400">Hamburger type:</span>
       <span className="text-xl">{title}</span>
     </h2>
     <div className="flex w-full items-center">
@@ -54,12 +55,13 @@ const Card = ({ children, title, code }) => (
         flex
         flex-col
         items-center
-        lg:border-r-2
-        lg:border-gray-700
+        md:border-r-2
+        md:border-gray-700
+        md:pr-8
+        md:mr-8
         lg:pr-12
         lg:mr-12
         flex-shrink-0
-        lg:mb-0
       ">
         <h3 className="leading-snug text-center text-gray-500 font-semibold mb-2 text-sm">
           Direction: right
@@ -84,12 +86,13 @@ const Card = ({ children, title, code }) => (
         flex
         flex-col
         items-center
-        lg:border-l-2
-        lg:border-gray-700
+        md:border-l-2
+        md:border-gray-700
+        md:pl-8
+        md:ml-8
         lg:pl-12
         lg:ml-12
         flex-shrink-0
-        lg:mb-0
       ">
         <h3 className="leading-snug text-center text-gray-500 font-semibold mb-2 text-sm">
           Direction: left
