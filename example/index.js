@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Hamburger from '../src'
 import { Fade } from '../src'
+import { Turn } from '../src'
 
 const Main = () => (
   <>
@@ -28,6 +29,19 @@ const Main = () => (
         '
       </div>
       <Fade size={36} color="white" />
+    </Card>
+    <Card title="Turn">
+      <Turn size={36} color="white" direction="right" />
+      <div>
+        Import {'{'}
+        <span className="text-white"> Turn </span>
+        as
+        <span className="text-white"> Hamburger </span>
+        {'}'} from '
+        <span className="text-green-400">hamburger-react</span>
+        '
+      </div>
+      <Turn size={36} color="white" />
     </Card>
   </>
 )
