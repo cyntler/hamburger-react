@@ -1,10 +1,10 @@
+import { Fade } from '../src'
+import { Sling } from '../src'
+import { Spin } from '../src'
+import { Turn } from '../src'
+import Hamburger from '../src'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Hamburger from '../src'
-import { Fade } from '../src'
-import { Turn } from '../src'
-import { Spin } from '../src'
-import { Sling } from '../src'
 
 const Main = () => (
   <>
@@ -58,7 +58,7 @@ const Main = () => (
       </div>
       <Sling size={36} color="white" />
     </Card>
-    <Card title="Spin">
+    <Card title="Spin" last>
       <Spin size={36} color="white" direction="right" />
       <div>
         Import {'{'}
@@ -74,8 +74,8 @@ const Main = () => (
   </>
 )
 
-const Card = ({ children, title, code }) => (
-  <div className="
+const Card = ({ children, title, last }) => (
+  <div className={`
     bg-gray-800
     rounded-lg
     shadow-xl
@@ -84,10 +84,10 @@ const Card = ({ children, title, code }) => (
     px-8
     lg:px-12
     flex
-    mb-6
+    mb-${last ? 0 : 6}
     flex-col
     items-center
-  ">
+  `}>
     <h2 className="mb-2 leading-snug text-center font-semibold flex items-center">
       <span className="text-l mr-2 text-gray-400">Hamburger type:</span>
       <span className="text-xl">{title}</span>
