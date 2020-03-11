@@ -2,6 +2,7 @@ import { Fade } from '../src'
 import { Sling } from '../src'
 import { Spin } from '../src'
 import { Turn } from '../src'
+import { Twirl } from '../src'
 import Hamburger from '../src'
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -57,6 +58,19 @@ const Main = () => (
         '
       </div>
       <Sling size={36} color="white" />
+    </Card>
+    <Card title="Twirl">
+      <Twirl size={36} color="white" direction="right" />
+      <div>
+        Import {'{'}
+        <span className="text-white"> Twirl </span>
+        as
+        <span className="text-white"> Hamburger </span>
+        {'}'} from '
+        <span className="text-green-400">hamburger-react</span>
+        '
+      </div>
+      <Twirl size={36} color="white" />
     </Card>
     <Card title="Spin" last>
       <Spin size={36} color="white" direction="right" />

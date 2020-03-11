@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 const area = 48
 const name = 'hamburger-react'
-const transition = '0.4s cubic-bezier(0, 0, 0, 1)'
+const duration = 0.4
+const timing = 'cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
 export const Burger = ({
@@ -30,23 +31,22 @@ export const Burger = ({
   const move = (width / translate) - (deviation / (4 / 3))
   const isLeft = direction === 'left'
 
-  const barStyles = {
-    background: color,
-    height: `${barHeight}px`,
-    left: `${room}px`,
-    position: 'absolute',
-    transition,
-    width: `${width}px`,
-  }
-
   const burgerStyles = {
     cursor: 'pointer',
     height: `${area}px`,
     outline: 'none',
     position: 'relative',
-    transition,
+    transition: `${duration}s ${timing}`,
     userSelect: 'none',
     width: `${area}px`,
+  }
+
+  const barStyles = {
+    background: color,
+    height: `${barHeight}px`,
+    left: `${room}px`,
+    position: 'absolute',
+    width: `${width}px`,
   }
 
   const handler = () => {
@@ -65,12 +65,15 @@ export const Burger = ({
     barHeight,
     barStyles,
     burgerStyles,
+    timing,
     handler,
     isLeft,
     margin,
     move,
     name,
     toggled,
+    timing,
+    duration,
     topOffset,
   })
 }

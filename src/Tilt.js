@@ -24,6 +24,7 @@ export const Tilt = props => (
           ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move}px)`
           : 'none'
         }`,
+        transition: `${o.duration}s ${o.timing}`,
       }} />
       <div style={{
         ...o.barStyles,
@@ -32,6 +33,7 @@ export const Tilt = props => (
           ? 'scale(0, 1)'
           : 'none'
         }`,
+        transition: `${o.duration}s ${o.timing}`,
       }} />
       <div style={{
         ...o.barStyles,
@@ -40,6 +42,7 @@ export const Tilt = props => (
           ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move * -1}px)`
           : 'none'
         }`,
+        transition: `${o.duration}s ${o.timing}`,
       }} />
     </div>
   )} />
