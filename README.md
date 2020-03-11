@@ -4,11 +4,12 @@ Hamburger icons with CSS-driven transitions. Created to be as performant, elegan
 ## Yet another hamburger library?
 Yes. The decision to create this small package was made because existing solutions seem to have one or more of the following problems:
 
-- Animations that didn't feel natural
-- Transitions on expensive properties
+- Animations that don't feel natural
+- Transitions on expensive properties (jerky animations)
 - No React support
 - Size (additional dependencies besides React)
 - Not customizable, or too customizable (no sensible defaults)
+- Doing too much
 
 ## Installation
 ```sh
