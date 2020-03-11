@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Hamburger from '../src'
 import { Fade } from '../src'
 import { Turn } from '../src'
+import { Spin } from '../src'
 
 const Main = () => (
   <>
@@ -42,6 +43,19 @@ const Main = () => (
         '
       </div>
       <Turn size={36} color="white" />
+    </Card>
+    <Card title="Spin">
+      <Spin size={36} color="white" direction="right" />
+      <div>
+        Import {'{'}
+        <span className="text-white"> Spin </span>
+        as
+        <span className="text-white"> Hamburger </span>
+        {'}'} from '
+        <span className="text-green-400">hamburger-react</span>
+        '
+      </div>
+      <Spin size={36} color="white" />
     </Card>
   </>
 )
