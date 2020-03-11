@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Hamburger } from '../src'
+import Hamburger from '../src'
+import { Fade } from '../src'
 
 const Main = () => (
   <>
@@ -17,7 +18,7 @@ const Main = () => (
       </>
     </Card>
     <Card title="Fade" subtitle="Direction: left">
-      <Hamburger size={36} color="white" type="fade" />
+      <Fade size={36} color="white" />
       <>
         <div>&lt;Hamburger</div>
         <div>&nbsp;&nbsp;type="fade"</div>
@@ -25,7 +26,7 @@ const Main = () => (
       </>
     </Card>
     <Card title="Fade" subtitle="Direction: right">
-      <Hamburger size={36} color="white" direction="right" type="fade" />
+      <Fade size={36} color="white" direction="right" />
       <>
         <div>&lt;Hamburger</div>
         <div>&nbsp;&nbsp;type="fade"</div>
