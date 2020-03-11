@@ -4,6 +4,7 @@ import Hamburger from '../src'
 import { Fade } from '../src'
 import { Turn } from '../src'
 import { Spin } from '../src'
+import { Sling } from '../src'
 
 const Main = () => (
   <>
@@ -43,6 +44,19 @@ const Main = () => (
         '
       </div>
       <Turn size={36} color="white" />
+    </Card>
+    <Card title="Sling">
+      <Sling size={36} color="white" direction="right" />
+      <div>
+        Import {'{'}
+        <span className="text-white"> Sling </span>
+        as
+        <span className="text-white"> Hamburger </span>
+        {'}'} from '
+        <span className="text-green-400">hamburger-react</span>
+        '
+      </div>
+      <Sling size={36} color="white" />
     </Card>
     <Card title="Spin">
       <Spin size={36} color="white" direction="right" />
