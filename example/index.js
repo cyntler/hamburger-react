@@ -111,7 +111,20 @@ const Main = () => (
         <span className="text-xl">Squash</span>
       </h2>
       <div className="flex w-full items-center">
-        <div className="bg-teal-700 absolute leading-loose left-0 top-0 h-full w-24 rounded-l-lg flex items-center justify-center flex-col">
+        <div className="
+          bg-teal-700
+          absolute
+          leading-loose
+          left-0
+          top-0
+          h-full
+          w-24
+          rounded-l-lg
+          flex
+          items-center
+          justify-center
+          flex-col
+        ">
           <span>✨</span>
           <span className="font-semibold text-sm">New!</span>
           <span>✨</span>
