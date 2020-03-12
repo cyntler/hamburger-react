@@ -1,6 +1,6 @@
 import { Fade } from '../src'
 import { Sling } from '../src'
-import { Spin } from '../src'
+import { Spiral } from '../src'
 import { Turn } from '../src'
 import { Twirl } from '../src'
 import { Squash } from '../src'
@@ -78,18 +78,18 @@ const Main = () => (
       <Twirl size={36} color="white" />
     </Card>
 
-    <Card title="Spin">
-      <Spin size={36} color="white" direction="right" />
+    <Card title="Spiral">
+      <Spiral size={36} color="white" direction="right" />
       <div>
         Import {'{'}
-        <span className="text-white"> Spin </span>
+        <span className="text-white"> Spiral </span>
         as
         <span className="text-white"> Hamburger </span>
         {'}'} from '
         <span className="text-green-400">hamburger-react</span>
         '
       </div>
-      <Spin size={36} color="white" />
+      <Spiral size={36} color="white" />
     </Card>
 
     <div className={`
