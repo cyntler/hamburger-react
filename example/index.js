@@ -144,7 +144,7 @@ const Main = () => (
           flex-shrink-0
         ">
           <h3 className="leading-snug text-center text-gray-500 font-semibold mb-2 text-sm">
-            Direction: not applicable
+            Direction: n / a
           </h3>
           <Squash size={36} color="white" />
         </div>
