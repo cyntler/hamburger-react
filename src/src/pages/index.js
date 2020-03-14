@@ -1,6 +1,7 @@
 import Cards from '../components/cards'
 import Properties from '../components/properties'
 import Defaults from '../components/defaults'
+import Title from '../components/title'
 import Wrap from '../components/wrap'
 import React from 'react'
 
@@ -8,6 +9,7 @@ export default () => (
   <>
     <div className="md:mt-24 mb-16 md:mb-24">
       <Wrap>
+        <Title />
         <Cards />
       </Wrap>
     </div>
