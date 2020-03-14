@@ -1,6 +1,7 @@
 import Cards from '../components/cards'
 import Properties from '../components/properties'
 import Installation from '../components/installation'
+import Information from '../components/information'
 import Title from '../components/title'
 import Wrap from '../components/wrap'
 import React from 'react'
@@ -27,7 +28,9 @@ export default () => (
     </div>
 
     <div className="mb-16 md:mb-32">
-      <Wrap></Wrap>
+      <Wrap>
+        <Information />
+      </Wrap>
     </div>
   </>
 )
