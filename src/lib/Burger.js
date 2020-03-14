@@ -65,15 +65,14 @@ export const Burger = ({
     barHeight,
     barStyles,
     burgerStyles,
-    timing,
+    duration,
     handler,
     isLeft,
     margin,
     move,
     name,
-    toggled,
     timing,
-    duration,
+    toggled,
     topOffset,
   })
 }
