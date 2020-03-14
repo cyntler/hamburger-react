@@ -13,7 +13,7 @@ export default ({ children, last }) => (
         {children[1]}
       </div>
     </div>
-    <code className="text-xs px-6 py-4 rounded bg-indigo-800 shadow-inner">
+    <code className="text-sm px-6 py-4 rounded-md bg-indigo-800 shadow-inner">
       {children[2]}
     </code>
   </div>

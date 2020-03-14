@@ -22,21 +22,44 @@ export default () => (
         <Property name="color" type="string" />
         <Hamburger color="white" size={34} />
       </Example>
+
       <Example>
         <Property name="direction" type="string" />
         <Hamburger color="white" size={26} />
       </Example>
+
       <Example>
         <Property name="rounded" type="boolean" />
         <Hamburger color="white" rounded size={42} />
       </Example>
+
       <Example>
         <Property name="size" type="integer" />
         <Hamburger color="white" size={20} />
       </Example>
+
       <Example last>
         <Property name="onToggle" type="function" />
         <Hamburger color="white" size={30} />
+        <>
+          <div>{'<'}<span className="text-yellow-400">Hamburger</span></div>
+          <div className="flex items-center">
+            &nbsp;&nbsp;
+            <span className="text-purple-400">onToggle</span>
+            ={'{'}<span className="text-orange-400">toggled</span>&nbsp;=>{' {'}
+          </div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;if (<span className="text-orange-400">toggled</span>) {'{'}</div>
+          <div className="text-indigo-400">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open a menu
+          </div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'} else {'{'}</div>
+          <div className="text-indigo-400">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close a menu
+          </div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
+          <div>&nbsp;&nbsp;{'}'}</div>
+          <div>{'/>'}</div>
+        </>
       </Example>
     </div>
   </>
