@@ -34,8 +34,7 @@ export default () => (
         &nbsp;&nbsp;
         <span className="text-purple-400">color</span>
         ="
-        <span className="text-green-400">{'#'}000</span>
-        "
+        <span className="text-green-400">{'#'}000</span>"
         <span className="hidden md:inline text-sm text-indigo-400">
           &nbsp;// line color
         </span>
@@ -45,8 +44,7 @@ export default () => (
         &nbsp;&nbsp;
         <span className="text-purple-400">direction</span>
         ="
-        <span className="text-green-400">left</span>
-        "
+        <span className="text-green-400">left</span>"
         <span className="hidden md:inline text-sm text-indigo-400">
           &nbsp;// animation direction
         </span>
@@ -54,8 +52,7 @@ export default () => (
 
       <div className="flex items-center">
         &nbsp;&nbsp;
-        <span className="text-purple-400">rounded</span>
-        ={'{'}
+        <span className="text-purple-400">rounded</span>={'{'}
         <span className="text-green-400">false</span>
         {'}'}
         <span className="hidden md:inline text-sm text-indigo-400">
@@ -65,8 +62,7 @@ export default () => (
 
       <div className="flex items-center">
         &nbsp;&nbsp;
-        <span className="text-purple-400">size</span>
-        ={'{'}
+        <span className="text-purple-400">size</span>={'{'}
         <span className="text-green-400">32</span>
         {'}'}
         <span className="hidden md:inline text-sm text-indigo-400">
@@ -76,8 +72,7 @@ export default () => (
 
       <div className="flex items-center">
         &nbsp;&nbsp;
-        <span className="text-purple-400">onToggle</span>
-        ={'{'}
+        <span className="text-purple-400">onToggle</span>={'{'}
         <span className="text-green-400">null</span>
         {'}'}
         <span className="hidden md:inline text-sm text-indigo-400">
