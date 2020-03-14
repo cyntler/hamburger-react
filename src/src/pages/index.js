@@ -1,6 +1,5 @@
 import Cards from '../components/cards'
 import Properties from '../components/properties'
-import Defaults from '../components/defaults'
 import Installation from '../components/installation'
 import Title from '../components/title'
 import Wrap from '../components/wrap'
@@ -28,9 +27,7 @@ export default () => (
     </div>
 
     <div className="mb-16 md:mb-32">
-      <Wrap>
-        <Defaults />
-      </Wrap>
+      <Wrap></Wrap>
     </div>
   </>
 )
