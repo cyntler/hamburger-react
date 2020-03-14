@@ -1,6 +1,12 @@
 {
   "name": "hamburger-react",
   "version": "1.0.0",
+  "repository": "luukdv/hamburger-react",
+  "author": {
+		"name": "Luuk de Vlieger",
+		"email": "info@luuk.site",
+		"url": "https://www.luuk.site"
+	},
   "dependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
