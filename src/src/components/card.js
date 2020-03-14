@@ -43,9 +43,8 @@ export default ({ children, title }) => (
       <code
         className="
         text-blue-300
-        flex
         flex-grow
-        justify-center
+        text-center
         text-xs
         px-6
         py-4

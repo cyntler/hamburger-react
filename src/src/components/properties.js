@@ -36,6 +36,17 @@ export default () => (
       <Example>
         <Property name="size" type="integer" />
         <Hamburger color="white" size={20} />
+        <>
+          <div>
+            {'<'}
+            <span className="text-yellow-400">Hamburger</span>
+            &nbsp;
+            <span className="text-purple-400">size</span>
+            ={'{'}
+            <span className="text-green-400">20</span>
+            {'} />'}
+          </div>
+        </>
       </Example>
 
       <Example last>
@@ -43,21 +54,35 @@ export default () => (
         <Hamburger color="white" size={30} />
         <>
           <div>{'<'}<span className="text-yellow-400">Hamburger</span></div>
-          <div className="flex items-center">
+
+          <div>
             &nbsp;&nbsp;
             <span className="text-purple-400">onToggle</span>
-            ={'{'}<span className="text-orange-400">toggled</span>&nbsp;=>{' {'}
+            ={'{'}
+            <span className="text-orange-400">toggled</span>
+            &nbsp;=>{' {'}
           </div>
-          <div>&nbsp;&nbsp;&nbsp;&nbsp;if (<span className="text-orange-400">toggled</span>) {'{'}</div>
+
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;if (
+            <span className="text-orange-400">toggled</span>
+            ) {'{'}
+          </div>
+
           <div className="text-indigo-400">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open a menu
           </div>
+
           <div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'} else {'{'}</div>
+
           <div className="text-indigo-400">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close a menu
           </div>
+
           <div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
+
           <div>&nbsp;&nbsp;{'}'}</div>
+
           <div>{'/>'}</div>
         </>
       </Example>
