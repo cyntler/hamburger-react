@@ -16,7 +16,7 @@ export default () => (
     <code
       className="
         w-full
-        max-w-xl
+        max-w-md
         px-8
         py-6
         text-lg
@@ -35,9 +35,6 @@ export default () => (
         <span className="text-purple-400">color</span>
         ="
         <span className="text-green-400">{'#'}000</span>"
-        <span className="hidden md:inline text-sm text-indigo-400">
-          &nbsp;// line color
-        </span>
       </div>
 
       <div className="flex items-center">
@@ -45,9 +42,6 @@ export default () => (
         <span className="text-purple-400">direction</span>
         ="
         <span className="text-green-400">left</span>"
-        <span className="hidden md:inline text-sm text-indigo-400">
-          &nbsp;// animation direction
-        </span>
       </div>
 
       <div className="flex items-center">
@@ -55,9 +49,6 @@ export default () => (
         <span className="text-purple-400">rounded</span>={'{'}
         <span className="text-green-400">false</span>
         {'}'}
-        <span className="hidden md:inline text-sm text-indigo-400">
-          &nbsp;// round line corners
-        </span>
       </div>
 
       <div className="flex items-center">
@@ -65,9 +56,6 @@ export default () => (
         <span className="text-purple-400">size</span>={'{'}
         <span className="text-green-400">32</span>
         {'}'}
-        <span className="hidden md:inline text-sm text-indigo-400">
-          &nbsp;// a size between 12 and 48
-        </span>
       </div>
 
       <div className="flex items-center">
@@ -75,9 +63,6 @@ export default () => (
         <span className="text-purple-400">onToggle</span>={'{'}
         <span className="text-green-400">null</span>
         {'}'}
-        <span className="hidden md:inline text-sm text-indigo-400">
-          &nbsp;// callback
-        </span>
       </div>
 
       <div>{'/>'}</div>
