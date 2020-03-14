@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "dependencies": {
+    "gatsby": "^2.19.28",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "gatsby-plugin-postcss": "^2.1.20",
+    "gatsby-plugin-purgecss": "^4.0.1",
+    "postcss-discard-comments": "^4.0.2",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "format": "prettier --write '**/*.{js,json}'",
+    "serve": "npm run build && gatsby serve",
+    "start": "gatsby develop"
+  }
+}
