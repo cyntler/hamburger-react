@@ -38,9 +38,9 @@ export default ({ children, title }) => (
           flex-col
         "
       >
-        <span>✨</span>
+        <span role="img" aria-label="Sparkles">✨</span>
         <span className="font-semibold text-sm">New!</span>
-        <span>✨</span>
+        <span role="img" aria-label="Sparkles">✨</span>
       </div>
       <div
         className="

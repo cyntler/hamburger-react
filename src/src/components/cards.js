@@ -23,7 +23,7 @@ export default () => (
       text-center
     "
     >
-      Animated hamburger icons for React&nbsp;&nbsp;🍔
+      Animated hamburger icons for React<span className="ml-4" role="img" aria-label="Hamburger">🍔</span>
     </h1>
     <div className="w-full">
       <Card title="Tilt">
