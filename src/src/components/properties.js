@@ -17,25 +17,27 @@ export default () => (
       Properties
     </h2>
 
-    <Example>
-      <Property name="color" type="string" />
-      <Hamburger color="white" size={24} />
-    </Example>
-    <Example>
-      <Property name="direction" type="string" />
-      <Hamburger color="white" size={24} />
-    </Example>
-    <Example>
-      <Property name="rounded" type="boolean" />
-      <Hamburger color="white" size={24} />
-    </Example>
-    <Example>
-      <Property name="size" type="integer" />
-      <Hamburger color="white" size={24} />
-    </Example>
-    <Example>
-      <Property name="onToggle" type="function" />
-      <Hamburger color="white" size={24} />
-    </Example>
+    <div>
+      <Example>
+        <Property name="color" type="string" />
+        <Hamburger color="white" size={28} />
+      </Example>
+      <Example>
+        <Property name="direction" type="string" />
+        <Hamburger color="white" size={28} />
+      </Example>
+      <Example>
+        <Property name="rounded" type="boolean" />
+        <Hamburger color="white" size={28} />
+      </Example>
+      <Example>
+        <Property name="size" type="integer" />
+        <Hamburger color="white" size={28} />
+      </Example>
+      <Example last>
+        <Property name="onToggle" type="function" />
+        <Hamburger color="white" size={28} />
+      </Example>
+    </div>
   </>
 )

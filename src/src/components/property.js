@@ -5,12 +5,6 @@ export default ({ name, type }) => (
     className="
     flex
     items-baseline
-    mr-4
-    pr-4
-    md:mr-8
-    md:pr-8
-    border-r-2
-    border-gray-700
   "
   >
     <div
@@ -19,7 +13,6 @@ export default ({ name, type }) => (
       bg-purple-900
       border-purple-600
       rounded
-      shadow-inner
       py-1
       px-4
       text-center
