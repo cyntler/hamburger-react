@@ -20,23 +20,23 @@ export default () => (
     <div className="w-full max-w-xl">
       <Example>
         <Property name="color" type="string" />
-        <Hamburger color="white" size={28} />
+        <Hamburger color="white" size={34} />
       </Example>
       <Example>
         <Property name="direction" type="string" />
-        <Hamburger color="white" size={28} />
+        <Hamburger color="white" size={26} />
       </Example>
       <Example>
         <Property name="rounded" type="boolean" />
-        <Hamburger color="white" size={28} />
+        <Hamburger color="white" rounded size={42} />
       </Example>
       <Example>
         <Property name="size" type="integer" />
-        <Hamburger color="white" size={28} />
+        <Hamburger color="white" size={20} />
       </Example>
       <Example last>
         <Property name="onToggle" type="function" />
-        <Hamburger color="white" size={28} />
+        <Hamburger color="white" size={30} />
       </Example>
     </div>
   </>
