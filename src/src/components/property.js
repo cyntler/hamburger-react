@@ -14,10 +14,11 @@ export default ({ name, type }) => (
       border-purple-600
       rounded
       py-1
-      px-4
       text-center
       mr-6
-      font-medium border-solid
+      w-24
+      font-medium
+      border-solid
     "
     >
       {name}

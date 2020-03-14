@@ -6,13 +6,13 @@ import React from 'react'
 
 export default () => (
   <>
-    <div className="mt-12 md:mt-24 mb-16 md:mb-32">
+    <div className="md:mt-24 mb-16 md:mb-24">
       <Wrap>
         <Cards />
       </Wrap>
     </div>
 
-    <div className="bg-gray-800 py-8 md:py-16 mb-12 md:mb-24">
+    <div className="bg-gray-800 md:pt-20 md:pb-24 mb-10 md:mb-20">
       <Wrap>
         <Properties />
       </Wrap>

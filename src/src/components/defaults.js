@@ -5,9 +5,9 @@ export default () => (
     <h2
       className="
         leading-snug
-        md:mb-8
+        md:mb-12
         text-2xl
-        md:text-3xl
+        md:text-4xl
         font-medium
       "
     >

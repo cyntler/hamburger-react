@@ -8,16 +8,16 @@ export default () => (
     <h2
       className="
         leading-snug
-        md:mb-8
+        md:mb-12
         text-2xl
-        md:text-3xl
+        md:text-4xl
         font-medium
       "
     >
       Properties
     </h2>
 
-    <div>
+    <div className="w-full max-w-xl">
       <Example>
         <Property name="color" type="string" />
         <Hamburger color="white" size={28} />

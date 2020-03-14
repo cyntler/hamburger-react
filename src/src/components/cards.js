@@ -14,8 +14,8 @@ export default () => (
     <h1
       className="
       leading-snug
-      mb-12
-      md:mb-24
+      mb-10
+      md:mb-20
       text-2xl
       md:text-3xl
       lg:text-4xl
@@ -23,7 +23,10 @@ export default () => (
       text-center
     "
     >
-      Animated hamburger icons for React<span className="ml-4" role="img" aria-label="Hamburger">🍔</span>
+      Animated hamburger icons for React
+      <span className="ml-4" role="img" aria-label="Hamburger">
+        🍔
+      </span>
     </h1>
     <div className="w-full">
       <Card title="Tilt">
