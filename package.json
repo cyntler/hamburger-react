@@ -2,6 +2,7 @@
   "name": "hamburger-react",
   "version": "1.0.0",
   "repository": "luukdv/hamburger-react",
+  "license": "MIT",
   "author": {
 		"name": "Luuk de Vlieger",
 		"email": "info@luuk.site",
