@@ -1,7 +1,7 @@
 import React from 'react'
 import { Burger } from './Burger'
 
-export const Spiral = props => (
+export const Spin = props => (
   <Burger {...props} render={o => (
     <div
       className={o.name}

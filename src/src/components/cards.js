@@ -1,6 +1,6 @@
 import { Fade } from '../../lib'
 import { Sling } from '../../lib'
-import { Spiral } from '../../lib'
+import { Spin } from '../../lib'
 import { Turn } from '../../lib'
 import { Twirl } from '../../lib'
 import { Squash } from '../../lib'
@@ -70,16 +70,16 @@ export default () => (
         <Twirl size={36} color="white" />
       </Card>
 
-      <Card title="Spiral">
-        <Spiral size={36} color="white" direction="right" />
+      <Card title="Spin">
+        <Spin size={36} color="white" direction="right" />
         <div>
           Import {'{'}
-          <span className="text-white"> Spiral </span>
+          <span className="text-white"> Spin </span>
           as
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Spiral size={36} color="white" />
+        <Spin size={36} color="white" />
       </Card>
 
       <NewCard title="Squash">
