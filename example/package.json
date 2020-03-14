@@ -4,9 +4,7 @@
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
-    "parcel-bundler": "^1.12.4",
-    "react-dom": "^16.8.0",
-    "react": "^16.8.0"
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
     "build": "parcel build index.html",
