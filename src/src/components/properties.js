@@ -21,6 +21,7 @@ export default () => (
       <Example>
         <Property name="color" type="string" />
         <Hamburger color="#4FD1C5" size={34} />
+        The color of the icon bars, accepts any CSS-parsable argument.
         <div>
           {'<'}
           <span className="text-yellow-400">Hamburger</span>
@@ -34,6 +35,7 @@ export default () => (
       <Example>
         <Property name="direction" type="string" />
         <Hamburger color="white" direction="right" size={26} />
+        The animation direction of the icon, left or right.
         <div>
           {'<'}
           <span className="text-yellow-400">Hamburger</span>
@@ -47,6 +49,7 @@ export default () => (
       <Example>
         <Property name="rounded" type="boolean" />
         <Hamburger color="white" rounded size={42} />
+        Specifies if the icon bars should be rounded.
         <div>
           {'<'}
           <span className="text-yellow-400">Hamburger</span>
@@ -58,7 +61,8 @@ export default () => (
 
       <Example>
         <Property name="size" type="integer" />
-        <Hamburger color="white" size={20} />
+        <Hamburger color="white" size={20} />A number between 12 and 48, which
+        sets the size of the icon.
         <div>
           {'<'}
           <span className="text-yellow-400">Hamburger</span>
@@ -71,7 +75,8 @@ export default () => (
 
       <Example last>
         <Property name="onToggle" type="function" />
-        <Hamburger color="white" size={30} />
+        <Hamburger color="white" size={30} />A callback with a single boolean
+        argument, indicating if the icon is toggled.
         <>
           <div>
             {'<'}

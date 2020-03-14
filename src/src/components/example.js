@@ -13,8 +13,9 @@ export default ({ children, last }) => (
         {children[1]}
       </div>
     </div>
+    <p className="text-sm mb-6">{children[2]}</p>
     <code className="text-sm px-6 py-4 rounded-md bg-indigo-800 shadow-inner">
-      {children[2]}
+      {children[3]}
     </code>
   </div>
 )
