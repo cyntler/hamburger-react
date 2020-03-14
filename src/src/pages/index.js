@@ -1,6 +1,7 @@
 import Cards from '../components/cards'
 import Properties from '../components/properties'
 import Installation from '../components/installation'
+import Footer from '../components/footer'
 import Information from '../components/information'
 import Title from '../components/title'
 import Wrap from '../components/wrap'
@@ -27,9 +28,15 @@ export default () => (
       </Wrap>
     </div>
 
-    <div className="mb-16 md:mb-32">
+    <div className="mb-16 md:mb-24">
       <Wrap>
         <Information />
+      </Wrap>
+    </div>
+
+    <div className="bg-gray-800 md:pt-12 md:pb-16">
+      <Wrap>
+        <Footer />
       </Wrap>
     </div>
   </>
