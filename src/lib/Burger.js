@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 const area = 48
-const name = 'hamburger-react'
 const duration = 0.4
+const name = 'hamburger-react'
 const timing = 'cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
@@ -49,16 +49,16 @@ export const Burger = ({
     width: `${width}px`,
   }
 
+  if (rounded) {
+    barStyles['borderRadius'] = '9em'
+  }
+
   const handler = () => {
     if (onToggle) {
       onToggle(!toggled)
     }
 
     toggle(!toggled)
-  }
-
-  if (rounded) {
-    barStyles['borderRadius'] = '9em'
   }
 
   return render({
