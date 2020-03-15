@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default () => (
-  <div className="w-full flex justify-between text-sm text-gray-600">
+  <div className="w-full flex justify-between text-sm text-gray-500">
     <p>
       hamburger-react is a project by{' '}
       <a

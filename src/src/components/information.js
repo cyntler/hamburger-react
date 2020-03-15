@@ -23,8 +23,8 @@ export default () => (
       >
         GitHub repository
       </a>{' '}
-      for additional information about usage, accessibility and the motivation
-      behind this package.
+      for additional information about usage and the motivation behind this
+      package.
     </p>
   </div>
 )
