@@ -15,7 +15,7 @@ export default () => (
       <Card title="Tilt">
         <Hamburger size={36} color="white" direction="right" />
         <div>
-          Import
+          import
           <span className="text-white"> Hamburger </span>
           from '<span className="text-green-400">hamburger-react</span>'
         </div>
@@ -25,7 +25,7 @@ export default () => (
       <Card title="Fade">
         <Fade size={36} color="white" direction="right" />
         <div>
-          Import {'{'}
+          import {'{'}
           <span className="text-white"> Fade </span>
           as
           <span className="text-white"> Hamburger </span>
@@ -37,7 +37,7 @@ export default () => (
       <Card title="Turn">
         <Turn size={36} color="white" direction="right" />
         <div>
-          Import {'{'}
+          import {'{'}
           <span className="text-white"> Turn </span>
           as
           <span className="text-white"> Hamburger </span>
@@ -49,7 +49,7 @@ export default () => (
       <Card title="Sling">
         <Sling size={36} color="white" direction="right" />
         <div>
-          Import {'{'}
+          import {'{'}
           <span className="text-white"> Sling </span>
           as
           <span className="text-white"> Hamburger </span>
@@ -61,7 +61,7 @@ export default () => (
       <Card title="Twirl">
         <Twirl size={36} color="white" direction="right" />
         <div>
-          Import {'{'}
+          import {'{'}
           <span className="text-white"> Twirl </span>
           as
           <span className="text-white"> Hamburger </span>
@@ -73,7 +73,7 @@ export default () => (
       <Card title="Spin">
         <Spin size={36} color="white" direction="right" />
         <div>
-          Import {'{'}
+          import {'{'}
           <span className="text-white"> Spin </span>
           as
           <span className="text-white"> Hamburger </span>
@@ -85,7 +85,7 @@ export default () => (
       <NewCard title="Squash">
         <Squash size={36} color="white" />
         <div>
-          Import {'{'}
+          import {'{'}
           <span className="text-white"> Squash </span>
           as
           <span className="text-white"> Hamburger </span>
