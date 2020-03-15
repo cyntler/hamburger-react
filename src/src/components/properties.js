@@ -66,8 +66,16 @@ export default () => (
 
       <Example last>
         <Property name="onToggle" initial="null" type="function" />
-        <Hamburger color="white" size={30} />A callback with a single boolean
-        argument, indicating if the icon is toggled.
+        <Hamburger
+          color="white"
+          size={30}
+          onToggle={toggled =>
+            console.log('🍔 [hamburger-react] toggled:', toggled)
+          }
+        />
+        A callback which receives a single boolean argument, indicating if the
+        icon is toggled. Inspect your browser console after tapping/clicking the
+        example above.
         <>
           <div>
             {'<'}
