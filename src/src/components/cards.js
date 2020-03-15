@@ -34,6 +34,18 @@ export default () => (
         <Fade size={36} color="white" />
       </Card>
 
+      <Card title="Twirl">
+        <Twirl size={36} color="white" direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Twirl </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Twirl size={36} color="white" />
+      </Card>
+
       <Card title="Turn">
         <Turn size={36} color="white" direction="right" />
         <div>
@@ -56,18 +68,6 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Sling size={36} color="white" />
-      </Card>
-
-      <Card title="Twirl">
-        <Twirl size={36} color="white" direction="right" />
-        <div>
-          import {'{'}
-          <span className="text-white"> Twirl </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
-        <Twirl size={36} color="white" />
       </Card>
 
       <Card title="Spin">
