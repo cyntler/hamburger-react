@@ -1,21 +1,12 @@
-import Property from '../components/property'
-import Hamburger from '../../lib'
 import Example from '../components/example'
+import Hamburger from '../../lib'
+import Heading from './heading'
+import Property from '../components/property'
 import React from 'react'
 
 export default () => (
   <>
-    <h2
-      className="
-        leading-snug
-        md:mb-12
-        text-2xl
-        md:text-4xl
-        font-medium
-      "
-    >
-      Properties
-    </h2>
+    <Heading>Properties</Heading>
 
     <div className="w-full max-w-xl">
       <Example>

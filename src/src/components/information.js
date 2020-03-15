@@ -1,18 +1,9 @@
+import Heading from './heading'
 import React from 'react'
 
 export default () => (
   <div className="max-w-xl text-center">
-    <h2
-      className="
-        leading-snug
-        md:mb-12
-        text-2xl
-        md:text-4xl
-        font-medium
-      "
-    >
-      More information
-    </h2>
+    <Heading>More information</Heading>
     <p className="text-lg leading-loose">
       Visit the{' '}
       <a

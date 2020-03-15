@@ -1,18 +1,9 @@
+import Heading from './heading'
 import React from 'react'
 
 export default () => (
   <>
-    <h2
-      className="
-        leading-snug
-        md:mb-12
-        text-2xl
-        md:text-4xl
-        font-medium
-      "
-    >
-      Installation
-    </h2>
+    <Heading>Installation</Heading>
     <code
       className="
         w-full
