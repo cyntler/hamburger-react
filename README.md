@@ -1,5 +1,5 @@
 # Animated hamburger icons for React
-Hamburger icons with CSS-driven transitions. Created to be as performant, elegant and widely supported as possible. This means no SVG/JavaScript animations or transitions on non-cheap properties.
+Hamburger icons with CSS-driven transitions. Created to be as elegant and performant as possible. This means no JavaScript animations or transitions on non-cheap properties.
 
 ## Yet another hamburger library?
 Yes. The decision to create this small package was made because existing solutions seem to have one or more of the following problems:
@@ -17,6 +17,13 @@ npm i hamburger-react
 ```
 
 ## Usage
+Visit [the website](https://hamburger-react.netlify.com) for full documentation, API and examples. A basic implementation looks as follows:
+
+```js
+import Hamburger from 'hamburger-react'
+
+<Hamburger />
+```
 
 ## Accessibility
 It is recommended to have a tap/click area of at least 48x48 pixels. Therefore, padding will be added around the icon to create a surface of exactly this size.
