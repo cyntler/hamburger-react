@@ -1,5 +1,5 @@
 # Animated hamburger icons for React 🍔
-Hamburger icons with CSS-driven transitions. Created to be as elegant and performant as possible. This means no JavaScript animations or transitions on non-cheap properties.
+Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations or transitions on non-cheap properties.
 
 ## Yet another hamburger library?
 Yes. The decision to create this small package was made because existing solutions seem to have one or more of the following problems:
@@ -22,7 +22,7 @@ Visit [the website](https://hamburger-react.netlify.com) for full documentation,
 ```js
 import Hamburger from 'hamburger-react'
 
-<Hamburger />
+<Hamburger onToggle={toggled => ...} />
 ```
 
 ## Accessibility
