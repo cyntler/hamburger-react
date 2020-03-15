@@ -13,7 +13,7 @@ Yes. The decision to create this small package was made because existing solutio
 
 ## Installation
 ```sh
-npm i hamburger-react
+npm install hamburger-react
 ```
 
 ## Usage
