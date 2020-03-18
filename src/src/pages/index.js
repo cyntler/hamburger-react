@@ -5,7 +5,7 @@ import Information from '../components/information'
 import Installation from '../components/installation'
 import Properties from '../components/properties'
 import React from 'react'
-import Title from '../components/title'
+import Header from '../components/header'
 import Version from '../components/version'
 import Wrap from '../components/wrap'
 
@@ -15,7 +15,7 @@ export default () => (
 
     <div className="mt-12 sm:mt-20 lg:mt-24 mb-10 sm:mb-16 lg:mb-20">
       <Wrap wide>
-        <Title />
+        <Header />
       </Wrap>
     </div>
 
