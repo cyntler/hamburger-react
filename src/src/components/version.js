@@ -1,7 +1,10 @@
 import React from 'react'
 
 export default () => (
-  <div
+  <a
+    href="https://github.com/luukdv/hamburger-react/releases"
+    target="_blank" // eslint-disable-line react/jsx-no-target-blank
+    rel="noopener"
     className="
       border-gray-600
       border
@@ -19,5 +22,5 @@ export default () => (
   "
   >
     v1.0.0
-  </div>
+  </a>
 )
