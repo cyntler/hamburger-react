@@ -54,7 +54,7 @@ export default () => (
       </Wrap>
     </div>
 
-    <div className="bg-gray-700 pt-6 sm:pt-8 lg:pt-12 pb-8 sm:pb-12 lg:pb-16">
+    <div className="bg-gray-700 pt-8 lg:pt-12 pb-12 lg:pb-16">
       <Wrap>
         <Footer />
       </Wrap>
