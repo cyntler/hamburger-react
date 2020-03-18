@@ -7,7 +7,7 @@ Yes. The decision to create this small package was made because existing solutio
 - Animations that don't feel natural
 - Transitions on expensive properties (jerky animations)
 - No React support
-- Size (additional dependencies besides React)
+- Size (additional dependencies besides React or not tree-shakable)
 - Not customizable, or too customizable (no sensible defaults)
 - Doing too much
 
