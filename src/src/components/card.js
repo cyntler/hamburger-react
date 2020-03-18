@@ -27,6 +27,8 @@ export default ({ children, title }) => (
       <div
         className="
         flex
+        mb-2
+        md:mb-0
         md:flex-col
         items-center
         md:border-r-2
@@ -58,6 +60,8 @@ export default ({ children, title }) => (
         className="
         text-blue-300
         flex-grow
+        mb-2
+        md:mb-0
         text-center
         text-xs
         px-6
