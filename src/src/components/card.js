@@ -63,8 +63,10 @@ export default ({ children, title }) => (
         mb-2
         md:mb-0
         text-center
+        text-center
         text-xs
-        px-6
+        px-4
+        sm:px-6
         py-4
         rounded
         bg-indigo-800
