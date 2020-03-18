@@ -29,3 +29,6 @@ import Hamburger from 'hamburger-react'
 It is recommended to have a tap/click area of at least 48x48 pixels. Therefore, padding will be added around the icon to create a surface of exactly this size.
 
 Keyboard interaction is provided with the `enter` key, and the icon element has the recommended accessibility attributes (such as `role`).
+
+## Support
+The icons are hooks-based, and will work with React 16.8.0 ('the one with hooks') or higher.
