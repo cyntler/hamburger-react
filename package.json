@@ -8,6 +8,9 @@
 		"email": "info@luuk.site",
 		"url": "https://www.luuk.site"
   },
+  "files": [
+    "src/lib"
+  ],
   "keywords": [
     "animated",
     "animation",
