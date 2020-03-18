@@ -29,7 +29,7 @@ export default ({ children, title }) => (
           leading-loose
           left-0
           hidden
-          md:block
+          md:flex
           top-0
           h-full
           w-24
@@ -55,14 +55,13 @@ export default ({ children, title }) => (
           items-center
           md:border-r-2
           md:border-gray-700
-          md:pr-8
-          md:mr-8
           mb-2
           md:mb-0
-          md:pl-20
+          md:pr-8
           lg:pr-12
+          md:mr-8
           lg:mr-12
-          lg:pl-24
+          md:pl-24
           flex-shrink-0
         "
       >
