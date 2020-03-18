@@ -2,7 +2,7 @@ import React from 'react'
 
 export default ({ children }) => (
   <h2
-    className={`
+    className="
     leading-snug
     mb-6
     sm:mb-8
@@ -11,7 +11,7 @@ export default ({ children }) => (
     sm:text-3xl
     lg:text-4xl
     font-medium
-  `}
+  "
   >
     {children}
   </h2>

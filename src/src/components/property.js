@@ -2,16 +2,16 @@ import React from 'react'
 
 export default ({ name, initial, type }) => (
   <div
-    className={`
+    className="
     flex
     mb-2
     sm:mb-0
     items-baseline
-  `}
+  "
   >
     <div className="flex">
       <div
-        className={`
+        className="
         border-b-2
         border-t-2
         border-l-2
@@ -31,12 +31,12 @@ export default ({ name, initial, type }) => (
         rounded-br-none
         font-medium
         border-solid
-      `}
+      "
       >
         {name}
       </div>
       <div
-        className={`
+        className="
         border-2
         rounded-tl-none
         rounded-bl-none
@@ -53,7 +53,7 @@ export default ({ name, initial, type }) => (
         w-12
         sm:w-16
         border-solid
-      `}
+      "
       >
         {initial}
       </div>
