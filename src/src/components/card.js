@@ -7,11 +7,14 @@ export default ({ children, title }) => (
     rounded-lg
     shadow-xl
     pt-6
-    pb-8
-    px-8
+    pb-6
+    md:pb-8
+    px-6
+    md:px-8
     lg:px-12
     flex
-    mb-6
+    mb-4
+    md:mb-6
     flex-col
     items-center
   `}
@@ -20,11 +23,11 @@ export default ({ children, title }) => (
       <span className="text-l mr-2 text-gray-400">Hamburger type:</span>
       <span className="text-xl">{title}</span>
     </h2>
-    <div className="flex w-full items-center">
+    <div className="flex w-full items-center flex-col md:flex-row">
       <div
         className="
         flex
-        flex-col
+        md:flex-col
         items-center
         md:border-r-2
         md:border-gray-700
@@ -35,7 +38,18 @@ export default ({ children, title }) => (
         flex-shrink-0
       "
       >
-        <h3 className="leading-snug text-center text-gray-500 font-semibold mb-2 text-sm">
+        <h3 className="
+          order-1
+          md:order-none
+          ml-2
+          md:ml-0
+          leading-snug
+          text-center
+          text-gray-500
+          font-semibold
+          md:mb-2
+          text-sm
+          ">
           Direction: right
         </h3>
         {children[0]}
@@ -58,7 +72,7 @@ export default ({ children, title }) => (
       <div
         className="
         flex
-        flex-col
+        md:flex-col
         items-center
         md:border-l-2
         md:border-gray-700
@@ -69,7 +83,18 @@ export default ({ children, title }) => (
         flex-shrink-0
       "
       >
-        <h3 className="leading-snug text-center text-gray-500 font-semibold mb-2 text-sm">
+        <h3 className="
+          order-1
+          md:order-none
+          ml-2
+          md:ml-0
+          leading-snug
+          text-center
+          text-gray-500
+          font-semibold
+          md:mb-2
+          text-sm
+          ">
           Direction: left
         </h3>
         {children[2]}
