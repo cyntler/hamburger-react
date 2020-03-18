@@ -1,7 +1,10 @@
 {
   "name": "hamburger-react",
   "version": "1.0.0",
+  "description": "",
+  "homepage": "https://hamburger-react.netlify.com",
   "repository": "luukdv/hamburger-react",
+  "bugs": "https://github.com/luukdv/hamburger-react/issues",
   "license": "MIT",
   "author": {
 		"name": "Luuk de Vlieger",
