@@ -6,7 +6,7 @@ export default ({ children, wide }) => (
     mx-auto
     px-5
     sm:px-10
-    max-w-screen-${wide ? 'xl' : 'lg'}
+    ${wide ? 'max-w-screen-xl' : 'max-w-screen-lg'}
     flex
     items-center
     flex-col
