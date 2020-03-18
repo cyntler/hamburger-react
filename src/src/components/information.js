@@ -4,7 +4,7 @@ import React from 'react'
 export default () => (
   <div className="max-w-xl text-center">
     <Heading>More information</Heading>
-    <p className="text-lg leading-loose">
+    <p className="sm:text-lg leading-loose">
       Visit the{' '}
       <a
         className="underline font-medium text-purple-400"

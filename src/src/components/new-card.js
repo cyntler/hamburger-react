@@ -7,8 +7,7 @@ export default ({ children, title }) => (
       rounded-lg
       shadow-xl
       pt-6
-      pb-6
-      md:pb-8
+      pb-8
       px-6
       sm:px-8
       lg:px-12
