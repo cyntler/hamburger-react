@@ -6,7 +6,7 @@ export default () => (
       className="
         leading-snug
         text-2xl
-        md:text-3xl
+        sm:text-3xl
         lg:text-4xl
         font-medium
         text-center
@@ -19,7 +19,7 @@ export default () => (
     </h1>
     <h3
       className="
-        text-xl md:text-2xl mb-10 md:mb-20 ml-6 text-gray-500
+        text-xl sm:text-2xl mb-10 sm:mb-20 ml-6 text-gray-500
       "
     >
       Made for React
