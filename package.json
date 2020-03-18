@@ -1,4 +1,34 @@
 {
   "name": "hamburger-react",
-  "version": "0.1.0-beta.1"
+  "version": "1.0.0",
+  "description": "Animated hamburger icons for React",
+  "homepage": "https://hamburger-react.netlify.com",
+  "repository": "luukdv/hamburger-react",
+  "bugs": "https://github.com/luukdv/hamburger-react/issues",
+  "license": "MIT",
+  "author": {
+		"name": "Luuk de Vlieger",
+		"email": "info@luuk.site",
+		"url": "https://www.luuk.site"
+  },
+  "files": [
+    "src/lib"
+  ],
+  "keywords": [
+    "animated",
+    "animation",
+    "burger",
+    "css",
+    "hamburger",
+    "icon",
+    "icons",
+    "menu",
+    "react",
+    "toggle",
+    "transition"
+  ],
+  "dependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  }
 }
