@@ -7,7 +7,8 @@ export default ({ children, title }) => (
       rounded-lg
       shadow-xl
       pt-6
-      pb-8
+      pb-6
+      md:pb-8
       px-6
       sm:px-8
       lg:px-12
@@ -69,11 +70,10 @@ export default ({ children, title }) => (
         <h3
           className="
           order-1
-          ml-2
+          ml-4
           md:ml-0
           md:order-none
           leading-snug
-          text-center
           text-gray-500
           font-semibold
           md:mb-2

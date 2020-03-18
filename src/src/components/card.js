@@ -26,9 +26,8 @@ export default ({ children, title }) => (
     <div className="flex w-full items-center flex-col md:flex-row">
       <div
         className="
-        flex
-        mb-2
-        md:mb-0
+        hidden
+        md:flex
         md:flex-col
         items-center
         md:border-r-2
@@ -42,12 +41,7 @@ export default ({ children, title }) => (
       >
         <h3
           className="
-          order-1
-          md:order-none
-          ml-2
-          md:ml-0
           leading-snug
-          text-center
           text-gray-500
           font-semibold
           md:mb-2
@@ -62,8 +56,6 @@ export default ({ children, title }) => (
         className="
         text-blue-300
         flex-grow
-        mb-2
-        md:mb-0
         text-center
         text-center
         text-xs
@@ -79,6 +71,10 @@ export default ({ children, title }) => (
       </code>
       <div
         className="
+        mb-2
+        md:mb-0
+        order-first
+        md:order-none
         flex
         md:flex-col
         items-center
@@ -93,13 +89,12 @@ export default ({ children, title }) => (
       >
         <h3
           className="
+          leading-snug
+          text-gray-500
           order-1
           md:order-none
-          ml-2
+          ml-4
           md:ml-0
-          leading-snug
-          text-center
-          text-gray-500
           font-semibold
           md:mb-2
           text-sm
