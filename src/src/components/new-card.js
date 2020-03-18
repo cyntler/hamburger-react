@@ -66,7 +66,8 @@ export default ({ children, title }) => (
           flex-shrink-0
         "
       >
-        <h3 className="
+        <h3
+          className="
           order-1
           ml-2
           md:ml-0
@@ -77,7 +78,8 @@ export default ({ children, title }) => (
           font-semibold
           md:mb-2
           text-sm
-          ">
+          "
+        >
           Direction: n / a
         </h3>
         {children[0]}

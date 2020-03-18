@@ -40,7 +40,8 @@ export default ({ children, title }) => (
         flex-shrink-0
       "
       >
-        <h3 className="
+        <h3
+          className="
           order-1
           md:order-none
           ml-2
@@ -51,7 +52,8 @@ export default ({ children, title }) => (
           font-semibold
           md:mb-2
           text-sm
-          ">
+          "
+        >
           Direction: right
         </h3>
         {children[0]}
@@ -89,7 +91,8 @@ export default ({ children, title }) => (
         flex-shrink-0
       "
       >
-        <h3 className="
+        <h3
+          className="
           order-1
           md:order-none
           ml-2
@@ -100,7 +103,8 @@ export default ({ children, title }) => (
           font-semibold
           md:mb-2
           text-sm
-          ">
+          "
+        >
           Direction: left
         </h3>
         {children[2]}

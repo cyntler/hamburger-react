@@ -23,7 +23,8 @@ export default () => (
       </Wrap>
     </div>
 
-    <div className="
+    <div
+      className="
       bg-gray-800
       pt-10
       sm:pt-16
@@ -34,7 +35,8 @@ export default () => (
       mb-10
       sm:mb-16
       lg:mb-20
-    ">
+    "
+    >
       <Wrap>
         <Properties />
       </Wrap>

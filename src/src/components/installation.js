@@ -19,8 +19,8 @@ export default () => (
         text-center
       "
     >
-      <span className="select-none text-blue-300 mr-2 sm:mr-4">$</span>npm install
-      hamburger-react
+      <span className="select-none text-blue-300 mr-2 sm:mr-4">$</span>npm
+      install hamburger-react
     </code>
   </>
 )
