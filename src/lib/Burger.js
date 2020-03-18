@@ -8,6 +8,7 @@ const translate = 4.6325
 export const Burger = ({
   color = '#000',
   direction = 'left',
+  hideOutline = true,
   onToggle,
   render,
   rounded = false,
@@ -32,7 +33,6 @@ export const Burger = ({
   const burgerStyles = {
     cursor: 'pointer',
     height: `${area}px`,
-    outline: 'none',
     position: 'relative',
     transition: `${duration}s ${timing}`,
     userSelect: 'none',
@@ -45,6 +45,10 @@ export const Burger = ({
     left: `${room}px`,
     position: 'absolute',
     width: `${width}px`,
+  }
+
+  if (hideOutline) {
+    burgerStyles['outline'] = 'none'
   }
 
   if (rounded) {

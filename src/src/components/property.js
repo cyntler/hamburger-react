@@ -23,8 +23,8 @@ export default ({ name, initial, type }) => (
         flex
         items-center
         justify-center
-        w-20
-        sm:w-24
+        w-24
+        sm:w-32
         text-sm
         md:text-base
         rounded-tr-none
@@ -49,7 +49,7 @@ export default ({ name, initial, type }) => (
         items-center
         justify-center
         text-center
-        mr-6
+        sm:mr-6
         w-12
         sm:w-16
         border-solid
