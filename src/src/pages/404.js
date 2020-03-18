@@ -9,7 +9,7 @@ export default () => (
           leading-snug
           text-5xl
           mb-8
-          md:mb-16
+          sm:mb-16
           lg:mb-32
           font-medium
           text-center

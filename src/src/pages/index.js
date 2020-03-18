@@ -10,38 +10,38 @@ import Wrap from '../components/wrap'
 
 export default () => (
   <>
-    <div className="md:mt-24 mb-16 md:mb-24">
+    <div className="sm:mt-24 mb-16 sm:mb-24">
       <Wrap>
         <Title />
         <Cards />
       </Wrap>
     </div>
 
-    <div className="mb-16 md:mb-24">
+    <div className="mb-16 sm:mb-24">
       <Wrap>
         <Installation />
       </Wrap>
     </div>
 
-    <div className="bg-gray-800 md:pt-20 md:pb-24 mb-10 md:mb-20">
+    <div className="bg-gray-800 sm:pt-20 sm:pb-24 mb-10 sm:mb-20">
       <Wrap>
         <Properties />
       </Wrap>
     </div>
 
-    <div className="mb-16 md:mb-24">
+    <div className="mb-16 sm:mb-24">
       <Wrap>
         <Accessibility />
       </Wrap>
     </div>
 
-    <div className="bg-gray-800 md:pt-20 md:pb-24">
+    <div className="bg-gray-800 sm:pt-20 sm:pb-24">
       <Wrap>
         <Information />
       </Wrap>
     </div>
 
-    <div className="bg-gray-700 md:pt-12 md:pb-16">
+    <div className="bg-gray-700 sm:pt-12 sm:pb-16">
       <Wrap>
         <Footer />
       </Wrap>

@@ -7,13 +7,15 @@ export default ({ children, title }) => (
       rounded-lg
       shadow-xl
       pt-6
-      pb-8
-      px-8
+      pb-6
+      md:pb-8
+      px-6
+      sm:px-8
       lg:px-12
       flex
       mb-0
-      flex-col
       relative
+      flex-col
       items-center
     `}
   >

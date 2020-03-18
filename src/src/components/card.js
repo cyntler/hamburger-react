@@ -3,20 +3,20 @@ import React from 'react'
 export default ({ children, title }) => (
   <div
     className={`
-    bg-gray-800
-    rounded-lg
-    shadow-xl
-    pt-6
-    pb-6
-    md:pb-8
-    px-6
-    md:px-8
-    lg:px-12
-    flex
-    mb-4
-    md:mb-6
-    flex-col
-    items-center
+      bg-gray-800
+      rounded-lg
+      shadow-xl
+      pt-6
+      pb-6
+      md:pb-8
+      px-6
+      sm:px-8
+      lg:px-12
+      flex
+      mb-4
+      md:mb-6
+      flex-col
+      items-center
   `}
   >
     <h2 className="mb-2 leading-snug text-center font-semibold flex items-center">
