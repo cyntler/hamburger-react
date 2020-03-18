@@ -17,7 +17,7 @@ export default () => (
     <div className="flex justify-center">
       <a
         className="underline font-medium px-4"
-        href="https://www.npmjs.com/package/react-hamburger"
+        href="https://www.npmjs.com/package/hamburger-react"
         target="_blank" // eslint-disable-line react/jsx-no-target-blank
         rel="noopener"
       >
