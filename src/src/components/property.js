@@ -4,6 +4,8 @@ export default ({ name, initial, type }) => (
   <div
     className={`
     flex
+    mb-2
+    sm:mb-0
     items-baseline
   `}
   >
@@ -16,11 +18,15 @@ export default ({ name, initial, type }) => (
         bg-purple-900
         border-purple-600
         rounded
-        h-10
+        h-8
+        sm:h-10
         flex
         items-center
         justify-center
-        w-24
+        w-20
+        sm:w-24
+        text-sm
+        md:text-base
         rounded-tr-none
         rounded-br-none
         font-medium
@@ -37,20 +43,24 @@ export default ({ name, initial, type }) => (
         border-purple-600
         rounded
         text-xs
-        h-10
+        h-8
+        sm:h-10
         flex
         items-center
         justify-center
         text-center
         mr-6
-        w-16
+        w-12
+        sm:w-16
         border-solid
       `}
       >
         {initial}
       </div>
     </div>
-    <div className="font-medium text-gray-500 mr-2">Type:</div>
-    <div className="font-medium text-lg">{type}</div>
+    <div className="font-medium text-gray-500 mr-2 flex-grow sm:flex-grow-0 text-right">
+      Type:
+    </div>
+    <div className="font-medium sm:text-lg">{type}</div>
   </div>
 )
