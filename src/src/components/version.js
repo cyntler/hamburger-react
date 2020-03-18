@@ -3,7 +3,16 @@ import React from 'react'
 export default () => (
   <div
     className="
-      fixed
+      border-gray-600
+      border
+      mt-2
+      sm:mt-4
+      rounded-sm
+      py-1
+      px-2
+      mr-2
+      sm:mr-4
+      absolute
       top-0
       right-0
       text-xs
