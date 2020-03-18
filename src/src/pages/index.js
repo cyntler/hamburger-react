@@ -10,9 +10,14 @@ import Wrap from '../components/wrap'
 
 export default () => (
   <>
-    <div className="mt-12 sm:mt-20 lg:mt-24 mb-12 sm:mb-20 lg:mb-24">
-      <Wrap>
+    <div className="mt-12 sm:mt-20 lg:mt-24 mb-10 sm:mb-16 lg:mb-20">
+      <Wrap wide>
         <Title />
+      </Wrap>
+    </div>
+
+    <div className="mb-12 sm:mb-20 lg:mb-24">
+      <Wrap>
         <Cards />
       </Wrap>
     </div>
