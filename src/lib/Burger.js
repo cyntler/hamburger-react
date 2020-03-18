@@ -2,17 +2,16 @@ import { useState } from 'react'
 
 const area = 48
 const duration = 0.4
-const name = 'hamburger-react'
 const timing = 'cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
 export const Burger = ({
   color = '#000',
   direction = 'left',
-  rounded = false,
-  size = 32,
   onToggle,
   render,
+  rounded = false,
+  size = 32,
 }) => {
   const [toggled, toggle] = useState(false)
 
@@ -29,7 +28,6 @@ export const Burger = ({
 
   const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
   const move = (width / translate) - (deviation / (4 / 3))
-  const isLeft = direction === 'left'
 
   const burgerStyles = {
     cursor: 'pointer',
@@ -67,10 +65,9 @@ export const Burger = ({
     burgerStyles,
     duration,
     handler,
-    isLeft,
+    isLeft: (direction === 'left'),
     margin,
     move,
-    name,
     timing,
     toggled,
     topOffset,

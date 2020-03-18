@@ -1,15 +1,15 @@
-import React from 'react'
 import { Burger } from './Burger'
+import React from 'react'
 
 export const Squash = props => (
   <Burger {...props} render={o => (
     <div
-      className={o.name}
-      style={o.burgerStyles}
+      className="hamburger-react"
       onClick={o.handler}
-      role="button"
-      tabIndex="0"
       onKeyUp={e => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      role="button"
+      style={o.burgerStyles}
+      tabIndex="0"
     >
       <div style={{
         transition: `${o.duration / 2}s ${o.timing} ${o.toggled
@@ -34,6 +34,7 @@ export const Squash = props => (
           }`,
         }} />
       </div>
+
       <div style={{
         transition: `${o.duration / 2}s ${o.timing}`,
         opacity: `${o.toggled
@@ -47,6 +48,7 @@ export const Squash = props => (
           top: `${o.topOffset + o.barHeight + o.margin}px`,
         }} />
       </div>
+
       <div style={{
         transition: `${o.duration / 2}s ${o.timing} ${o.toggled
           ? '0s'

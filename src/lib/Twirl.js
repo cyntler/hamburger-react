@@ -1,10 +1,13 @@
-import React from 'react'
 import { Burger } from './Burger'
+import React from 'react'
 
 export const Twirl = props => (
   <Burger {...props} render={o => (
     <div
-      className={o.name}
+      className="hamburger-react"
+      onClick={o.handler}
+      onKeyUp={e => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      role="button"
       style={{
         ...o.burgerStyles,
         transform: `${o.toggled
@@ -12,10 +15,7 @@ export const Twirl = props => (
           : 'none'
         }`,
       }}
-      onClick={o.handler}
-      role="button"
       tabIndex="0"
-      onKeyUp={e => (e.key === 13 || e.keyCode === 13) && o.handler()}
     >
       <div style={{
         transition: `${o.duration / 2}s ${o.timing} ${o.toggled
@@ -40,6 +40,7 @@ export const Twirl = props => (
           }`,
         }} />
       </div>
+
       <div style={{
         transition: `${o.duration / 2}s ${o.timing}`,
         opacity: `${o.toggled
@@ -53,6 +54,7 @@ export const Twirl = props => (
           top: `${o.topOffset + o.barHeight + o.margin}px`,
         }} />
       </div>
+
       <div style={{
         transition: `${o.duration / 2}s ${o.timing} ${o.toggled
           ? '0s'
