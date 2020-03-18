@@ -7,7 +7,20 @@
 		"name": "Luuk de Vlieger",
 		"email": "info@luuk.site",
 		"url": "https://www.luuk.site"
-	},
+  },
+  "keywords": [
+    "animated",
+    "animation",
+    "burger",
+    "css",
+    "hamburger",
+    "icon",
+    "icons",
+    "menu",
+    "react",
+    "toggle",
+    "transition"
+  ],
   "dependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
