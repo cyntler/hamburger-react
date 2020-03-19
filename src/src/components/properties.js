@@ -6,7 +6,7 @@ import React from 'react'
 
 export default () => (
   <>
-    <Heading>Properties</Heading>
+    <Heading>Properties & examples</Heading>
 
     <div className="w-full max-w-xl">
       <Example>
