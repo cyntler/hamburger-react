@@ -2,29 +2,27 @@ import Menu from './menu'
 import React from 'react'
 
 export default () => (
-  <div className="w-full flex justify-between items-center">
-    <div>
-      <h1
-        className="
-          leading-snug
-          text-2xl
-          sm:text-3xl
-          lg:text-4xl
-          font-medium
-        "
-      >
-        Animated hamburger icons
-        <span
-          className="hidden sm:inline ml-4"
-          role="img"
-          aria-label="Hamburger"
+  <div className="w-full flex justify-between items-center text-center sm:text-left">
+    <div className="w-full flex items-center flex-col sm:flex-row">
+      <div className="mb-4 sm:mb-0 sm:mr-6">
+        <img alt="logo" src="" srcSet=" 2x" />
+      </div>
+      <div>
+        <h1
+          className="
+            leading-snug
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+            font-medium
+          "
         >
-          🍔
-        </span>
-      </h1>
-      <h3 className="text-lg sm:text-xl lg:text-2xl text-gray-500">
-        Made for React
-      </h3>
+          Animated hamburger icons
+        </h1>
+        <h3 className="text-lg sm:text-xl lg:text-2xl text-gray-500">
+          Made for React
+        </h3>
+      </div>
     </div>
 
     <Menu />
