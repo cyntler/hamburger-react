@@ -12,6 +12,15 @@ export default () => (
       >
         Luuk
       </a>
+      . Logo by{' '}
+      <a
+        className="underline font-medium"
+        href="https://www.stutpak.nl"
+        target="_blank" // eslint-disable-line react/jsx-no-target-blank
+        rel="noopener"
+      >
+        Stutpak
+      </a>
       .
     </p>
     <div className="flex justify-center">
