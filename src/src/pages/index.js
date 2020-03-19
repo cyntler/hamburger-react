@@ -25,13 +25,14 @@ export default () => (
       </Wrap>
     </div>
 
-    <div className="mb-12 sm:mb-20 lg:mb-24">
+    <div id="installation" className="mb-12 sm:mb-20 lg:mb-24">
       <Wrap>
         <Installation />
       </Wrap>
     </div>
 
     <div
+      id="properties"
       className="
       pt-10
       sm:pt-16
