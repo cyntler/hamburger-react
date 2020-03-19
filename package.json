@@ -28,6 +28,8 @@
     "transition"
   ],
   "main": "dist",
+  "module": "dist",
+  "sideEffects": false,
   "scripts": {
     "build": "babel src/lib --out-dir dist --presets=@babel/preset-react",
     "prepublishOnly": "npm run build"
