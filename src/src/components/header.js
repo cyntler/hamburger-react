@@ -1,3 +1,4 @@
+import Menu from './menu'
 import React from 'react'
 
 export default () => (
@@ -25,5 +26,7 @@ export default () => (
         Made for React
       </h3>
     </div>
+
+    <Menu />
   </div>
 )
