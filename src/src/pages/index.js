@@ -13,7 +13,7 @@ export default () => (
   <>
     <Version />
 
-    <div className="mt-12 sm:mt-20 lg:mt-24 mb-10 sm:mb-16 lg:mb-20">
+    <div className="mt-8 sm:mt-12 lg:mt-16 mb-10 sm:mb-16 lg:mb-20">
       <Wrap wide>
         <Header />
       </Wrap>

@@ -1,5 +1,7 @@
-# Animated hamburger icons for React 🍔
-Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations or transitions on non-cheap properties.
+<img alt="Logo" src="src/static/logo@4x.png" height="91" width="112">
+
+# Animated hamburger icons for React
+[Hamburger icons](https://hamburger-react.netlify.com) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, transitions on non-cheap properties and a small footprint KB-wise.
 
 ## Yet another hamburger library?
 Yes. The decision to create this small package was made because existing solutions seem to have one or more of the following problems:
@@ -17,7 +19,7 @@ npm install hamburger-react
 ```
 
 ## Usage
-Visit [the website](https://hamburger-react.netlify.com) for full documentation, API and examples. A basic implementation looks as follows:
+[Visit the website](https://hamburger-react.netlify.com) for full documentation, API and examples. A basic implementation looks as follows:
 
 ```js
 import Hamburger from 'hamburger-react'
