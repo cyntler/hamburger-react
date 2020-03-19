@@ -1,6 +1,6 @@
-<img alt="Logo" src="src/static/logo@4x.png" height="120" width="120">
+<img alt="Logo" src="src/static/logo@4x.png" height="91" width="112">
 
-# Animated hamburger icons for React 🍔
+# Animated hamburger icons for React
 Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, transitions on non-cheap properties and a small footprint KB-wise.
 
 ## Yet another hamburger library?
