@@ -23,6 +23,6 @@ export default () => (
       text-xs
   "
   >
-    v1.0.4
+    v1.0.5
   </a>
 )
