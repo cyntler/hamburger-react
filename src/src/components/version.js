@@ -15,6 +15,8 @@ export default () => (
       px-2
       mr-2
       sm:mr-4
+      hidden
+      sm:block
       absolute
       top-0
       right-0
