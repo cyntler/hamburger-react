@@ -7,9 +7,9 @@
   "bugs": "https://github.com/luukdv/hamburger-react/issues",
   "license": "MIT",
   "author": {
-		"name": "Luuk de Vlieger",
-		"email": "info@luuk.site",
-		"url": "https://www.luuk.site"
+    "name": "Luuk de Vlieger",
+    "email": "info@luuk.site",
+    "url": "https://www.luuk.site"
   },
   "files": [
     "src/lib"
@@ -31,5 +31,11 @@
   "dependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3"
   }
 }
