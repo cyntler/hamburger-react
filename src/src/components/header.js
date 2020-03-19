@@ -2,7 +2,7 @@ import Menu from './menu'
 import React from 'react'
 
 export default () => (
-  <div className="w-full">
+  <div className="w-full flex justify-between items-center">
     <div>
       <h1
         className="
