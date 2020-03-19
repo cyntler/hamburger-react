@@ -28,6 +28,9 @@
     "transition"
   ],
   "main": "src/lib",
+  "scripts": {
+    "build": "babel src/lib --out-dir dist --presets=@babel/preset-env,@babel/preset-react"
+  },
   "dependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
