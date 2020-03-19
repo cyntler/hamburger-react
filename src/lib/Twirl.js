@@ -50,8 +50,8 @@ export const Twirl = props => (
       }}>
         <div style={{
           ...o.barStyles,
-          transition: `${o.duration / 2}s ${o.timing}`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
+          transition: `${o.duration / 2}s ${o.timing}`,
         }} />
       </div>
 

@@ -23,8 +23,8 @@ export const Fade = props => (
 
       <div style={{
         ...o.barStyles,
-        transition: `${o.duration}s ${o.timing}`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
+        transition: `${o.duration}s ${o.timing}`,
         opacity: `${o.toggled
           ? '0'
           : '1'
