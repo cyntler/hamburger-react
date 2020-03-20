@@ -4,11 +4,19 @@ export default props => (
   <html lang="en" className="antialiased">
     <head>
       <title>Animated hamburger icons for React 🍔</title>
+      <meta charSet="utf-8" />
       <meta
         name="description"
         content="Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible."
       />
-      <meta charSet="utf-8" />
+      <meta
+        property="og:image:secure_url"
+        content="https://hamburger-react.netlify.com/hamburger-react.jpg"
+      />
+      <meta
+        property="og:image"
+        content="https://hamburger-react.netlify.com/hamburger-react.jpg"
+      />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
