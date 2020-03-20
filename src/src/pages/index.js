@@ -13,19 +13,19 @@ export default () => (
   <>
     <Version />
 
-    <div className="mt-8 sm:mt-12 lg:mt-16 mb-10 sm:mb-16 lg:mb-20">
+    <div className="mt-8 sm:mt-12 lg:mt-16 mb-12 sm:mb-16 lg:mb-20">
       <Wrap wide>
         <Header />
       </Wrap>
     </div>
 
-    <div className="mb-12 sm:mb-20 lg:mb-24">
+    <div className="mb-16 sm:mb-20 lg:mb-24">
       <Wrap>
         <Cards />
       </Wrap>
     </div>
 
-    <div id="installation" className="mb-12 sm:mb-20 lg:mb-24">
+    <div id="installation" className="mb-16 sm:mb-20 lg:mb-24">
       <Wrap>
         <Installation />
       </Wrap>
@@ -34,13 +34,13 @@ export default () => (
     <div
       id="properties"
       className="
-      pt-10
+      pt-12
       sm:pt-16
       lg:pt-20
-      pb-12
+      pb-16
       sm:pb-20
       lg:pb-24
-      mb-10
+      mb-12
       sm:mb-16
       lg:mb-20
       bg-gray-800
@@ -51,13 +51,13 @@ export default () => (
       </Wrap>
     </div>
 
-    <div className="mb-12 sm:mb-20 lg:mb-24">
+    <div className="mb-16 sm:mb-20 lg:mb-24">
       <Wrap>
         <Accessibility />
       </Wrap>
     </div>
 
-    <div className="pt-10 sm:pt-16 lg:pt-20 pb-12 sm:pb-20 lg:pb-24 bg-gray-800">
+    <div className="pt-10 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24 bg-gray-800">
       <Wrap>
         <Information />
       </Wrap>

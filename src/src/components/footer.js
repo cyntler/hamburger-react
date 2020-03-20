@@ -2,7 +2,7 @@ import React from 'react'
 
 export default () => (
   <div className="w-full flex flex-col sm:flex-row justify-between text-sm text-gray-500">
-    <p className="text-center sm:text-left mb-4 sm:mb-0">
+    <p className="text-center sm:text-left mb-6 sm:mb-0">
       hamburger-react is a project by{' '}
       <a
         className="underline font-medium"

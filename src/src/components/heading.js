@@ -4,8 +4,8 @@ export default ({ children }) => (
   <h2
     className="
     leading-snug
-    mb-6
-    sm:mb-8
+    mb-8
+    sm:mb-10
     lg:mb-12
     text-2xl
     sm:text-3xl
