@@ -5,7 +5,7 @@ export default () => (
   <div className="w-full flex justify-between items-center text-center sm:text-left">
     <div className="w-full flex items-center flex-col sm:flex-row">
       <div className="mb-4 sm:mb-0 sm:mr-6 w-16 lg:w-20">
-        <img alt="Logo" src="/logo.png" srcSet="/logo@2x.png 2x" />
+        <img width="80" height="65" alt="Logo" src="/logo.png" srcSet="/logo@2x.png 2x" />
       </div>
       <div>
         <h1
