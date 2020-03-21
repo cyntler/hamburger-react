@@ -1,4 +1,4 @@
-<img alt="Logo" src="src/static/logo@4x.png" height="91" width="112">
+<img alt="Logo" src="src/static/logo-readme.png" height="91" width="112">
 
 # Animated hamburger icons for React
 [Hamburger icons](https://hamburger-react.netlify.com) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, transitions on non-cheap properties and a small footprint KB-wise.
