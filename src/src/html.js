@@ -10,12 +10,28 @@ export default props => (
         content="Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible."
       />
       <meta
+        property="og:description"
+        content="Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible."
+      />
+      <meta
         property="og:image:secure_url"
         content="https://hamburger-react.netlify.com/hamburger-react.jpg"
       />
       <meta
         property="og:image"
         content="https://hamburger-react.netlify.com/hamburger-react.jpg"
+      />
+      <meta
+        property="og:title"
+        content="Animated hamburger icons for React 🍔"
+      />
+      <meta
+        property="og:type"
+        content="website"
+      />
+      <meta
+        property="og:url"
+        content="https://hamburger-react.netlify.com"
       />
       <meta
         name="viewport"
