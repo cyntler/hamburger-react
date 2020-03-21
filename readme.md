@@ -34,3 +34,6 @@ Keyboard interaction is provided with the `enter` key, and the icon element has 
 
 ## Support
 The icons are hooks-based, and will work with React 16.8.0 ('the one with hooks') or higher.
+
+## Credits
+Logo by [Stutpak](https://www.stutpak.nl).
