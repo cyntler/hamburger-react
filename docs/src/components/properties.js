@@ -1,5 +1,5 @@
 import Example from '../components/example'
-import Hamburger from '../../lib'
+import Hamburger from '../../../src'
 import Heading from './heading'
 import Property from '../components/property'
 import React from 'react'

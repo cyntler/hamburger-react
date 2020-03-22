@@ -30,8 +30,9 @@
   "main": "dist",
   "module": "dist",
   "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "build": "babel src/lib --out-dir dist --presets=@babel/preset-react",
+    "build": "babel src --out-dir dist",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
