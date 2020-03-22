@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default props => (
+export default (props) => (
   <html lang="en" className="antialiased">
     <head>
       <title>Animated hamburger icons for React 🍔</title>
@@ -25,14 +25,8 @@ export default props => (
         property="og:title"
         content="Animated hamburger icons for React 🍔"
       />
-      <meta
-        property="og:type"
-        content="website"
-      />
-      <meta
-        property="og:url"
-        content="https://hamburger-react.netlify.com"
-      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://hamburger-react.netlify.com" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"

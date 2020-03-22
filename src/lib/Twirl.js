@@ -1,12 +1,12 @@
 import { Burger } from './Burger'
 import React from 'react'
 
-export const Twirl = props => (
-  <Burger {...props} render={o => (
+export const Twirl = (props) => (
+  <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
       onClick={o.handler}
-      onKeyUp={e => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
       role="button"
       style={{
         ...o.burgerStyles,

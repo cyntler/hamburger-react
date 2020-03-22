@@ -9,7 +9,7 @@ export default () => (
 )
 
 const Anchor = ({ label, to, largeOnly }) => {
-  const clickHandler = to =>
+  const clickHandler = (to) =>
     typeof document !== 'undefined' &&
     document.getElementById(to).scrollIntoView({ behavior: 'smooth' })
 
@@ -24,7 +24,7 @@ const Anchor = ({ label, to, largeOnly }) => {
         outline-none
       `}
       role="button"
-      onKeyUp={e => (e.key === 13 || e.keyCode === 13) && clickHandler(to)}
+      onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && clickHandler(to)}
       tabIndex="0"
       onClick={() => clickHandler(to)}
     >

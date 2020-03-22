@@ -83,7 +83,7 @@ export default () => (
         <Hamburger
           color="white"
           size={30}
-          onToggle={toggled =>
+          onToggle={(toggled) =>
             console.log('🍔 [hamburger-react] toggled:', toggled)
           }
         />
