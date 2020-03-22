@@ -5,6 +5,7 @@ export const Spin = (props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
+      data-testid="spin"
       onClick={o.handler}
       onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
       role="button"
