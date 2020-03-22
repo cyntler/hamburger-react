@@ -8,6 +8,9 @@ module.exports = (api) => {
     ignore: [
       '**/*.test.js',
     ],
+    plugins: [
+      'babel-plugin-jsx-remove-data-test-id',
+    ],
     presets: [
       '@babel/preset-react',
     ],
