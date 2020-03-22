@@ -12,7 +12,7 @@ export const Squash = (props) => (
       style={o.burgerStyles}
       tabIndex="0"
     >
-      <div style={{
+      <div data-testid="bar-wrap-one" style={{
         transition: `${o.duration / 2}s ${o.timing} ${o.toggled
           ? '0s'
           : `${o.duration / 2}s`
@@ -22,7 +22,7 @@ export const Squash = (props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-one" style={{
           ...o.barStyles,
           top: `${o.topOffset}px`,
           transition: `${o.duration / 2}s ${o.timing} ${o.toggled
@@ -36,21 +36,21 @@ export const Squash = (props) => (
         }} />
       </div>
 
-      <div style={{
+      <div data-testid="bar-wrap-two" style={{
         transition: `${o.duration / 2}s ${o.timing}`,
         opacity: `${o.toggled
           ? '0'
           : '1'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-two" style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
           transition: `${o.duration / 2}s ${o.timing}`,
         }} />
       </div>
 
-      <div style={{
+      <div data-testid="bar-wrap-three" style={{
         transition: `${o.duration / 2}s ${o.timing} ${o.toggled
           ? '0s'
           : `${o.duration / 2}s`
@@ -60,7 +60,7 @@ export const Squash = (props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-three" style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
           transition: `${o.duration / 2}s ${o.timing} ${o.toggled

@@ -18,7 +18,7 @@ export const Tilt = (props) => (
       }}
       tabIndex="0"
     >
-      <div style={{
+      <div data-testid="bar-one" style={{
         ...o.barStyles,
         top: `${o.topOffset}px`,
         transition: `${o.duration}s ${o.timing}`,
@@ -28,7 +28,7 @@ export const Tilt = (props) => (
         }`,
       }} />
 
-      <div style={{
+      <div data-testid="bar-two" style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.duration}s ${o.timing}`,
@@ -38,7 +38,7 @@ export const Tilt = (props) => (
         }`,
       }} />
 
-      <div style={{
+      <div data-testid="bar-three" style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
         transition: `${o.duration}s ${o.timing}`,
