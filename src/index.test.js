@@ -1,6 +1,7 @@
 import React from 'react'
 import Hamburger, { Fade, Sling, Spin, Squash, Turn, Twirl } from '.'
-import { render } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
+import { toBeInTheDocument } from '@testing-library/jest-dom'
 
 it('does not throw an error', () => {
   render(<Hamburger />)
@@ -8,52 +9,81 @@ it('does not throw an error', () => {
 
 it('renders the "Fade" version', () => {
   const { getByTestId } = render(<Fade />)
-  getByTestId('fade')
+
+  expect(getByTestId('fade')).toBeInTheDocument()
 })
 
 it('renders the "Sling" version', () => {
   const { getByTestId } = render(<Sling />)
-  getByTestId('sling')
+
+  expect(getByTestId('sling')).toBeInTheDocument()
 })
 
 it('renders the "Spin" version', () => {
   const { getByTestId } = render(<Spin />)
-  getByTestId('spin')
+
+  expect(getByTestId('spin')).toBeInTheDocument()
 })
 
 it('renders the "Squash" version', () => {
   const { getByTestId } = render(<Squash />)
-  getByTestId('squash')
+
+  expect(getByTestId('squash')).toBeInTheDocument()
 })
 
 it('renders the "Tilt" version', () => {
   const { getByTestId } = render(<Hamburger />)
-  getByTestId('tilt')
+
+  expect(getByTestId('tilt')).toBeInTheDocument()
 })
 
 it('renders the "Turn" version', () => {
   const { getByTestId } = render(<Turn />)
-  getByTestId('turn')
+
+  expect(getByTestId('turn')).toBeInTheDocument()
 })
 
 it('renders the "Twirl" version', () => {
   const { getByTestId } = render(<Twirl />)
-  getByTestId('twirl')
+
+  expect(getByTestId('twirl')).toBeInTheDocument()
 })
 
 it('renders three bars in a simple burger', () => {
   const { getByTestId } = render(<Hamburger />)
-  getByTestId('bar-one')
-  getByTestId('bar-two')
-  getByTestId('bar-three')
+
+  expect(getByTestId('bar-one')).toBeInTheDocument()
+  expect(getByTestId('bar-two')).toBeInTheDocument()
+  expect(getByTestId('bar-three')).toBeInTheDocument()
 })
 
 it('renders three bars in a complex burger', () => {
   const { getByTestId } = render(<Squash />)
-  getByTestId('bar-wrap-one')
-  getByTestId('bar-one')
-  getByTestId('bar-wrap-two')
-  getByTestId('bar-two')
-  getByTestId('bar-wrap-three')
-  getByTestId('bar-three')
+
+  expect(getByTestId('bar-wrap-one')).toBeInTheDocument()
+  expect(getByTestId('bar-one')).toBeInTheDocument()
+  expect(getByTestId('bar-wrap-two')).toBeInTheDocument()
+  expect(getByTestId('bar-two')).toBeInTheDocument()
+  expect(getByTestId('bar-wrap-three')).toBeInTheDocument()
+  expect(getByTestId('bar-three')).toBeInTheDocument()
+})
+
+it('animates on click', () => {
+  const { container, getByTestId } = render(<Hamburger />)
+
+  expect(getByTestId('bar-one')).toHaveStyle({ transform: 'none' })
+
+  // fireEvent.click(container.firstChild)
+  // expect(getByTestId('bar-one')).toHaveStyle({ transform: '' })
+})
+
+it('fires the "onToggle" callback with correct arguments', () => {
+  const onToggle = jest.fn()
+  const { container } = render(<Hamburger onToggle={onToggle} />)
+
+  fireEvent.click(container.firstChild)
+  expect(onToggle).toHaveBeenCalledWith(true)
+
+  fireEvent.click(container.firstChild)
+  expect(onToggle).toHaveBeenCalledWith(false)
 })
