@@ -71,10 +71,10 @@ it('renders three bars in a complex burger', () => {
 it('animates on click', () => {
   const { container, getByTestId } = render(<Hamburger />)
 
-  expect(getByTestId('bar-one')).toHaveStyle({ transform: 'none' })
+  expect(getByTestId('bar-two')).toHaveStyle({ transform: 'none' })
 
-  // fireEvent.click(container.firstChild)
-  // expect(getByTestId('bar-one')).toHaveStyle({ transform: '' })
+  fireEvent.click(container.firstChild)
+  expect(getByTestId('bar-two')).toHaveStyle({ transform: 'scaleX(0)' })
 })
 
 it('fires the "onToggle" callback with correct arguments', () => {
