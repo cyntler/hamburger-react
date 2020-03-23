@@ -1,4 +1,4 @@
-!src/package-lock.json
+!docs/package-lock.json
 .DS_Store
 dist
 node_modules
