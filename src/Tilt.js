@@ -33,7 +33,7 @@ export const Tilt = (props) => (
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.duration}s ${o.timing}`,
         transform: `${o.toggled
-          ? 'scale(0, 1)'
+          ? 'scaleX(0)'
           : 'none'
         }`,
       }} />

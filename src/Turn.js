@@ -27,7 +27,7 @@ export const Turn = (props) => (
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.duration / 2}s ${o.timing}`,
         transform: `${o.toggled
-          ? 'scale(0, 1)'
+          ? 'scaleX(0)'
           : 'none'
         }`,
       }} />
