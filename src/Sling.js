@@ -1,14 +1,21 @@
 import { Burger } from './Burger'
 import React from 'react'
 
-export const Turn = (props) => (
+export const Sling = (props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
+      data-testid="sling"
       onClick={o.handler}
       onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
       role="button"
-      style={o.burgerStyles}
+      style={{
+        ...o.burgerStyles,
+        transform: `${o.toggled
+          ? `rotateY(${180 * (o.isLeft ? -1 : 1)}deg)`
+          : 'none'
+        }`,
+      }}
       tabIndex="0"
     >
       <div style={{
@@ -24,9 +31,9 @@ export const Turn = (props) => (
       <div style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
-        transition: `${o.duration / 2}s ${o.timing}`,
+        transition: `${o.duration}s ${o.timing}`,
         transform: `${o.toggled
-          ? 'scale(0, 1)'
+          ? `scale(0, 1) translate(${(o.move * 20) * (o.isLeft ? -1 : 1)}px, 0)`
           : 'none'
         }`,
       }} />

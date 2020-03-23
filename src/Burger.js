@@ -28,7 +28,7 @@ export const Burger = ({
   const topOffset = Math.round((area - height) / 2)
 
   const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
-  const move = (width / translate) - (deviation / (4 / 3))
+  const move = ((width / translate) - (deviation / (4 / 3))).toFixed(2)
 
   const burgerStyles = {
     cursor: 'pointer',

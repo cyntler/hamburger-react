@@ -1,14 +1,21 @@
 import { Burger } from './Burger'
 import React from 'react'
 
-export const Squash = (props) => (
+export const Twirl = (props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
+      data-testid="twirl"
       onClick={o.handler}
       onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
       role="button"
-      style={o.burgerStyles}
+      style={{
+        ...o.burgerStyles,
+        transform: `${o.toggled
+          ? `rotate(${90 * (o.isLeft ? -1 : 1)}deg)`
+          : 'none'
+        }`,
+      }}
       tabIndex="0"
     >
       <div style={{
@@ -29,7 +36,7 @@ export const Squash = (props) => (
             : '0s'
           }`,
           transform: `${o.toggled
-            ? `rotate(45deg)`
+            ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg)`
             : 'none'
           }`,
         }} />
@@ -67,7 +74,7 @@ export const Squash = (props) => (
             : '0s'
           }`,
           transform: `${o.toggled
-            ? `rotate(-45deg)`
+            ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg)`
             : 'none'
           }`,
         }} />

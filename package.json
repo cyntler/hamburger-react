@@ -30,9 +30,12 @@
   "main": "dist",
   "module": "dist",
   "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "build": "babel src/lib --out-dir dist --presets=@babel/preset-react",
-    "prepublishOnly": "npm run build"
+    "build": "babel src --out-dir dist",
+    "prepublishOnly": "npm run test:once && npm run build",
+    "test": "jest --watch",
+    "test:once": "jest"
   },
   "dependencies": {
     "react": "^16.8.0",
@@ -41,6 +44,11 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
-    "@babel/preset-react": "^7.8.3"
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.8.3",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^10.0.1",
+    "babel-plugin-jsx-remove-data-test-id": "^2.1.3",
+    "jest": "^25.1.0"
   }
 }

@@ -1,23 +1,24 @@
 import { Burger } from './Burger'
 import React from 'react'
 
-export const Sling = (props) => (
+export const Tilt = (props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
+      data-testid="tilt"
       onClick={o.handler}
       onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
       role="button"
       style={{
         ...o.burgerStyles,
         transform: `${o.toggled
-          ? `rotateY(${180 * (o.isLeft ? -1 : 1)}deg)`
+          ? `rotate(${90 * (o.isLeft ? -1 : 1)}deg)`
           : 'none'
         }`,
       }}
       tabIndex="0"
     >
-      <div style={{
+      <div data-testid="bar-one" style={{
         ...o.barStyles,
         top: `${o.topOffset}px`,
         transition: `${o.duration}s ${o.timing}`,
@@ -27,17 +28,17 @@ export const Sling = (props) => (
         }`,
       }} />
 
-      <div style={{
+      <div data-testid="bar-two" style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.duration}s ${o.timing}`,
         transform: `${o.toggled
-          ? `scale(0, 1) translate(${(o.move * 20) * (o.isLeft ? -1 : 1)}px, 0)`
+          ? 'scaleX(0)'
           : 'none'
         }`,
       }} />
 
-      <div style={{
+      <div data-testid="bar-three" style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
         transition: `${o.duration}s ${o.timing}`,
