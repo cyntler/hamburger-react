@@ -1,5 +1,5 @@
 import React from 'react'
-import Hamburger, { Fade, Sling, Spin, Squash, Turn, Twirl } from '.'
+import Hamburger, { Fade, Sling, Spin, Squash, Turn, Twirl } from '../src'
 import { render, fireEvent } from '@testing-library/react'
 import { toBeInTheDocument } from '@testing-library/jest-dom'
 
