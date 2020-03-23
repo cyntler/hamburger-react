@@ -122,7 +122,7 @@ export default () => (
 
           <div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
 
-          <div>&nbsp;&nbsp;{'}'}'}</div>
+          <div>&nbsp;&nbsp;{'}}'}</div>
 
           <div>{'/>'}</div>
         </>
