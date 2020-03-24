@@ -17,7 +17,7 @@ const Anchor = ({ label, to, largeOnly }) => {
     <div
       className={`
         underline
-        ${largeOnly ? 'hidden lg:block' : ''}
+        ${largeOnly && 'hidden lg:block'}
         py-4
         px-4
         lg:px-6

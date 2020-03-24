@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
 const area = 48
-const duration = 0.4
 const timing = 'cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
 export const Burger = ({
   color = '#000',
   direction = 'left',
+  duration = 0.4,
   hideOutline = true,
   onToggle,
   render,
@@ -29,12 +29,13 @@ export const Burger = ({
 
   const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
   const move = ((width / translate) - (deviation / (4 / 3))).toFixed(2)
+  const time = Math.max(0, duration)
 
   const burgerStyles = {
     cursor: 'pointer',
     height: `${area}px`,
     position: 'relative',
-    transition: `${duration}s ${timing}`,
+    transition: `${time}s ${timing}`,
     userSelect: 'none',
     width: `${area}px`,
   }
@@ -67,11 +68,11 @@ export const Burger = ({
     barHeight,
     barStyles,
     burgerStyles,
-    duration,
     handler,
     isLeft: (direction === 'left'),
     margin,
     move,
+    time,
     timing,
     toggled,
     topOffset,
