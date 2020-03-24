@@ -38,9 +38,15 @@ export default () => (
       </Example>
 
       <Example>
-        <Property name="duration" initial="0.4" type="float / integer" smallType="float / int" />
+        <Property
+          name="duration"
+          initial="0.4"
+          type="float / integer"
+          smallType="float / int"
+        />
         <Hamburger color="white" duration={0.8} size={26} />
-        The duration of the animation. Can be set to zero when no animation is desired.
+        The duration of the animation. Can be set to zero when no animation is
+        desired.
         <div>
           {'<'}
           <span className="text-yellow-400">Hamburger</span>
