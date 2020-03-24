@@ -45,7 +45,7 @@ export default () => (
           smallType="float / int"
         />
         <Hamburger color="white" duration={0.8} size={26} />
-        The duration of the animation. Can be set to zero when no animation is
+        The duration of the animation. Can be set to zero if no animation is
         desired.
         <div>
           {'<'}
