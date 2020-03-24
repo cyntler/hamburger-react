@@ -13,8 +13,10 @@ export const Burger = ({
   render,
   rounded = false,
   size = 32,
+  toggle,
+  toggled,
 }) => {
-  const [toggled, toggle] = useState(false)
+  const [toggledInternal, toggleInternal] = useState(false)
 
   const width = Math.max(12, Math.min(area, size))
   const room = Math.round((area - width) / 2)
@@ -56,12 +58,20 @@ export const Burger = ({
     barStyles['borderRadius'] = '9em'
   }
 
+  const hasExternalSetter = toggle !== undefined
+  const hasExternalState = toggled !== undefined
+  const isToggled = hasExternalState ? toggled : toggledInternal
+
   const handler = () => {
-    if (onToggle) {
-      onToggle(!toggled)
+    if (hasExternalSetter && hasExternalState && onToggle) {
+      onToggle(!isToggled)
     }
 
-    toggle(!toggled)
+    if (hasExternalSetter && hasExternalState) {
+      toggle(!isToggled)
+    } else if (! hasExternalSetter && ! hasExternalState) {
+      toggleInternal(!isToggled)
+    }
   }
 
   return render({
@@ -70,11 +80,11 @@ export const Burger = ({
     burgerStyles,
     handler,
     isLeft: (direction === 'left'),
+    isToggled,
     margin,
     move,
     time,
     timing,
-    toggled,
     topOffset,
   })
 }
