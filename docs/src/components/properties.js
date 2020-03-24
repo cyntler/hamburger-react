@@ -25,7 +25,7 @@ export default () => (
 
       <Example>
         <Property name="direction" initial="left" type="string" />
-        <Hamburger color="white" direction="right" size={26} />
+        <Hamburger color="white" direction="right" size={30} />
         The animation direction of the icon, left or right.
         <div>
           {'<'}
@@ -34,6 +34,20 @@ export default () => (
           <span className="text-purple-400">direction</span>="
           <span className="text-green-400">right</span>
           {'" />'}
+        </div>
+      </Example>
+
+      <Example>
+        <Property name="duration" initial="0.4" type="float / integer" smallType="float / int" />
+        <Hamburger color="white" duration={0.8} size={26} />
+        The duration of the animation. Can be set to zero when no animation is desired.
+        <div>
+          {'<'}
+          <span className="text-yellow-400">Hamburger</span>
+          &nbsp;
+          <span className="text-purple-400">duration</span>={'{'}
+          <span className="text-green-400">0.8</span>
+          {'} />'}
         </div>
       </Example>
 

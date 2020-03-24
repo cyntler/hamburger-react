@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ name, initial, type }) => (
+export default ({ name, initial, type, smallType }) => (
   <div
     className="
     flex
@@ -61,6 +61,16 @@ export default ({ name, initial, type }) => (
     <div className="font-medium text-gray-500 mr-2 flex-grow sm:flex-grow-0 text-right">
       Type:
     </div>
-    <div className="font-medium sm:text-lg">{type}</div>
+    <div className={`
+      ${smallType && 'hidden'}
+      ${smallType && 'sm:block'}
+      font-medium
+      sm:text-lg
+    `}>{type}</div>
+    {smallType && <div className={`
+      sm:hidden
+      font-medium
+      sm:text-lg
+    `}>{smallType}</div>}
   </div>
 )
