@@ -1,6 +1,8 @@
-<img alt="Logo" src="docs/static/logo-readme.png" height="91" width="112">
+<p align="center">
+  <img alt="Logo" src="docs/static/logo-readme.png" height="91" width="112">
+  <h1 align="center">Animated hamburger icons for React</h1>
+</p>
 
-# Animated hamburger icons for React
 [Hamburger icons](https://hamburger-react.netlify.com) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, transitions on non-cheap properties and a small footprint KB-wise.
 
 ## Yet another hamburger library?
