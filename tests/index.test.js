@@ -3,49 +3,25 @@ import Hamburger, { Fade, Sling, Spin, Squash, Turn, Twirl } from '../src'
 import { render, fireEvent } from '@testing-library/react'
 import { toBeInTheDocument } from '@testing-library/jest-dom'
 
-it('does not throw an error', () => {
-  render(<Hamburger />)
-})
-
-it('renders the "Fade" version', () => {
-  const { getByTestId } = render(<Fade />)
+it('renders all versions', () => {
+  const { getByTestId } = render(
+    <>
+      <Fade />
+      <Hamburger />
+      <Sling />
+      <Spin />
+      <Squash />
+      <Turn />
+      <Twirl />
+    </>
+  )
 
   expect(getByTestId('fade')).toBeInTheDocument()
-})
-
-it('renders the "Sling" version', () => {
-  const { getByTestId } = render(<Sling />)
-
   expect(getByTestId('sling')).toBeInTheDocument()
-})
-
-it('renders the "Spin" version', () => {
-  const { getByTestId } = render(<Spin />)
-
   expect(getByTestId('spin')).toBeInTheDocument()
-})
-
-it('renders the "Squash" version', () => {
-  const { getByTestId } = render(<Squash />)
-
   expect(getByTestId('squash')).toBeInTheDocument()
-})
-
-it('renders the "Tilt" version', () => {
-  const { getByTestId } = render(<Hamburger />)
-
   expect(getByTestId('tilt')).toBeInTheDocument()
-})
-
-it('renders the "Turn" version', () => {
-  const { getByTestId } = render(<Turn />)
-
   expect(getByTestId('turn')).toBeInTheDocument()
-})
-
-it('renders the "Twirl" version', () => {
-  const { getByTestId } = render(<Twirl />)
-
   expect(getByTestId('twirl')).toBeInTheDocument()
 })
 
