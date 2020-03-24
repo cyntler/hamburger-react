@@ -33,7 +33,7 @@
   "type": "module",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "prepublishOnly": "npm run test:once && npm run build",
+    "prepublishOnly": "npm run test:once && npm run build && rm dist/.DS_Store",
     "test": "jest --watch",
     "test:once": "jest"
   },
