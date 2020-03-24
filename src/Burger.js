@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
 const area = 48
-const duration = 0.4
 const timing = 'cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
 export const Burger = ({
   color = '#000',
   direction = 'left',
+  duration = 0.4,
   hideOutline = true,
   onToggle,
   render,
