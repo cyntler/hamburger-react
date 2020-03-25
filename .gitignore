@@ -1,5 +1,5 @@
-!docs/package-lock.json
 .DS_Store
 dist
 node_modules
 package-lock.json
+!docs/package-lock.json
