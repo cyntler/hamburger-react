@@ -161,38 +161,27 @@ export default () => {
           <>
             <div>
               {'<'}
-              <span className="text-yellow-400">Hamburger</span>
-            </div>
-
-            <div>
-              &nbsp;&nbsp;
+              <span className="text-yellow-400">Hamburger</span>&nbsp;
               <span className="text-purple-400">onToggle</span>={'{'}
               <span className="text-orange-400">toggled</span>
               &nbsp;=>{' {'}
             </div>
-
             <div>
-              &nbsp;&nbsp;&nbsp;&nbsp;if (
+              &nbsp;&nbsp;if (
               <span className="text-orange-400">toggled</span>) {'{'}
             </div>
 
             <div className="text-indigo-400">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open a menu
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open a menu
             </div>
-
             <div>
-              &nbsp;&nbsp;&nbsp;&nbsp;{'}'} else {'{'}
+              &nbsp;&nbsp;{'}'} else {'{'}
             </div>
-
             <div className="text-indigo-400">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close a menu
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close a menu
             </div>
-
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
-
-            <div>&nbsp;&nbsp;{'}}'}</div>
-
-            <div>{'/>'}</div>
+            <div>&nbsp;&nbsp;{'}'}</div>
+            <div>{'}} />'}</div>
           </>
         </Example>
       </div>
