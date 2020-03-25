@@ -11,7 +11,7 @@ export const Twirl = (props) => (
       role="button"
       style={{
         ...o.burgerStyles,
-        transform: `${o.toggled
+        transform: `${o.isToggled
           ? `rotate(${90 * (o.isLeft ? -1 : 1)}deg)`
           : 'none'
         }`,
@@ -19,11 +19,11 @@ export const Twirl = (props) => (
       tabIndex="0"
     >
       <div style={{
-        transition: `${o.time / 2}s ${o.timing} ${o.toggled
+        transition: `${o.time / 2}s ${o.timing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
-        transform: `${o.toggled
+        transform: `${o.isToggled
           ? `translateY(${o.barHeight + o.margin}px)`
           : 'none'
         }`,
@@ -31,11 +31,11 @@ export const Twirl = (props) => (
         <div style={{
           ...o.barStyles,
           top: `${o.topOffset}px`,
-          transition: `${o.time / 2}s ${o.timing} ${o.toggled
+          transition: `${o.time / 2}s ${o.timing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,
-          transform: `${o.toggled
+          transform: `${o.isToggled
             ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg)`
             : 'none'
           }`,
@@ -44,7 +44,7 @@ export const Twirl = (props) => (
 
       <div style={{
         transition: `${o.time / 2}s ${o.timing}`,
-        opacity: `${o.toggled
+        opacity: `${o.isToggled
           ? '0'
           : '1'
         }`,
@@ -57,11 +57,11 @@ export const Twirl = (props) => (
       </div>
 
       <div style={{
-        transition: `${o.time / 2}s ${o.timing} ${o.toggled
+        transition: `${o.time / 2}s ${o.timing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
-        transform: `${o.toggled
+        transform: `${o.isToggled
           ? `translateY(-${o.barHeight + o.margin}px)`
           : 'none'
         }`,
@@ -69,11 +69,11 @@ export const Twirl = (props) => (
         <div style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
-          transition: `${o.time / 2}s ${o.timing} ${o.toggled
+          transition: `${o.time / 2}s ${o.timing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,
-          transform: `${o.toggled
+          transform: `${o.isToggled
             ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg)`
             : 'none'
           }`,

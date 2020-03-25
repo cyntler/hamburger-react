@@ -3,7 +3,7 @@ import Hamburger, { Fade, Sling, Spin, Squash, Turn, Twirl } from '../src'
 import { render, fireEvent } from '@testing-library/react'
 import { toBeInTheDocument, toHaveStyle } from '@testing-library/jest-dom'
 
-it('renders all versions', () => {
+it(`renders all versions`, () => {
   const { getByTestId: get } = render(
     <>
       <Fade />
@@ -25,7 +25,7 @@ it('renders all versions', () => {
   expect(get('twirl')).toBeInTheDocument()
 })
 
-it('renders three bars in a simple burger', () => {
+it(`renders three bars in a simple burger`, () => {
   const { getByTestId: get } = render(<Hamburger />)
 
   expect(get('bar-one')).toBeInTheDocument()
@@ -33,7 +33,7 @@ it('renders three bars in a simple burger', () => {
   expect(get('bar-three')).toBeInTheDocument()
 })
 
-it('renders three bars in a complex burger', () => {
+it(`renders three bars in a complex burger`, () => {
   const { getByTestId: get } = render(<Squash />)
 
   expect(get('bar-wrap-one')).toBeInTheDocument()
@@ -44,7 +44,7 @@ it('renders three bars in a complex burger', () => {
   expect(get('bar-three')).toBeInTheDocument()
 })
 
-it('animates on click', () => {
+it(`animates on click`, () => {
   const { container, getByTestId: get } = render(<Hamburger />)
 
   expect(get('bar-two')).toHaveStyle({ transform: 'none' })

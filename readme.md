@@ -28,8 +28,18 @@ npm install hamburger-react
 
 ```js
 import Hamburger from 'hamburger-react'
-
+```
+```js
 <Hamburger onToggle={toggled => ...} />
+```
+
+Or when providing your own state:
+
+```js
+const [isOpen, setOpen] = useState(false)
+```
+```js
+<Hamburger toggled={isOpen} toggle={setOpen} />
 ```
 
 ## Accessibility
