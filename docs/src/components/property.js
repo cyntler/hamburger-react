@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default ({ name, initial, type, smallType }) => (
+export default ({ name, initial, type, smallType, margin }) => (
   <div
-    className="
+    className={`
     flex
     mb-2
     sm:mb-0
-    items-baseline
-  "
+    items-center
+    sm:h-12
+  `}
   >
     <div className="flex">
       <div
@@ -50,37 +51,38 @@ export default ({ name, initial, type, smallType }) => (
         justify-center
         text-center
         sm:mr-6
-        w-12
-        sm:w-16
+        w-20
         border-solid
       "
       >
         {initial}
       </div>
     </div>
-    <div className="font-medium text-gray-500 mr-2 flex-grow sm:flex-grow-0 text-right">
-      Type:
-    </div>
-    <div
-      className={`
-      ${smallType && 'hidden'}
-      ${smallType && 'sm:block'}
-      font-medium
-      sm:text-lg
-    `}
-    >
-      {type}
-    </div>
-    {smallType && (
+    <div className="flex items-baseline flex-grow justify-end">
+      <div className="hidden sm:block font-medium text-gray-500 mr-2">
+        Type:
+      </div>
       <div
         className={`
-        sm:hidden
+        ${smallType && 'hidden'}
+        ${smallType && 'sm:block'}
         font-medium
         sm:text-lg
       `}
       >
-        {smallType}
+        {type}
       </div>
-    )}
+      {smallType && (
+        <div
+          className={`
+          sm:hidden
+          font-medium
+          sm:text-lg
+        `}
+        >
+          {smallType}
+        </div>
+      )}
+    </div>
   </div>
 )
