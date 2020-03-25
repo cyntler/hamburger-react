@@ -60,16 +60,18 @@ export const Burger = ({
 
   const hasExternalSetter = toggle !== undefined
   const hasExternalState = toggled !== undefined
+  const isExternal = hasExternalSetter && hasExternalState
+  const isInternal = ! hasExternalSetter && ! hasExternalState
   const isToggled = hasExternalState ? toggled : toggledInternal
 
   const handler = () => {
-    if (hasExternalSetter && hasExternalState && onToggle) {
+    if (onToggle && (isExternal || isInternal)) {
       onToggle(!isToggled)
     }
 
-    if (hasExternalSetter && hasExternalState) {
+    if (isExternal) {
       toggle(!isToggled)
-    } else if (! hasExternalSetter && ! hasExternalState) {
+    } else if (isInternal) {
       toggleInternal(!isToggled)
     }
   }
