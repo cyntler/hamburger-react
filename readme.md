@@ -6,7 +6,7 @@
 [Hamburger icons](https://hamburger-react.netlify.com) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
 
 ## Size
-When using one hamburger, less than 1.5 KB will be added to your bundle (min + gzip). If you check out the total size of the library using a tool like BundlePhobia it will seem larger, but all individual burgers are tree-shakable.
+When using one hamburger, less than 1.6 KB will be added to your bundle (min + gzip). If you check out the total size of the library using a tool like BundlePhobia it will seem larger, but all individual burgers are tree-shakable.
 
 ## Yet another hamburger library?
 Yes. The decision to create this small package was made because existing solutions seem to have one or more of the following problems:
