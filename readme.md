@@ -33,7 +33,7 @@ import Hamburger from 'hamburger-react'
 <Hamburger onToggle={toggled => ...} />
 ```
 
-Or when providing your own state:
+Or by providing your own state:
 
 ```js
 const [isOpen, setOpen] = useState(false)
