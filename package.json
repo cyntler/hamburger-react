@@ -33,9 +33,9 @@
   "type": "module",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "prepublishOnly": "npm run test:once && npm run build && rm dist/.DS_Store",
-    "test": "jest --watch",
-    "test:once": "jest"
+    "prepublishOnly": "npm test && npm run build && rm dist/.DS_Store",
+    "test:watch": "jest --watch",
+    "test": "jest"
   },
   "dependencies": {
     "react": "^16.8.0",
