@@ -7,11 +7,11 @@ export default (props) => (
       <meta charSet="utf-8" />
       <meta
         name="description"
-        content="Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible."
+        content="Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible. (1.6 KB)"
       />
       <meta
         property="og:description"
-        content="Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible."
+        content="Hamburger icons with CSS-driven transitions, created to be as elegant and performant as possible. (1.6 KB)"
       />
       <meta
         property="og:image:secure_url"
