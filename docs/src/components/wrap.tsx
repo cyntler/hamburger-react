@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ children, wide }) => (
+export default ({ children, wide = false }) => (
   <div
     className={`
     mx-auto
@@ -14,4 +14,4 @@ export default ({ children, wide }) => (
   >
     {children}
   </div>
-)
+);

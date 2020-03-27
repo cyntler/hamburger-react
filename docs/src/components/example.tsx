@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ children, last }) => (
+export default ({ children, last = false }) => (
   <div
     className={
       'flex flex-col' +

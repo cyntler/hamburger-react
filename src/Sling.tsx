@@ -1,16 +1,23 @@
 import { Burger } from './Burger'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import { CommonBurgerProps } from './common-types'
 
-export const Turn = (props) => (
+export const Sling = ((props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
-      data-testid="turn"
+      data-testid="sling"
       onClick={o.handler}
-      onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"
-      style={o.burgerStyles}
-      tabIndex="0"
+      style={{
+        ...o.burgerStyles,
+        transform: `${o.isToggled
+          ? `rotateY(${180 * (o.isLeft ? -1 : 1)}deg)`
+          : 'none'
+        }`,
+      }}
+      tabIndex={0}
     >
       <div style={{
         ...o.barStyles,
@@ -25,9 +32,9 @@ export const Turn = (props) => (
       <div style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
-        transition: `${o.time / 2}s ${o.timing}`,
+        transition: `${o.time}s ${o.timing}`,
         transform: `${o.isToggled
-          ? 'scaleX(0)'
+          ? `scale(0, 1) translate(${(o.move * 20) * (o.isLeft ? -1 : 1)}px, 0)`
           : 'none'
         }`,
       }} />
@@ -43,4 +50,4 @@ export const Turn = (props) => (
       }} />
     </div>
   )} />
-)
+)) as FunctionComponent<CommonBurgerProps>

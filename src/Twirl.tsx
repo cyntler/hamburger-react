@@ -1,13 +1,14 @@
 import { Burger } from './Burger'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import { CommonBurgerProps } from './common-types'
 
-export const Twirl = (props) => (
+export const Twirl = ((props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
       data-testid="twirl"
       onClick={o.handler}
-      onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"
       style={{
         ...o.burgerStyles,
@@ -16,7 +17,7 @@ export const Twirl = (props) => (
           : 'none'
         }`,
       }}
-      tabIndex="0"
+      tabIndex={0}
     >
       <div style={{
         transition: `${o.time / 2}s ${o.timing} ${o.isToggled
@@ -81,4 +82,4 @@ export const Twirl = (props) => (
       </div>
     </div>
   )} />
-)
+)) as FunctionComponent<CommonBurgerProps>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Hamburger, { Squash } from '../src'
+import Hamburger from '../src'
 import { render } from '@testing-library/react'
 
 it(`accepts state`, () => {

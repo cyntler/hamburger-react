@@ -1,16 +1,17 @@
 import { Burger } from './Burger'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import { CommonBurgerProps } from './common-types'
 
-export const Fade = (props) => (
+export const Turn = ((props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
-      data-testid="fade"
+      data-testid="turn"
       onClick={o.handler}
-      onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"
       style={o.burgerStyles}
-      tabIndex="0"
+      tabIndex={0}
     >
       <div style={{
         ...o.barStyles,
@@ -25,10 +26,10 @@ export const Fade = (props) => (
       <div style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
-        transition: `${o.time}s ${o.timing}`,
-        opacity: `${o.isToggled
-          ? '0'
-          : '1'
+        transition: `${o.time / 2}s ${o.timing}`,
+        transform: `${o.isToggled
+          ? 'scaleX(0)'
+          : 'none'
         }`,
       }} />
 
@@ -43,4 +44,4 @@ export const Fade = (props) => (
       }} />
     </div>
   )} />
-)
+)) as FunctionComponent<CommonBurgerProps>

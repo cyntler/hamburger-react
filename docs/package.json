@@ -9,6 +9,7 @@
   "devDependencies": {
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-purgecss": "^5.0.0",
+    "gatsby-plugin-ts-loader": "^0.1.0",
     "postcss-discard-comments": "^4.0.2",
     "prettier": "^2.0.2"
   },
