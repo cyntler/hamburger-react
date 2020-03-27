@@ -2,13 +2,13 @@ import React from 'react'
 
 export default () => (
   <div className="hidden md:flex -mr-4 lg:-mr-6 font-medium text-lg">
-    <Anchor label="Installation" to="installation" />
+    <Anchor label="Installation" to="installation" lgOnly />
     <Anchor label="Properties" to="properties" />
-    <Anchor label="Examples" to="properties" largeOnly />
+    <Anchor label="Examples" to="properties" xlOnly />
   </div>
 )
 
-const Anchor = ({ label, to, largeOnly }) => {
+const Anchor = ({ label, to, lgOnly, xlOnly }) => {
   const clickHandler = (to) =>
     typeof document !== 'undefined' &&
     document.getElementById(to).scrollIntoView({ behavior: 'smooth' })
@@ -17,7 +17,8 @@ const Anchor = ({ label, to, largeOnly }) => {
     <div
       className={`
         underline
-        ${largeOnly && 'hidden lg:block'}
+        ${lgOnly && 'hidden lg:block'}
+        ${xlOnly && 'hidden xl:block'}
         py-4
         px-4
         lg:px-6

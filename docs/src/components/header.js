@@ -19,11 +19,11 @@ export default () => (
             leading-snug
             text-2xl
             sm:text-3xl
-            lg:text-4xl
+            xl:text-4xl
             font-medium
           "
         >
-          Animated hamburger icons
+          Animated hamburger menu icons
         </h1>
         <h3 className="text-lg sm:text-xl lg:text-2xl text-gray-500">
           Made for React

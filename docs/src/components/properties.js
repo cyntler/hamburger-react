@@ -167,8 +167,8 @@ export default () => {
               &nbsp;=>{' {'}
             </div>
             <div>
-              &nbsp;&nbsp;if (
-              <span className="text-orange-400">toggled</span>) {'{'}
+              &nbsp;&nbsp;if (<span className="text-orange-400">toggled</span>){' '}
+              {'{'}
             </div>
 
             <div className="text-indigo-400">

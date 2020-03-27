@@ -3,7 +3,7 @@ import React from 'react'
 export default (props) => (
   <html lang="en" className="antialiased">
     <head>
-      <title>Animated hamburger icons for React 🍔</title>
+      <title>Animated hamburger menu icons for React 🍔</title>
       <meta charSet="utf-8" />
       <meta
         name="description"
@@ -23,7 +23,7 @@ export default (props) => (
       />
       <meta
         property="og:title"
-        content="Animated hamburger icons for React 🍔"
+        content="Animated hamburger menu icons for React 🍔"
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://hamburger-react.netlify.com" />
