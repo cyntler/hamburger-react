@@ -12,7 +12,8 @@
     "url": "https://www.luuk.site"
   },
   "files": [
-    "dist"
+    "dist-cjs",
+    "dist-esm"
   ],
   "keywords": [
     "animated",
@@ -27,28 +28,32 @@
     "toggle",
     "transition"
   ],
-  "main": "dist",
-  "module": "dist",
+  "main": "dist-cjs",
+  "module": "dist-esm",
   "sideEffects": false,
-  "type": "module",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build:cjs": "BUILD_TYPE=cjs babel src --out-dir dist-cjs",
+    "build:esm": "babel src --out-dir dist-esm",
+    "build": "npm run build:cjs && npm run build:esm",
     "prepublishOnly": "npm test && npm run build",
     "test:watch": "jest --watch",
     "test": "jest"
   },
-  "dependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.8.3",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^10.0.1",
     "babel-plugin-jsx-remove-data-test-id": "^2.1.3",
-    "jest": "^25.1.0"
+    "jest": "^25.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
   }
 }

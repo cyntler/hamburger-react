@@ -9,6 +9,7 @@ module.exports = (api) => {
       '**/*.test.js',
     ],
     plugins: [
+      ...(process.env.BUILD_TYPE == 'cjs' ? ['@babel/plugin-transform-modules-commonjs'] : []),
       'babel-plugin-jsx-remove-data-test-id',
     ],
     presets: [
