@@ -1,7 +1,6 @@
 import React from 'react'
 import Hamburger, { Fade, Sling, Spin, Squash, Turn, Twirl } from '../src'
 import { render, fireEvent } from '@testing-library/react'
-import { toBeInTheDocument, toHaveStyle } from '@testing-library/jest-dom'
 
 it(`renders all versions`, () => {
   const { getByTestId: get } = render(
