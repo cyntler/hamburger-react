@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "gatsby": "^2.20.5",
+    "gatsby": "^2.20.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tailwindcss": "^1.2.0"
