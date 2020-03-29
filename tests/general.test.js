@@ -1,7 +1,6 @@
 import React from 'react'
 import Hamburger, { Fade, Sling, Spin, Squash, Turn, Twirl } from '../src'
 import { render, fireEvent } from '@testing-library/react'
-import { toBeInTheDocument, toHaveStyle } from '@testing-library/jest-dom'
 
 it(`renders all versions`, () => {
   const { getByTestId: get } = render(
@@ -45,10 +44,10 @@ it(`renders three bars in a complex burger`, () => {
 })
 
 it(`animates on click`, () => {
-  const { container, getByTestId: get } = render(<Hamburger />)
+  const { getByTestId: get } = render(<Hamburger />)
 
   expect(get('bar-two')).toHaveStyle({ transform: 'none' })
 
-  fireEvent.click(container.firstChild)
+  fireEvent.click(get('tilt'))
   expect(get('bar-two')).toHaveStyle({ transform: 'scaleX(0)' })
 })

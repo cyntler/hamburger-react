@@ -1,7 +1,6 @@
 import React from 'react'
 import Hamburger, { Squash } from '../src'
 import { render } from '@testing-library/react'
-import { toHaveStyle } from '@testing-library/jest-dom'
 
 it(`can be set as float`, () => {
   const { getByTestId: get } = render(<Hamburger duration={0.4} />)

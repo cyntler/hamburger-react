@@ -1,5 +1,6 @@
 .DS_Store
-dist
+dist-cjs
+dist-esm
 node_modules
 package-lock.json
 !docs/package-lock.json
