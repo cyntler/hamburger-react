@@ -48,6 +48,6 @@ it(`animates on click`, () => {
 
   expect(get('bar-two')).toHaveStyle({ transform: 'none' })
 
-  fireEvent.click(get('bar-one'))
+  fireEvent.click(get('tilt'))
   expect(get('bar-two')).toHaveStyle({ transform: 'scaleX(0)' })
 })
