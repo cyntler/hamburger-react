@@ -4,27 +4,27 @@ import { render, fireEvent } from '@testing-library/react'
 
 it(`fires the callback with correct arguments`, () => {
   const onToggle = jest.fn()
-  const { container } = render(<Hamburger onToggle={onToggle} />)
+  const { getByTestId: get } = render(<Hamburger onToggle={onToggle} />)
 
-  fireEvent.click(container.firstChild)
+  fireEvent.click(get('bar-one'))
   expect(onToggle).toHaveBeenCalledWith(true)
 
-  fireEvent.click(container.firstChild)
+  fireEvent.click(get('bar-one'))
   expect(onToggle).toHaveBeenCalledWith(false)
 })
 
 it(`doesn't fire when state is provider without an updater`, () => {
   const onToggle = jest.fn()
-  const { container } = render(<Hamburger toggled={false} onToggle={onToggle} />)
+  const { getByTestId: get } = render(<Hamburger toggled={false} onToggle={onToggle} />)
 
-  fireEvent.click(container.firstChild)
+  fireEvent.click(get('bar-one'))
   expect(onToggle).not.toHaveBeenCalled()
 })
 
 it(`fires when state and updater are provided`, () => {
   const onToggle = jest.fn()
-  const { container } = render(<Hamburger toggled={true} toggle={jest.fn()} onToggle={onToggle} />)
+  const { getByTestId: get } = render(<Hamburger toggled={true} toggle={jest.fn()} onToggle={onToggle} />)
 
-  fireEvent.click(container.firstChild)
+  fireEvent.click(get('bar-one'))
   expect(onToggle).toHaveBeenCalledWith(false)
 })

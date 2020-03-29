@@ -4,8 +4,8 @@ import { render, fireEvent } from '@testing-library/react'
 
 it(`fires the updater with correct arguments`, () => {
   const toggle = jest.fn()
-  const { container } = render(<Hamburger toggled={false} toggle={toggle} />)
+  const { getByTestId: get } = render(<Hamburger toggled={false} toggle={toggle} />)
 
-  fireEvent.click(container.firstChild)
+  fireEvent.click(get('bar-one'))
   expect(toggle).toHaveBeenCalledWith(true)
 })

@@ -44,10 +44,10 @@ it(`renders three bars in a complex burger`, () => {
 })
 
 it(`animates on click`, () => {
-  const { container, getByTestId: get } = render(<Hamburger />)
+  const { getByTestId: get } = render(<Hamburger />)
 
   expect(get('bar-two')).toHaveStyle({ transform: 'none' })
 
-  fireEvent.click(container.firstChild)
+  fireEvent.click(get('bar-one'))
   expect(get('bar-two')).toHaveStyle({ transform: 'scaleX(0)' })
 })
