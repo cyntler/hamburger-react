@@ -1,5 +1,5 @@
 import { CSSProperties, Dispatch, FunctionComponent, useState } from 'react'
-import { BurgerProps } from './common-types'
+import { BurgerProps } from './'
 
 const area = 48
 const timing = 'cubic-bezier(0, 0, 0, 1)'

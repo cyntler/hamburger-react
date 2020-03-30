@@ -1,6 +1,6 @@
 import { Burger } from './Burger'
 import React, { FunctionComponent } from 'react'
-import { CommonBurgerProps } from './common-types'
+import { CommonBurgerProps } from './'
 
 export const Sling = ((props) => (
   <Burger {...props} render={(o) => (
