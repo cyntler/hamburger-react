@@ -8,10 +8,28 @@ export default () => (
   </div>
 )
 
-const Anchor = ({ label, to, lgOnly = false, xlOnly = false }) => {
-  const clickHandler = (to) =>
-    typeof document !== 'undefined' &&
-    document.getElementById(to).scrollIntoView({ behavior: 'smooth' })
+const Anchor = ({
+  label,
+  to,
+  lgOnly = false,
+  xlOnly = false,
+}: {
+  label: string
+  to: string
+  lgOnly?: boolean
+  xlOnly?: boolean
+}) => {
+  const clickHandler = (to: string) => {
+    if (typeof document === 'undefined') {
+      return
+    }
+
+    const element = document.getElementById(to)
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <div
@@ -25,7 +43,9 @@ const Anchor = ({ label, to, lgOnly = false, xlOnly = false }) => {
         outline-none
       `}
       role="button"
-      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && clickHandler(to)}
+      onKeyUp={(e) =>
+        (e.key === 'Enter' || e.keyCode === 13) && clickHandler(to)
+      }
       tabIndex={0}
       onClick={() => clickHandler(to)}
     >

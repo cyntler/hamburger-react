@@ -3,7 +3,7 @@ import React from 'react'
 
 export default () => (
   <>
-    <Heading>Installation</Heading>
+    <Heading title="Installation" />
     <code
       className="
         w-full

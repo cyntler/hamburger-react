@@ -2,6 +2,7 @@
   "private": true,
   "dependencies": {
     "gatsby": "^2.20.8",
+    "gatsby-plugin-typescript": "^2.3.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tailwindcss": "^1.2.0"
@@ -9,14 +10,16 @@
   "devDependencies": {
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-purgecss": "^5.0.0",
-    "gatsby-plugin-ts-loader": "^0.1.0",
     "postcss-discard-comments": "^4.0.2",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "build": "gatsby build",
-    "format": "prettier --write '**/*.{js,json}'",
+    "format": "prettier --write '**/*.{js,json,ts,tsx}'",
     "serve": "npm run build && gatsby serve",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "type-check:watch": "npm run type-check -- --watch",
+    "type-check": "tsc"
   }
 }

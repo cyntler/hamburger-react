@@ -8,6 +8,6 @@ module.exports = {
         tailwind: true,
       },
     },
-    'gatsby-plugin-ts-loader',
+    'gatsby-plugin-typescript',
   ],
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default () => (
   <div className="max-w-xl text-center">
-    <Heading>More information</Heading>
+    <Heading title="More information" />
     <p className="sm:text-lg leading-loose">
       Visit the{' '}
       <a

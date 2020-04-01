@@ -9,7 +9,7 @@ export default () => {
 
   return (
     <>
-      <Heading>Properties & examples</Heading>
+      <Heading title="Properties & examples" />
 
       <div className="w-full max-w-xl">
         <Example>
@@ -103,12 +103,7 @@ export default () => {
 
         <Example>
           <div>
-            <Property
-              name="toggled"
-              initial="undefined"
-              type="boolean"
-              margin
-            />
+            <Property name="toggled" initial="undefined" type="boolean" />
             <Property name="toggle" initial="undefined" type="function" />
           </div>
           <Hamburger
