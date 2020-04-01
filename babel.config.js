@@ -1,10 +1,12 @@
-const commonPresets = ['@babel/preset-typescript']
+const commonPresets = [
+  '@babel/preset-react',
+  '@babel/preset-typescript',
+]
 
 module.exports = (api) => {
   return api.env('test') ? {
     presets: [
       '@babel/preset-env',
-      '@babel/preset-react',
       ...commonPresets,
     ],
   } : {
