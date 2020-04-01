@@ -13,7 +13,7 @@ it(`fires the callback with correct arguments`, () => {
   expect(onToggle).toHaveBeenCalledWith(false)
 })
 
-it(`doesn't fire when state is provider without an updater`, () => {
+it(`doesn't fire when state is provided without an updater`, () => {
   const onToggle = jest.fn()
   const { getByTestId: get } = render(<Hamburger toggled={false} onToggle={onToggle} />)
 
