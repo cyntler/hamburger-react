@@ -1,6 +1,11 @@
 import React from 'react'
 
-export default (props) => (
+export default (props: {
+  body: string
+  headComponents: React.ReactNode
+  postBodyComponents: React.ReactNode
+  preBodyComponents: React.ReactNode
+}) => (
   <html lang="en" className="antialiased">
     <head>
       <title>Animated hamburger menu icons for React 🍔</title>

@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { CSSProperties, FunctionComponent, useState } from 'react'
+import { BurgerProps } from './'
 
 const area = 48
 const timing = 'cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
-export const Burger = ({
+export const Burger = (({
   color = '#000',
   direction = 'left',
   duration = 0.4,
@@ -30,10 +31,10 @@ export const Burger = ({
   const topOffset = Math.round((area - height) / 2)
 
   const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
-  const move = ((width / translate) - (deviation / (4 / 3))).toFixed(2)
+  const move = parseFloat(((width / translate) - (deviation / (4 / 3))).toFixed(2))
   const time = Math.max(0, duration)
 
-  const burgerStyles = {
+  const burgerStyles: CSSProperties = {
     cursor: 'pointer',
     height: `${area}px`,
     position: 'relative',
@@ -42,7 +43,7 @@ export const Burger = ({
     width: `${area}px`,
   }
 
-  const barStyles = {
+  const barStyles: CSSProperties = {
     background: color,
     height: `${barHeight}px`,
     left: `${room}px`,
@@ -58,21 +59,21 @@ export const Burger = ({
     barStyles['borderRadius'] = '9em'
   }
 
-  const hasExternalSetter = toggle !== undefined
-  const hasExternalState = toggled !== undefined
-  const isExternal = hasExternalSetter && hasExternalState
-  const isInternal = ! hasExternalSetter && ! hasExternalState
-  const isToggled = hasExternalState ? toggled : toggledInternal
+  const isExternal = typeof toggle === 'function' && typeof toggled === 'boolean'
+  const isInternal = typeof toggle !== 'function' && typeof toggled !== 'boolean'
+
+  const toggleFunction = isExternal ? toggle : (isInternal ? toggleInternal : undefined)
+  const toggleCallback = typeof onToggle === 'function' && (isExternal || isInternal) ? onToggle : undefined
+
+  const isToggled = typeof toggled === 'boolean' ? toggled : toggledInternal
 
   const handler = () => {
-    if (onToggle && (isExternal || isInternal)) {
-      onToggle(!isToggled)
+    if (toggleCallback) {
+      toggleCallback(!isToggled)
     }
 
-    if (isExternal) {
-      toggle(!isToggled)
-    } else if (isInternal) {
-      toggleInternal(!isToggled)
+    if (toggleFunction) {
+      toggleFunction(!isToggled)
     }
   }
 
@@ -89,4 +90,4 @@ export const Burger = ({
     timing,
     topOffset,
   })
-}
+}) as FunctionComponent<BurgerProps>

@@ -13,7 +13,8 @@
   },
   "files": [
     "dist-cjs",
-    "dist-esm"
+    "dist-esm",
+    "dist-types"
   ],
   "keywords": [
     "animated",
@@ -30,14 +31,19 @@
   ],
   "main": "dist-cjs",
   "module": "dist-esm",
+  "types": "dist-types/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build:cjs": "BUILD_TYPE=cjs babel src --out-dir dist-cjs",
-    "build:esm": "babel src --out-dir dist-esm",
-    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "BUILD_TYPE=cjs babel src --extensions '.ts,.tsx' --out-dir dist-cjs",
+    "build:esm": "babel src --extensions '.ts,.tsx' --out-dir dist-esm",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "run-p build:cjs build:esm build:types",
+    "prebuild": "rimraf dist-*",
     "prepublishOnly": "npm test && npm run build",
     "test:watch": "jest --watch",
-    "test": "jest"
+    "test": "jest",
+    "type-check:watch": "npm run type-check -- --watch",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {},
   "devDependencies": {
@@ -46,12 +52,16 @@
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
     "@testing-library/jest-dom": "^5.3.0",
     "@testing-library/react": "^10.0.1",
     "babel-plugin-jsx-remove-data-test-id": "^2.1.3",
     "jest": "^25.2.3",
+    "npm-run-all": "^4.1.5",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
   },
   "peerDependencies": {
     "react": "^16.8.0"

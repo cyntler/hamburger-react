@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ children }) => (
+export default ({ title }: { title: string }) => (
   <h2
     className="
     leading-snug
@@ -13,6 +13,6 @@ export default ({ children }) => (
     font-medium
   "
   >
-    {children}
+    {title}
   </h2>
 )

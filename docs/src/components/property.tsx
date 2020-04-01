@@ -1,6 +1,16 @@
 import React from 'react'
 
-export default ({ name, initial, type, smallType, margin }) => (
+export default ({
+  name,
+  initial,
+  type,
+  smallType = '',
+}: {
+  name: string
+  initial: string
+  type: string
+  smallType?: string
+}) => (
   <div
     className={`
     flex

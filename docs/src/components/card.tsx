@@ -1,6 +1,12 @@
 import React from 'react'
 
-export default ({ children, title }) => (
+export default ({
+  children,
+  title,
+}: {
+  children: [React.ReactNode, React.ReactNode, React.ReactNode]
+  title: string
+}) => (
   <div
     className="
       bg-gray-800

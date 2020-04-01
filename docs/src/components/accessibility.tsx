@@ -3,7 +3,7 @@ import React from 'react'
 
 export default () => (
   <div className="max-w-xl text-center">
-    <Heading>Accessibility</Heading>
+    <Heading title="Accessibility" />
     <p className="sm:text-lg leading-loose mb-8 text-left">
       It is recommended to have a tap/click area of at least{' '}
       <span className="bg-gray-800 px-2 py-1 rounded">48x48</span> pixels.

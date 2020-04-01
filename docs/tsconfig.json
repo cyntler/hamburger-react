@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "strict": true
+  },
+  "include": ["src"]
+}

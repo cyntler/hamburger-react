@@ -1,24 +1,19 @@
 import { Burger } from './Burger'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import { CommonBurgerProps } from './'
 
-export const Twirl = (props) => (
+export const Squash = ((props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
-      data-testid="twirl"
+      data-testid="squash"
       onClick={o.handler}
-      onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"
-      style={{
-        ...o.burgerStyles,
-        transform: `${o.isToggled
-          ? `rotate(${90 * (o.isLeft ? -1 : 1)}deg)`
-          : 'none'
-        }`,
-      }}
-      tabIndex="0"
+      style={o.burgerStyles}
+      tabIndex={0}
     >
-      <div style={{
+      <div data-testid="bar-wrap-one" style={{
         transition: `${o.time / 2}s ${o.timing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -28,7 +23,7 @@ export const Twirl = (props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-one" style={{
           ...o.barStyles,
           top: `${o.topOffset}px`,
           transition: `${o.time / 2}s ${o.timing} ${o.isToggled
@@ -36,27 +31,27 @@ export const Twirl = (props) => (
             : '0s'
           }`,
           transform: `${o.isToggled
-            ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg)`
+            ? `rotate(45deg)`
             : 'none'
           }`,
         }} />
       </div>
 
-      <div style={{
+      <div data-testid="bar-wrap-two" style={{
         transition: `${o.time / 2}s ${o.timing}`,
         opacity: `${o.isToggled
           ? '0'
           : '1'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-two" style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
           transition: `${o.time / 2}s ${o.timing}`,
         }} />
       </div>
 
-      <div style={{
+      <div data-testid="bar-wrap-three" style={{
         transition: `${o.time / 2}s ${o.timing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -66,7 +61,7 @@ export const Twirl = (props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-three" style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
           transition: `${o.time / 2}s ${o.timing} ${o.isToggled
@@ -74,11 +69,11 @@ export const Twirl = (props) => (
             : '0s'
           }`,
           transform: `${o.isToggled
-            ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg)`
+            ? `rotate(-45deg)`
             : 'none'
           }`,
         }} />
       </div>
     </div>
   )} />
-)
+)) as FunctionComponent<CommonBurgerProps>

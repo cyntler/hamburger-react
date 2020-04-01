@@ -1,24 +1,19 @@
 import { Burger } from './Burger'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import { CommonBurgerProps } from './'
 
-export const Tilt = (props) => (
+export const Turn = ((props) => (
   <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
-      data-testid="tilt"
+      data-testid="turn"
       onClick={o.handler}
-      onKeyUp={(e) => (e.key === 13 || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"
-      style={{
-        ...o.burgerStyles,
-        transform: `${o.isToggled
-          ? `rotate(${90 * (o.isLeft ? -1 : 1)}deg)`
-          : 'none'
-        }`,
-      }}
-      tabIndex="0"
+      style={o.burgerStyles}
+      tabIndex={0}
     >
-      <div data-testid="bar-one" style={{
+      <div style={{
         ...o.barStyles,
         top: `${o.topOffset}px`,
         transition: `${o.time}s ${o.timing}`,
@@ -28,17 +23,17 @@ export const Tilt = (props) => (
         }`,
       }} />
 
-      <div data-testid="bar-two" style={{
+      <div style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
-        transition: `${o.time}s ${o.timing}`,
+        transition: `${o.time / 2}s ${o.timing}`,
         transform: `${o.isToggled
           ? 'scaleX(0)'
           : 'none'
         }`,
       }} />
 
-      <div data-testid="bar-three" style={{
+      <div style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
         transition: `${o.time}s ${o.timing}`,
@@ -49,4 +44,4 @@ export const Tilt = (props) => (
       }} />
     </div>
   )} />
-)
+)) as FunctionComponent<CommonBurgerProps>
