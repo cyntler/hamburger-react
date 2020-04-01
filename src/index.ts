@@ -1,5 +1,4 @@
-import { CSSProperties, MouseEvent } from 'react'
-
+import React, { CSSProperties, Dispatch, SetStateAction } from 'react'
 import { Tilt as Hamburger } from './Tilt'
 
 import { Fade } from './Fade'
@@ -13,49 +12,44 @@ export default Hamburger
 
 export { Fade, Sling, Spin, Squash, Turn, Twirl }
 
-export type BurgerDirection = 'left' | 'right';
-export type RenderFunction = (o: RenderOptions) => any;
-export type ToggleFunction = (newState: boolean) => any;
-export type ToggleHandler = (isToggled: boolean) => any;
-
 export interface CommonBurgerProps {
-  /** The color of the icon bars, accepts any CSS-parsable argument. */
+  // The color of the icon bars, accepts any CSS-parsable argument.
   color?: string;
-  /** The animation direction of the icon, left or right. */
-  direction?: BurgerDirection;
-  /** The duration of the animation. Can be set to zero if no animation is desired. */
+  // The animation direction of the icon, left or right.
+  direction?: 'left' | 'right';
+  // The duration of the animation. Can be set to zero if no animation is desired.
   duration?: number;
-  /** Hides the default browser focus style. */
+  // Hides the default browser focus style.
   hideOutline?: boolean;
-  /** A callback which receives a single boolean argument, indicating if the icon is toggled. */
-  onToggle?: ToggleHandler;
-  /** Specifies if the icon bars should be rounded. */
+  // A callback which receives a single boolean argument, indicating if the icon is toggled.
+  onToggle?: (toggled: boolean) => any;
+  // Specifies if the icon bars should be rounded.
   rounded?: boolean;
-  /** A number between 12 and 48, which sets the size of the icon. */
+  // A number between 12 and 48, which sets the size of the icon.
   size?: number;
-  /** A way to provide your own state - your state's setter */
-  toggle?: ToggleFunction;
-  /** A way to provide your own state - your state's value */
+  // A way to provide your own state action. Should be used together with a state value (the `toggled` prop).
+  toggle?: Dispatch<SetStateAction<boolean>>
+  // A way to provide your own state value.
   toggled?: boolean;
-}
-
-export interface BurgerProps extends CommonBurgerProps {
-  render: RenderFunction;
 }
 
 export interface RenderOptions {
   barHeight: number;
   barStyles: CSSProperties;
   burgerStyles: CSSProperties;
-  handler: (e?: MouseEvent) => any;
+  handler: () => void;
   isLeft: boolean;
   isToggled: boolean;
   margin: number;
   move: number;
-  /** CSS transition-duration property - in seconds */
+  // CSS transition-duration property (in seconds).
   time: number;
-  /** CSS transition-timing-function property */
+  // CSS transition-timing-function property.
   timing: string;
-  /** CSS top property - in pixels */
+  // CSS top property (in pixels).
   topOffset: number;
+}
+
+export interface BurgerProps extends CommonBurgerProps {
+  render: (o: RenderOptions) => React.ReactNode;
 }
