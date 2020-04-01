@@ -13,23 +13,23 @@ export default Hamburger
 export { Fade, Sling, Spin, Squash, Turn, Twirl }
 
 export interface CommonBurgerProps {
-  // The color of the icon bars, accepts any CSS-parsable argument.
+  /** The color of the icon bars, accepts any CSS-parsable argument. */
   color?: string;
-  // The animation direction of the icon, left or right.
+  /** The animation direction of the icon, left or right. */
   direction?: 'left' | 'right';
-  // The duration of the animation. Can be set to zero if no animation is desired.
+  /** The duration of the animation. Can be set to zero if no animation is desired. */
   duration?: number;
-  // Hides the default browser focus style.
+  /** Hides the default browser focus style. */
   hideOutline?: boolean;
-  // A callback which receives a single boolean argument, indicating if the icon is toggled.
+  /** A callback which receives a single boolean argument, indicating if the icon is toggled. */
   onToggle?: (toggled: boolean) => any;
-  // Specifies if the icon bars should be rounded.
+  /** Specifies if the icon bars should be rounded. */
   rounded?: boolean;
-  // A number between 12 and 48, which sets the size of the icon.
+  /** A number between 12 and 48, which sets the size of the icon. */
   size?: number;
-  // A way to provide your own state action. Should be used together with a state value (the `toggled` prop).
+  /** A way to provide your own state action. Has to be used together with a state value (the `toggled` prop). */
   toggle?: Dispatch<SetStateAction<boolean>>
-  // A way to provide your own state value.
+  /** A way to provide your own state value. Can be used together with a state action (the `toggle` prop). */
   toggled?: boolean;
 }
 
@@ -42,11 +42,11 @@ export interface RenderOptions {
   isToggled: boolean;
   margin: number;
   move: number;
-  // CSS transition-duration property (in seconds).
+  /** CSS transition-duration property (in seconds). */
   time: number;
-  // CSS transition-timing-function property.
+  /** CSS transition-timing-function property. */
   timing: string;
-  // CSS top property (in pixels).
+  /** CSS top property (in pixels). */
   topOffset: number;
 }
 
