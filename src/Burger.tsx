@@ -62,7 +62,7 @@ export const Burger = (({
   const isExternal = typeof toggle === 'function' && typeof toggled === 'boolean'
   const isInternal = typeof toggle !== 'function' && typeof toggled !== 'boolean'
 
-  const toggleFunction = isExternal ? toggle : toggleInternal
+  const toggleFunction = isExternal ? toggle : (isInternal ? toggleInternal : undefined)
   const toggleCallback = typeof onToggle === 'function' && (isExternal || isInternal) ? onToggle : undefined
 
   const isToggled = typeof toggled === 'boolean' ? toggled : toggledInternal
