@@ -1,4 +1,4 @@
-import { CSSProperties, Dispatch, FunctionComponent, useState } from 'react'
+import { CSSProperties, FunctionComponent, useState } from 'react'
 import { BurgerProps } from './'
 
 const area = 48
@@ -59,30 +59,17 @@ export const Burger = (({
     barStyles['borderRadius'] = '9em'
   }
 
-  let hasExternalSetter = false
-  let hasExternalState = false
-  let toggleFunction: Dispatch<boolean>
-  let isToggled = toggledInternal
+  const isExternal = typeof toggle === 'function' && typeof toggled === 'boolean'
+  const isInternal = typeof toggle !== 'function' && typeof toggled !== 'boolean'
 
-  if (toggle !== undefined) {
-    hasExternalSetter = true
-    toggleFunction = toggle
-  }
-  if (toggled !== undefined) {
-    hasExternalState = true
-    isToggled = toggled
-  }
+  const toggleFunction = isExternal ? toggle : toggleInternal
+  const toggleCallback = typeof onToggle === 'function' && (isExternal || isInternal) ? onToggle : undefined
 
-  const isExternal = hasExternalSetter && hasExternalState
-  const isInternal = !hasExternalSetter && !hasExternalState
-
-  if (!hasExternalSetter && isInternal) {
-    toggleFunction = toggleInternal
-  }
+  const isToggled = typeof toggled === 'boolean' ? toggled : toggledInternal
 
   const handler = () => {
-    if (onToggle && (isExternal || isInternal)) {
-      onToggle(!isToggled)
+    if (toggleCallback) {
+      toggleCallback(!isToggled)
     }
 
     if (toggleFunction) {
