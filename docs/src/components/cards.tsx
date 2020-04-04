@@ -13,17 +13,17 @@ export default () => (
   <>
     <div className="w-full">
       <Card title="Tilt">
-        <Hamburger size={36} color="white" direction="right" />
+        <Hamburger size={36} direction="right" />
         <div>
           import
           <span className="text-white"> Hamburger </span>
           from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Hamburger size={36} color="white" />
+        <Hamburger size={36} />
       </Card>
 
       <Card title="Fade">
-        <Fade size={36} color="white" direction="right" />
+        <Fade size={36} direction="right" />
         <div>
           import {'{'}
           <span className="text-white"> Fade </span>
@@ -31,11 +31,11 @@ export default () => (
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Fade size={36} color="white" />
+        <Fade size={36} />
       </Card>
 
       <Card title="Twirl">
-        <Twirl size={36} color="white" direction="right" />
+        <Twirl size={36} direction="right" />
         <div>
           import {'{'}
           <span className="text-white"> Twirl </span>
@@ -43,11 +43,11 @@ export default () => (
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Twirl size={36} color="white" />
+        <Twirl size={36} />
       </Card>
 
       <Card title="Turn">
-        <Turn size={36} color="white" direction="right" />
+        <Turn size={36} direction="right" />
         <div>
           import {'{'}
           <span className="text-white"> Turn </span>
@@ -55,11 +55,11 @@ export default () => (
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Turn size={36} color="white" />
+        <Turn size={36} />
       </Card>
 
       <Card title="Sling">
-        <Sling size={36} color="white" direction="right" />
+        <Sling size={36} direction="right" />
         <div>
           import {'{'}
           <span className="text-white"> Sling </span>
@@ -67,11 +67,11 @@ export default () => (
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Sling size={36} color="white" />
+        <Sling size={36} />
       </Card>
 
       <Card title="Spin">
-        <Spin size={36} color="white" direction="right" />
+        <Spin size={36} direction="right" />
         <div>
           import {'{'}
           <span className="text-white"> Spin </span>
@@ -79,11 +79,11 @@ export default () => (
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Spin size={36} color="white" />
+        <Spin size={36} />
       </Card>
 
       <NewCard title="Squash">
-        <Squash size={36} color="white" />
+        <Squash size={36} />
         <div>
           import {'{'}
           <span className="text-white"> Squash </span>

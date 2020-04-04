@@ -13,7 +13,7 @@ export default () => {
 
       <div className="w-full max-w-xl">
         <Example>
-          <Property name="color" initial="#000" type="string" />
+          <Property name="color" initial="currentColor" type="string" />
           <Hamburger color="#4FD1C5" size={34} />
           The color of the icon bars, accepts any CSS-parsable argument.
           <div>
@@ -28,7 +28,7 @@ export default () => {
 
         <Example>
           <Property name="direction" initial="left" type="string" />
-          <Hamburger color="white" direction="right" size={30} />
+          <Hamburger direction="right" size={30} />
           The animation direction of the icon, left or right.
           <div>
             {'<'}
@@ -47,7 +47,7 @@ export default () => {
             type="float / integer"
             smallType="float / int"
           />
-          <Hamburger color="white" duration={0.8} size={26} />
+          <Hamburger duration={0.8} size={26} />
           The duration of the animation. Can be set to zero if no animation is
           desired.
           <div>
@@ -62,7 +62,7 @@ export default () => {
 
         <Example>
           <Property name="hideOutline" initial="true" type="boolean" />
-          <Hamburger color="white" hideOutline={false} size={30} />
+          <Hamburger hideOutline={false} size={30} />
           Hides the default browser focus style.
           <div>
             {'<'}
@@ -76,7 +76,7 @@ export default () => {
 
         <Example>
           <Property name="rounded" initial="false" type="boolean" />
-          <Hamburger color="white" rounded size={42} />
+          <Hamburger rounded size={42} />
           Specifies if the icon bars should be rounded.
           <div>
             {'<'}
@@ -89,8 +89,8 @@ export default () => {
 
         <Example>
           <Property name="size" initial="32" type="integer" />
-          <Hamburger color="white" size={20} />A number between 12 and 48, which
-          sets the size of the icon.
+          <Hamburger size={20} />A number between 12 and 48, which sets the size
+          of the icon.
           <div>
             {'<'}
             <span className="text-yellow-400">Hamburger</span>
@@ -106,13 +106,8 @@ export default () => {
             <Property name="toggled" initial="undefined" type="boolean" />
             <Property name="toggle" initial="undefined" type="function" />
           </div>
-          <Hamburger
-            color="white"
-            size={34}
-            toggled={isOpen}
-            toggle={setOpen}
-          />
-          A way to provide your own state.
+          <Hamburger size={34} toggled={isOpen} toggle={setOpen} />A way to
+          provide your own state.
           <div>
             <span className="text-purple-400">const</span>
             &nbsp;
@@ -144,7 +139,6 @@ export default () => {
         <Example last>
           <Property name="onToggle" initial="undefined" type="function" />
           <Hamburger
-            color="white"
             size={26}
             onToggle={(toggled) =>
               console.log('🍔 [hamburger-react] toggled:', toggled)
