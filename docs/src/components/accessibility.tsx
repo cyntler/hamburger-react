@@ -14,7 +14,9 @@ export default () => (
       Keyboard interaction is provided with the{' '}
       <span className="bg-gray-800 px-2 py-1 rounded">enter</span> key, and the
       icon element has the recommended accessibility attributes (such as{' '}
-      <span className="bg-gray-800 px-2 py-1 rounded">role</span>).
+      <span className="bg-gray-800 px-2 py-1 rounded">role</span>). You can use
+      the <span className="bg-gray-800 px-2 py-1 rounded">label</span> property
+      to supply an ARIA label for the icon.
     </p>
   </div>
 )
