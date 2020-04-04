@@ -21,7 +21,7 @@ export interface CommonBurgerProps {
   duration?: number;
   /** Hides the default browser focus style. */
   hideOutline?: boolean;
-  /** Set an ARIA label to improve accessibility. */
+  /** An ARIA label to improve accessibility. */
   label?: string;
   /** A callback which receives a single boolean argument, indicating if the icon is toggled. */
   onToggle?: (toggled: boolean) => any;

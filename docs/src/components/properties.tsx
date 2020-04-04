@@ -75,6 +75,20 @@ export default () => {
         </Example>
 
         <Example>
+          <Property name="label" initial="undefined" type="string" />
+          <Hamburger color="white" label="Show menu" size={26} />
+          An ARIA label to improve accessibility.
+          <div>
+            {'<'}
+            <span className="text-yellow-400">Hamburger</span>
+            &nbsp;
+            <span className="text-purple-400">label</span>="
+            <span className="text-green-400">Show menu</span>
+            {'" />'}
+          </div>
+        </Example>
+
+        <Example>
           <Property name="rounded" initial="false" type="boolean" />
           <Hamburger color="white" rounded size={42} />
           Specifies if the icon bars should be rounded.
