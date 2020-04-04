@@ -21,6 +21,8 @@ export interface CommonBurgerProps {
   duration?: number;
   /** Hides the default browser focus style. */
   hideOutline?: boolean;
+  /** An ARIA label to improve accessibility. */
+  label?: string;
   /** A callback which receives a single boolean argument, indicating if the icon is toggled. */
   onToggle?: (toggled: boolean) => any;
   /** Specifies if the icon bars should be rounded. */
@@ -40,6 +42,7 @@ export interface RenderOptions {
   handler: () => void;
   isLeft: boolean;
   isToggled: boolean;
+  label: string | undefined;
   margin: number;
   move: number;
   /** CSS transition-duration property (in seconds). */
