@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "esModuleInterop": true,
     "jsx": "react",
     "moduleResolution": "Node",
     "noEmit": true,
+    "paths": {
+      "react": ["node_modules/@types/react"]
+    },
     "strict": true
   },
   "include": ["src"]

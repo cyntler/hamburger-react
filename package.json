@@ -42,8 +42,8 @@
     "prepublishOnly": "npm test && npm run build",
     "test:watch": "jest --watch",
     "test": "jest",
-    "type-check:watch": "npm run type-check -- --watch",
-    "type-check": "tsc --noEmit"
+    "typecheck:watch": "npm run typecheck -- --watch",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {},
   "devDependencies": {
