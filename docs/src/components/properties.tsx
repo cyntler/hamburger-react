@@ -89,8 +89,8 @@ export default () => {
 
         <Example>
           <Property name="size" initial="32" type="integer" />
-          <Hamburger size={20} />A number between 12 and 48, which
-          sets the size of the icon.
+          <Hamburger size={20} />A number between 12 and 48, which sets the size
+          of the icon.
           <div>
             {'<'}
             <span className="text-yellow-400">Hamburger</span>
@@ -106,8 +106,8 @@ export default () => {
             <Property name="toggled" initial="undefined" type="boolean" />
             <Property name="toggle" initial="undefined" type="function" />
           </div>
-          <Hamburger size={34} toggled={isOpen} toggle={setOpen} />
-          A way to provide your own state.
+          <Hamburger size={34} toggled={isOpen} toggle={setOpen} />A way to
+          provide your own state.
           <div>
             <span className="text-purple-400">const</span>
             &nbsp;
