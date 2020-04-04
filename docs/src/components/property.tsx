@@ -61,7 +61,7 @@ export default ({
         justify-center
         text-center
         sm:mr-6
-        w-20
+        w-24
         border-solid
       "
       >
