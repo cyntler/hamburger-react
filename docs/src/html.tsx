@@ -20,18 +20,18 @@ export default (props: {
       />
       <meta
         property="og:image:secure_url"
-        content="https://hamburger-react.netlify.com/hamburger-react.jpg"
+        content="https://hamburger-react.netlify.app/hamburger-react.jpg"
       />
       <meta
         property="og:image"
-        content="https://hamburger-react.netlify.com/hamburger-react.jpg"
+        content="https://hamburger-react.netlify.app/hamburger-react.jpg"
       />
       <meta
         property="og:title"
         content="Animated hamburger menu icons for React 🍔"
       />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://hamburger-react.netlify.com" />
+      <meta property="og:url" content="https://hamburger-react.netlify.app" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"

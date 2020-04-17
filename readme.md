@@ -3,7 +3,7 @@
   <h1 align="center">Animated hamburger menu icons for React</h1>
 </p>
 
-[Hamburger icons](https://hamburger-react.netlify.com) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
+[Hamburger icons](https://hamburger-react.netlify.app) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
 
 ## Size
 When using one hamburger, ~1.5 KB will be added to your bundle (min + gzip).
@@ -24,7 +24,7 @@ npm install hamburger-react
 ```
 
 ## Usage
-[Visit the website](https://hamburger-react.netlify.com) for full documentation, API and examples. A basic implementation looks as follows:
+[Visit the website](https://hamburger-react.netlify.app) for full documentation, API and examples. A basic implementation looks as follows:
 
 ```js
 import Hamburger from 'hamburger-react'
