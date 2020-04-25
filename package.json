@@ -29,8 +29,8 @@
     "toggle",
     "transition"
   ],
-  "main": "dist-cjs",
-  "module": "dist-esm",
+  "main": "dist-cjs/index.js",
+  "module": "dist-esm/index.js",
   "types": "dist-types/index.d.ts",
   "sideEffects": false,
   "scripts": {
