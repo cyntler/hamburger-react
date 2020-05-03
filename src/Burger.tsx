@@ -3,7 +3,6 @@ import { BurgerProps } from './'
 
 const area = 48
 const timing = 'cubic-bezier(0, 0, 0, 1)'
-const translate = 4.6325
 
 export const Burger = (({
   _lines = 3,
@@ -35,7 +34,8 @@ export const Burger = (({
   const height = (barHeight * _lines) + margin * (_lines - 1)
   const topOffset = Math.round((area - height) / 2)
 
-  const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
+  const translate = _lines === 3 ? 4.6325 : 7.6675
+  const deviation = ((barHeightRaw - barHeight) + (marginRaw - margin)) / (_lines === 3 ? 1 : 2)
   const move = parseFloat(((width / translate) - (deviation / (4 / 3))).toFixed(2))
   const time = Math.max(0, duration)
 
