@@ -28,7 +28,7 @@ export default () => {
 
         <Example>
           <Property name="direction" initial="left" type="string" />
-          <Hamburger direction="right" size={30} />
+          <Hamburger direction="right" size={26} />
           The animation direction of the icon, left or right.
           <div>
             {'<'}
@@ -36,6 +36,20 @@ export default () => {
             &nbsp;
             <span className="text-purple-400">direction</span>="
             <span className="text-green-400">right</span>
+            {'" />'}
+          </div>
+        </Example>
+
+        <Example>
+          <Property name="distance" initial="md" type="string" />
+          <Hamburger distance="lg" size={32} />
+          The vertical distance between the lines. Small (sm), medium (md) or large (lg).
+          <div>
+            {'<'}
+            <span className="text-yellow-400">Hamburger</span>
+            &nbsp;
+            <span className="text-purple-400">distance</span>="
+            <span className="text-green-400">lg</span>
             {'" />'}
           </div>
         </Example>
