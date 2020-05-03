@@ -14,7 +14,7 @@ export const Cross = ((props) => (
       style={o.burgerStyles}
       tabIndex={0}
     >
-      <div style={{
+      <div data-testid="bar-one" style={{
         ...o.barStyles,
         top: `${o.topOffset}px`,
         transition: `${o.time}s ${o.timing}`,
@@ -24,7 +24,7 @@ export const Cross = ((props) => (
         }`,
       }} />
 
-      <div style={{
+      <div data-testid="bar-two" style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.time}s ${o.timing}`,
