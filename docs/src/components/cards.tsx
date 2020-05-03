@@ -5,6 +5,7 @@ import { Rotate } from '../../../src'
 import { Slant } from '../../../src'
 import { Sling } from '../../../src'
 import { Spin } from '../../../src'
+import { Spiral } from '../../../src'
 import { Squash } from '../../../src'
 import { Turn } from '../../../src'
 import { Twirl } from '../../../src'
@@ -98,16 +99,16 @@ export default () => (
         <Pivot size={36} />
       </Card>
 
-      <Card title="Rotate">
-        <Rotate size={36} direction="right" />
+      <Card title="Spiral">
+        <Spiral size={36} direction="right" />
         <div>
           import {'{'}
-          <span className="text-white"> Rotate </span>
+          <span className="text-white"> Spiral </span>
           as
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Rotate size={36} />
+        <Spiral size={36} />
       </Card>
 
       <Card title="Sling">
@@ -132,6 +133,18 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Spin size={36} />
+      </Card>
+
+      <Card title="Rotate">
+        <Rotate size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Rotate </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Rotate size={36} />
       </Card>
 
       <NewCard title="Squash">
