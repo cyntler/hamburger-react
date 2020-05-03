@@ -4,6 +4,7 @@ import { Tilt as Hamburger } from './Tilt'
 import { Cross } from './Cross'
 import { Fade } from './Fade'
 import { Pivot } from './Pivot'
+import { Rotate } from './Rotate'
 import { Slant } from './Slant'
 import { Sling } from './Sling'
 import { Spin } from './Spin'
@@ -13,7 +14,7 @@ import { Twirl } from './Twirl'
 
 export default Hamburger
 
-export { Cross, Fade, Pivot, Slant, Sling, Spin, Squash, Turn, Twirl }
+export { Cross, Fade, Pivot, Rotate, Slant, Sling, Spin, Squash, Turn, Twirl }
 
 export interface CommonBurgerProps {
   /** The color of the icon bars, accepts any CSS-parsable argument. */

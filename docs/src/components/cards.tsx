@@ -1,6 +1,7 @@
 import { Cross } from '../../../src'
 import { Fade } from '../../../src'
 import { Pivot } from '../../../src'
+import { Rotate } from '../../../src'
 import { Slant } from '../../../src'
 import { Sling } from '../../../src'
 import { Spin } from '../../../src'
@@ -25,18 +26,6 @@ export default () => (
         <Hamburger size={36} />
       </Card>
 
-      <Card title="Slant">
-        <Slant size={36} direction="right" />
-        <div>
-          import {'{'}
-          <span className="text-white"> Slant </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
-        <Slant size={36} />
-      </Card>
-
       <Card title="Fade">
         <Fade size={36} direction="right" />
         <div>
@@ -47,6 +36,18 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Fade size={36} />
+      </Card>
+
+      <Card title="Cross">
+        <Cross size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Cross </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Cross size={36} />
       </Card>
 
       <Card title="Twirl">
@@ -61,18 +62,6 @@ export default () => (
         <Twirl size={36} />
       </Card>
 
-      <Card title="Pivot">
-        <Pivot size={36} direction="right" />
-        <div>
-          import {'{'}
-          <span className="text-white"> Pivot </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
-        <Pivot size={36} />
-      </Card>
-
       <Card title="Turn">
         <Turn size={36} direction="right" />
         <div>
@@ -85,16 +74,40 @@ export default () => (
         <Turn size={36} />
       </Card>
 
-      <Card title="Cross">
-        <Cross size={36} direction="right" />
+      <Card title="Slant">
+        <Slant size={36} direction="right" />
         <div>
           import {'{'}
-          <span className="text-white"> Cross </span>
+          <span className="text-white"> Slant </span>
           as
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Cross size={36} />
+        <Slant size={36} />
+      </Card>
+
+      <Card title="Pivot">
+        <Pivot size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Pivot </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Pivot size={36} />
+      </Card>
+
+      <Card title="Rotate">
+        <Rotate size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Rotate </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Rotate size={36} />
       </Card>
 
       <Card title="Sling">
