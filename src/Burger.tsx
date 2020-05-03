@@ -6,8 +6,10 @@ const timing = 'cubic-bezier(0, 0, 0, 1)'
 const translate = 4.6325
 
 export const Burger = (({
+  _lines = 3,
   color = 'currentColor',
   direction = 'left',
+  distance = 'md',
   duration = 0.4,
   hideOutline = true,
   label,
@@ -25,10 +27,12 @@ export const Burger = (({
 
   const barHeightRaw = width / 12
   const barHeight = Math.round(barHeightRaw)
-  const marginRaw = width / 4.5
+
+  const space = distance === 'lg' ? 0.25 : distance === 'sm' ? 0.75 : 0.5
+  const marginRaw = width / (_lines * (space + (_lines === 3 ? 1 : 1.25)))
   const margin = Math.round(marginRaw)
 
-  const height = barHeight * 3 + margin * 2
+  const height = (barHeight * _lines) + margin * (_lines - 1)
   const topOffset = Math.round((area - height) / 2)
 
   const deviation = (barHeightRaw - barHeight) + (marginRaw - margin)
