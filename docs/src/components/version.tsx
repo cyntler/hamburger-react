@@ -23,6 +23,6 @@ export default () => (
       text-xs
   "
   >
-    v2.0.0 (1.5 KB)
+    v2.1.0 (1.5 KB)
   </a>
 )
