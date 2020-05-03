@@ -1,9 +1,10 @@
 import { Fade } from '../../../src'
+import { Lean } from '../../../src'
 import { Sling } from '../../../src'
 import { Spin } from '../../../src'
+import { Squash } from '../../../src'
 import { Turn } from '../../../src'
 import { Twirl } from '../../../src'
-import { Squash } from '../../../src'
 import Hamburger from '../../../src'
 import Card from './card'
 import NewCard from './new-card'
@@ -20,6 +21,18 @@ export default () => (
           from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Hamburger size={36} />
+      </Card>
+
+      <Card title="Lean">
+        <Lean size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Lean </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Lean size={36} />
       </Card>
 
       <Card title="Fade">
