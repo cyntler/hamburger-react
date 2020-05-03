@@ -7,7 +7,7 @@ export const Squeeze = ((props) => (
     <div
       className="hamburger-react"
       aria-label={o.label}
-      data-testid="squash"
+      data-testid="squeeze"
       onClick={o.handler}
       onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"

@@ -7,7 +7,7 @@ export const Rotate = ((props) => (
     <div
       className="hamburger-react"
       aria-label={o.label}
-      data-testid="sling"
+      data-testid="rotate"
       onClick={o.handler}
       onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"

@@ -7,7 +7,7 @@ export const Cross = ((props) => (
     <div
       className="hamburger-react"
       aria-label={o.label}
-      data-testid="turn"
+      data-testid="cross"
       onClick={o.handler}
       onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
       role="button"
