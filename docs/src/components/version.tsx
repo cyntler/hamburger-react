@@ -3,7 +3,7 @@ import React from 'react'
 export default () => (
   <a
     href="https://github.com/luukdv/hamburger-react/releases"
-    target="_blank" // eslint-disable-line react/jsx-no-target-blank
+    target="_blank"
     rel="noopener"
     className="
       border-gray-600
