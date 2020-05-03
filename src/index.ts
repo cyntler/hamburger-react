@@ -14,13 +14,11 @@ export default Hamburger
 export { Fade, Slant, Sling, Spin, Squash, Turn, Twirl }
 
 export interface CommonBurgerProps {
-  /** Only for internal use. */
-  _lines?: number;
   /** The color of the icon bars, accepts any CSS-parsable argument. */
   color?: string;
-  /** The animation direction of the icon (left or right). */
+  /** The animation direction of the icon, left or right. */
   direction?: 'left' | 'right';
-  /** The vertical distance between the lines (small, medium or large). */
+  /** The vertical distance between the lines. Small (sm), medium (md) or large (lg). */
   distance?: 'sm' | 'md' | 'lg';
   /** The duration of the animation. Can be set to zero if no animation is desired. */
   duration?: number;
@@ -38,6 +36,8 @@ export interface CommonBurgerProps {
   toggle?: Dispatch<SetStateAction<boolean>>
   /** A way to provide your own state value. Can be used together with a state action (the `toggle` prop). */
   toggled?: boolean;
+  /** Only for internal use. */
+  _lines?: number;
 }
 
 export interface RenderOptions {
