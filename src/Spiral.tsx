@@ -14,7 +14,7 @@ export const Spiral = ((props) => (
       style={{
         ...o.burgerStyles,
         transform: `${o.isToggled
-          ? `rotate(${360 * (o.isLeft ? -1 : 1)}deg)`
+          ? `rotate(${180 * (o.isLeft ? -1 : 1)}deg)`
           : 'none'
         }`,
       }}
