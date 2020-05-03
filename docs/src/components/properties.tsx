@@ -43,7 +43,8 @@ export default () => {
         <Example>
           <Property name="distance" initial="md" type="string" />
           <Hamburger distance="lg" size={32} />
-          The vertical distance between the lines. Small (sm), medium (md) or large (lg).
+          The vertical distance between the lines. Small (sm), medium (md) or
+          large (lg).
           <div>
             {'<'}
             <span className="text-yellow-400">Hamburger</span>
