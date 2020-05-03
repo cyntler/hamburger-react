@@ -2,6 +2,7 @@ import React, { CSSProperties, Dispatch, SetStateAction } from 'react'
 import { Tilt as Hamburger } from './Tilt'
 
 import { Fade } from './Fade'
+import { Lean } from './Lean'
 import { Sling } from './Sling'
 import { Spin } from './Spin'
 import { Squash } from './Squash'
@@ -10,13 +11,17 @@ import { Twirl } from './Twirl'
 
 export default Hamburger
 
-export { Fade, Sling, Spin, Squash, Turn, Twirl }
+export { Fade, Lean, Sling, Spin, Squash, Turn, Twirl }
 
 export interface CommonBurgerProps {
+  /** Only for internal use. */
+  _lines?: number;
   /** The color of the icon bars, accepts any CSS-parsable argument. */
   color?: string;
-  /** The animation direction of the icon, left or right. */
+  /** The animation direction of the icon (left or right). */
   direction?: 'left' | 'right';
+  /** The vertical distance between the lines (small, medium or large). */
+  distance?: 'sm' | 'md' | 'lg';
   /** The duration of the animation. Can be set to zero if no animation is desired. */
   duration?: number;
   /** Hides the default browser focus style. */
