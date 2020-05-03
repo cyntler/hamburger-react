@@ -7,6 +7,7 @@ import { Sling } from '../../../src'
 import { Spin } from '../../../src'
 import { Spiral } from '../../../src'
 import { Squash } from '../../../src'
+import { Squeeze } from '../../../src'
 import { Turn } from '../../../src'
 import { Twirl } from '../../../src'
 import Hamburger from '../../../src'
@@ -152,6 +153,17 @@ export default () => (
         <div>
           import {'{'}
           <span className="text-white"> Squash </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+      </NewCard>
+
+      <NewCard title="Squeeze" last>
+        <Squeeze size={36} />
+        <div>
+          import {'{'}
+          <span className="text-white"> Squeeze </span>
           as
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
