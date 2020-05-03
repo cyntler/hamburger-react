@@ -2,7 +2,7 @@ import { Burger } from './Burger'
 import React, { FunctionComponent } from 'react'
 import { CommonBurgerProps } from './'
 
-export const Lean = ((props) => (
+export const Slant = ((props) => (
   <Burger {...props} _lines={2} render={(o) => (
     <div
       className="hamburger-react"

@@ -2,7 +2,7 @@ import React, { CSSProperties, Dispatch, SetStateAction } from 'react'
 import { Tilt as Hamburger } from './Tilt'
 
 import { Fade } from './Fade'
-import { Lean } from './Lean'
+import { Slant } from './Slant'
 import { Sling } from './Sling'
 import { Spin } from './Spin'
 import { Squash } from './Squash'
@@ -11,7 +11,7 @@ import { Twirl } from './Twirl'
 
 export default Hamburger
 
-export { Fade, Lean, Sling, Spin, Squash, Turn, Twirl }
+export { Fade, Slant, Sling, Spin, Squash, Turn, Twirl }
 
 export interface CommonBurgerProps {
   /** Only for internal use. */
