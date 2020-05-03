@@ -3,7 +3,7 @@ import React from 'react'
 export default () => (
   <a
     href="https://github.com/luukdv/hamburger-react/releases"
-    target="_blank" // eslint-disable-line react/jsx-no-target-blank
+    target="_blank"
     rel="noopener"
     className="
       border-gray-600
@@ -23,6 +23,6 @@ export default () => (
       text-xs
   "
   >
-    v2.0.0 (1.5 KB)
+    v2.1.0 (1.5 KB)
   </a>
 )

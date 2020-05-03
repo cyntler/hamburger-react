@@ -7,7 +7,7 @@ export default () => (
       <a
         className="underline font-medium"
         href="https://www.luuk.site"
-        target="_blank" // eslint-disable-line react/jsx-no-target-blank
+        target="_blank"
         rel="noopener"
       >
         Luuk
@@ -16,7 +16,7 @@ export default () => (
       <a
         className="underline font-medium"
         href="https://www.stutpak.nl"
-        target="_blank" // eslint-disable-line react/jsx-no-target-blank
+        target="_blank"
         rel="noopener"
       >
         Stutpak
@@ -27,7 +27,7 @@ export default () => (
       <a
         className="underline font-medium px-4"
         href="https://www.npmjs.com/package/hamburger-react"
-        target="_blank" // eslint-disable-line react/jsx-no-target-blank
+        target="_blank"
         rel="noopener"
       >
         NPM
@@ -35,7 +35,7 @@ export default () => (
       <a
         className="underline font-medium px-4"
         href="https://github.com/luukdv/hamburger-react"
-        target="_blank" // eslint-disable-line react/jsx-no-target-blank
+        target="_blank"
         rel="noopener"
       >
         GitHub
@@ -43,7 +43,7 @@ export default () => (
       <a
         className="underline font-medium px-4"
         href="https://www.luuk.site"
-        target="_blank" // eslint-disable-line react/jsx-no-target-blank
+        target="_blank"
         rel="noopener"
       >
         Contact

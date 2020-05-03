@@ -9,7 +9,7 @@ export default () => (
       <a
         className="underline font-medium text-purple-400"
         href="https://github.com/luukdv/hamburger-react"
-        target="_blank" // eslint-disable-line react/jsx-no-target-blank
+        target="_blank"
         rel="noopener"
       >
         GitHub repository

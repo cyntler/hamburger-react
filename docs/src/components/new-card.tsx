@@ -3,12 +3,14 @@ import React from 'react'
 export default ({
   children,
   title,
+  last,
 }: {
   children: [React.ReactNode, React.ReactNode]
   title: string
+  last?: boolean
 }) => (
   <div
-    className="
+    className={`
       bg-gray-800
       rounded-lg
       shadow-xl
@@ -19,11 +21,11 @@ export default ({
       sm:px-8
       lg:px-12
       flex
-      mb-0
+      ${last ? '' : 'mb-4 md:mb-6'}
       relative
       flex-col
       items-center
-    "
+    `}
   >
     <h2 className="mb-2 leading-snug text-center font-semibold flex items-center">
       <span className="text-l mr-2 text-gray-400">Hamburger type:</span>
