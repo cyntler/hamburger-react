@@ -1,6 +1,7 @@
 import React, { CSSProperties, Dispatch, SetStateAction } from 'react'
 import { Tilt as Hamburger } from './Tilt'
 
+import { Cross } from './Cross'
 import { Fade } from './Fade'
 import { Pivot } from './Pivot'
 import { Slant } from './Slant'
@@ -12,7 +13,7 @@ import { Twirl } from './Twirl'
 
 export default Hamburger
 
-export { Fade, Pivot, Slant, Sling, Spin, Squash, Turn, Twirl }
+export { Cross, Fade, Pivot, Slant, Sling, Spin, Squash, Turn, Twirl }
 
 export interface CommonBurgerProps {
   /** The color of the icon bars, accepts any CSS-parsable argument. */

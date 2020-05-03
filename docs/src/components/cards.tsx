@@ -1,3 +1,4 @@
+import { Cross } from '../../../src'
 import { Fade } from '../../../src'
 import { Pivot } from '../../../src'
 import { Slant } from '../../../src'
@@ -82,6 +83,18 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Turn size={36} />
+      </Card>
+
+      <Card title="Cross">
+        <Cross size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Cross </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Cross size={36} />
       </Card>
 
       <Card title="Sling">
