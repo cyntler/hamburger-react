@@ -1,4 +1,5 @@
 import { Fade } from '../../../src'
+import { Pivot } from '../../../src'
 import { Slant } from '../../../src'
 import { Sling } from '../../../src'
 import { Spin } from '../../../src'
@@ -57,6 +58,18 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Twirl size={36} />
+      </Card>
+
+      <Card title="Pivot">
+        <Pivot size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Pivot </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Pivot size={36} />
       </Card>
 
       <Card title="Turn">
