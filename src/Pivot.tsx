@@ -20,7 +20,7 @@ export const Pivot = ((props) => (
       }}
       tabIndex={0}
     >
-      <div style={{
+      <div data-testid="bar-wrap-one" style={{
         transition: `${o.time / 2}s ${o.timing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -30,7 +30,7 @@ export const Pivot = ((props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-one" style={{
           ...o.barStyles,
           top: `${o.topOffset}px`,
           transition: `${o.time / 2}s ${o.timing} ${o.isToggled
@@ -44,7 +44,7 @@ export const Pivot = ((props) => (
         }} />
       </div>
 
-      <div style={{
+      <div data-testid="bar-wrap-two" style={{
         transition: `${o.time / 2}s ${o.timing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -54,7 +54,7 @@ export const Pivot = ((props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <div data-testid="bar-two" style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
           transition: `${o.time / 2}s ${o.timing} ${o.isToggled
