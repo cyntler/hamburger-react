@@ -19,7 +19,6 @@
     "format": "prettier --write '**/*.{js,json,ts,tsx}'",
     "serve": "npm run build && gatsby serve",
     "start": "gatsby develop",
-    "typecheck:watch": "npm run typecheck -- --watch",
     "typecheck": "tsc"
   }
 }
