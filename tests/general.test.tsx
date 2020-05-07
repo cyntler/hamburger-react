@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Hamburger, {
   Fade,
   Slant,
@@ -76,13 +76,4 @@ it(`renders three bars in a complex burger`, () => {
   expect(get('bar-two')).toBeInTheDocument()
   expect(get('bar-wrap-three')).toBeInTheDocument()
   expect(get('bar-three')).toBeInTheDocument()
-})
-
-it(`animates on click`, () => {
-  const { getByTestId: get } = render(<Hamburger />)
-
-  expect(get('bar-two')).toHaveStyle({ transform: 'none' })
-
-  fireEvent.click(get('tilt'))
-  expect(get('bar-two')).toHaveStyle({ transform: 'scaleX(0)' })
 })
