@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Hamburger, {
   Fade,
   Slant,
@@ -16,7 +16,7 @@ import Hamburger, {
 } from '../src'
 
 it(`renders all versions`, () => {
-  const { getByTestId: get } = render(
+  render(
     <>
       <Hamburger />
       <Cross />
@@ -34,46 +34,46 @@ it(`renders all versions`, () => {
     </>
   )
 
-  expect(get('fade')).toBeInTheDocument()
-  expect(get('sling')).toBeInTheDocument()
-  expect(get('spin')).toBeInTheDocument()
-  expect(get('squash')).toBeInTheDocument()
-  expect(get('tilt')).toBeInTheDocument()
-  expect(get('turn')).toBeInTheDocument()
-  expect(get('twirl')).toBeInTheDocument()
+  expect(screen.getByTestId('fade')).toBeInTheDocument()
+  expect(screen.getByTestId('sling')).toBeInTheDocument()
+  expect(screen.getByTestId('spin')).toBeInTheDocument()
+  expect(screen.getByTestId('squash')).toBeInTheDocument()
+  expect(screen.getByTestId('tilt')).toBeInTheDocument()
+  expect(screen.getByTestId('turn')).toBeInTheDocument()
+  expect(screen.getByTestId('twirl')).toBeInTheDocument()
 })
 
 it(`renders two bars in a simple burger`, () => {
-  const { getByTestId: get } = render(<Slant />)
+  render(<Slant />)
 
-  expect(get('bar-one')).toBeInTheDocument()
-  expect(get('bar-two')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-one')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-two')).toBeInTheDocument()
 })
 
 it(`renders three bars in a simple burger`, () => {
-  const { getByTestId: get } = render(<Hamburger />)
+  render(<Hamburger />)
 
-  expect(get('bar-one')).toBeInTheDocument()
-  expect(get('bar-two')).toBeInTheDocument()
-  expect(get('bar-three')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-one')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-two')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-three')).toBeInTheDocument()
 })
 
 it(`renders two bars in a complex burger`, () => {
-  const { getByTestId: get } = render(<Pivot />)
+  render(<Pivot />)
 
-  expect(get('bar-wrap-one')).toBeInTheDocument()
-  expect(get('bar-one')).toBeInTheDocument()
-  expect(get('bar-wrap-two')).toBeInTheDocument()
-  expect(get('bar-two')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-wrap-one')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-one')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-wrap-two')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-two')).toBeInTheDocument()
 })
 
 it(`renders three bars in a complex burger`, () => {
-  const { getByTestId: get } = render(<Squash />)
+  render(<Squash />)
 
-  expect(get('bar-wrap-one')).toBeInTheDocument()
-  expect(get('bar-one')).toBeInTheDocument()
-  expect(get('bar-wrap-two')).toBeInTheDocument()
-  expect(get('bar-two')).toBeInTheDocument()
-  expect(get('bar-wrap-three')).toBeInTheDocument()
-  expect(get('bar-three')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-wrap-one')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-one')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-wrap-two')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-two')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-wrap-three')).toBeInTheDocument()
+  expect(screen.getByTestId('bar-three')).toBeInTheDocument()
 })

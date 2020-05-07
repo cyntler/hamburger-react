@@ -1,11 +1,11 @@
 import React from 'react'
 import Hamburger from '../src'
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 
 it(`fires the action with correct arguments`, () => {
   const toggle = jest.fn()
-  const { getByTestId: get } = render(<Hamburger toggled={false} toggle={toggle} />)
+  render(<Hamburger toggled={false} toggle={toggle} />)
 
-  fireEvent.click(get('tilt'))
+  fireEvent.click(screen.getByTestId('tilt'))
   expect(toggle).toHaveBeenCalledWith(true)
 })
