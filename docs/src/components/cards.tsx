@@ -12,7 +12,6 @@ import { Turn } from '../../../src'
 import { Twirl } from '../../../src'
 import Hamburger from '../../../src'
 import Card from './card'
-import NewCard from './new-card'
 import React from 'react'
 
 export default () => (
@@ -28,16 +27,15 @@ export default () => (
         <Hamburger size={36} />
       </Card>
 
-      <Card title="Fade">
-        <Fade size={36} direction="right" />
+      <Card title="Squash">
+        <Squash size={36} />
         <div>
           import {'{'}
-          <span className="text-white"> Fade </span>
+          <span className="text-white"> Squash </span>
           as
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
-        <Fade size={36} />
       </Card>
 
       <Card title="Cross">
@@ -64,6 +62,18 @@ export default () => (
         <Twirl size={36} />
       </Card>
 
+      <Card title="Fade">
+        <Fade size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Fade </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Fade size={36} />
+      </Card>
+
       <Card title="Slant">
         <Slant size={36} direction="right" />
         <div>
@@ -74,6 +84,18 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Slant size={36} />
+      </Card>
+
+      <Card title="Spiral">
+        <Spiral size={36} direction="right" />
+        <div>
+          import {'{'}
+          <span className="text-white"> Spiral </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+        <Spiral size={36} />
       </Card>
 
       <Card title="Turn">
@@ -100,18 +122,6 @@ export default () => (
         <Pivot size={36} />
       </Card>
 
-      <Card title="Spiral">
-        <Spiral size={36} direction="right" />
-        <div>
-          import {'{'}
-          <span className="text-white"> Spiral </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
-        <Spiral size={36} />
-      </Card>
-
       <Card title="Sling">
         <Sling size={36} direction="right" />
         <div>
@@ -122,6 +132,17 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Sling size={36} />
+      </Card>
+
+      <Card title="Squeeze">
+        <Squeeze size={36} />
+        <div>
+          import {'{'}
+          <span className="text-white"> Squeeze </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
       </Card>
 
       <Card title="Spin">
@@ -136,7 +157,7 @@ export default () => (
         <Spin size={36} />
       </Card>
 
-      <Card title="Rotate">
+      <Card title="Rotate" last>
         <Rotate size={36} direction="right" />
         <div>
           import {'{'}
@@ -147,28 +168,6 @@ export default () => (
         </div>
         <Rotate size={36} />
       </Card>
-
-      <NewCard title="Squash">
-        <Squash size={36} />
-        <div>
-          import {'{'}
-          <span className="text-white"> Squash </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
-      </NewCard>
-
-      <NewCard title="Squeeze" last>
-        <Squeeze size={36} />
-        <div>
-          import {'{'}
-          <span className="text-white"> Squeeze </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
-      </NewCard>
     </div>
   </>
 )

@@ -5,7 +5,9 @@ export default ({
   title,
   last,
 }: {
-  children: [React.ReactNode, React.ReactNode, React.ReactNode]
+  children:
+    | [React.ReactNode, React.ReactNode, React.ReactNode]
+    | [React.ReactNode, React.ReactNode]
   title: string
   last?: boolean
 }) => (
@@ -55,7 +57,7 @@ export default ({
           text-sm
           "
         >
-          Direction: right
+          {`Direction: ${children[2] ? 'right' : 'not applicable'}`}
         </h3>
         {children[0]}
       </div>
@@ -77,22 +79,23 @@ export default ({
         {children[1]}
       </code>
       <div
-        className="
-        mb-2
-        md:mb-0
-        order-first
-        md:order-none
-        flex
-        md:flex-col
-        items-center
-        md:border-l-2
-        md:border-gray-700
-        md:pl-8
-        md:ml-8
-        lg:pl-12
-        lg:ml-12
-        flex-shrink-0
-      "
+        className={`
+          ${!children[2] ? 'md:hidden' : ''}
+          mb-2
+          md:mb-0
+          order-first
+          md:order-none
+          flex
+          md:flex-col
+          items-center
+          md:border-l-2
+          md:border-gray-700
+          md:pl-8
+          md:ml-8
+          lg:pl-12
+          lg:ml-12
+          flex-shrink-0
+        `}
       >
         <h3
           className="
@@ -107,9 +110,9 @@ export default ({
           text-sm
           "
         >
-          Direction: left
+          {`Direction: ${children[2] ? 'left' : 'not applicable'}`}
         </h3>
-        {children[2]}
+        {children[2] ? children[2] : children[0]}
       </div>
     </div>
   </div>
