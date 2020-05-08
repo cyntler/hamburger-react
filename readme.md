@@ -5,13 +5,13 @@
 
 [Hamburger icons](https://hamburger-react.netlify.app) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
 
-## Size
-When using one hamburger, ~1.5 KB will be added to your bundle (min + gzip).
-
 ## Installation
 ```sh
 npm install hamburger-react
 ```
+
+## Size
+When using one hamburger, ~1.5 KB will be added to your bundle (min + gzip).
 
 ## Usage
 [Visit the website](https://hamburger-react.netlify.app) for full documentation, API and examples. A basic implementation looks as follows:
