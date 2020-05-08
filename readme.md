@@ -22,8 +22,14 @@ import Hamburger from 'hamburger-react'
 ```js
 const [isOpen, setOpen] = useState(false)
 ```
-```js
+```jsx
 <Hamburger toggled={isOpen} toggle={setOpen} />
+```
+
+Or without providing your own state:
+
+```jsx
+<Hamburger onToggle={toggled => ...} />
 ```
 
 ## Yet another hamburger library?
