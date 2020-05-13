@@ -17,17 +17,22 @@
     "dist-types"
   ],
   "keywords": [
-    "animated",
     "animation",
+    "animations",
+    "burger-menu",
     "burger",
-    "css",
+    "hamburger-menu",
     "hamburger",
+    "hooks",
     "icon",
     "icons",
     "menu",
     "react",
+    "reactjs",
+    "sidebar",
     "toggle",
-    "transition"
+    "transition",
+    "transitions"
   ],
   "main": "dist-cjs/index.js",
   "module": "dist-esm/index.js",
