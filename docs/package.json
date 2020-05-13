@@ -1,10 +1,10 @@
 {
   "private": true,
   "dependencies": {
-    "gatsby": "^2.21.17",
+    "gatsby": "^2.21.24",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tailwindcss": "^1.4.5"
+    "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
     "gatsby-plugin-postcss": "^2.3.1",
@@ -12,7 +12,7 @@
     "gatsby-plugin-typescript": "^2.4.2",
     "postcss-discard-comments": "^4.0.2",
     "prettier": "^2.0.5",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   },
   "scripts": {
     "build": "gatsby build",
