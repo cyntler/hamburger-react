@@ -182,7 +182,7 @@ export default () => {
               <span className="text-yellow-400">Hamburger</span>&nbsp;
               <span className="text-purple-400">onToggle</span>={'{'}
               <span className="text-orange-400">toggled</span>
-              &nbsp;=>{' {'}
+              &nbsp;{'=> {'}
             </div>
             <div>
               &nbsp;&nbsp;if (<span className="text-orange-400">toggled</span>){' '}
