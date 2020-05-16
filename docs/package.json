@@ -2,6 +2,7 @@
   "private": true,
   "dependencies": {
     "gatsby": "^2.21.24",
+    "gatsby-plugin-netlify": "^2.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tailwindcss": "^1.4.6"
