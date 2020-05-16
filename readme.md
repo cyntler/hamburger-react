@@ -1,7 +1,9 @@
+<p>‌</p>
 <p align="center">
-  <img alt="Logo" src="docs/static/logo-readme.png" height="91" width="112">
-  <h1 align="center">Animated hamburger menu icons for React</h1>
+  <img alt="Logo" src="docs/static/preview.gif" height="640" width="96">
 </p>
+<p>‌</p>
+<h1 align="center">Animated hamburger menu icons for React</h1>
 
 [Hamburger menu icons](https://hamburger-react.netlify.app) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
 
@@ -49,6 +51,3 @@ Keyboard interaction is provided with the `enter` key, and the icon element has 
 
 ## Support
 The icons are hooks-based, and will work with React 16.8.0 ('the one with hooks') or higher.
-
-## Credits
-Logo by [Stutpak](https://www.stutpak.nl).
