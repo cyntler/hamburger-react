@@ -35,7 +35,7 @@ Or without providing your own state:
 ```
 
 ## Yet another hamburger library?
-Yes. The decision to create this small package was made because existing solutions seem to have one or more of the following problems:
+Yes. Since the creation of these burgers in 2015 a lot of similar ones have appeared, with one or more of the following downsides:
 
 - Animations that don't feel natural
 - Transitions on expensive properties (jerky animations)
