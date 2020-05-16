@@ -3,7 +3,7 @@
   <h1 align="center">Animated hamburger menu icons for React</h1>
 </p>
 
-[Hamburger icons](https://hamburger-react.netlify.app) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
+[Hamburger menu icons](https://hamburger-react.netlify.app) with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
 
 ## Installation
 ```sh
