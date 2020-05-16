@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "gatsby": "^2.21.24",
+    "gatsby": "^2.21.33",
     "gatsby-plugin-netlify": "^2.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
