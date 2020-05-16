@@ -3,8 +3,8 @@
   <img alt="Logo" src="docs/static/preview.gif" height="96" width="640">
 </p>
 <p>‌</p>
-<h1 align="center">Animated hamburger menu icons for React</h1>
 <p align="center">
+<h1>Animated hamburger menu icons for React</h1>
 <a href="https://hamburger-react.netlify.app">Hamburger menu icons</a> with CSS-driven transitions, created to be as elegant and performant as possible. This means no JavaScript animations, no transitions on non-cheap properties and a small size.
 </p>
 
