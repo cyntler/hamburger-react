@@ -1,6 +1,6 @@
 <p>‌</p>
 <p align="center">
-  <img alt="Logo" src="docs/static/preview.gif" height="640" width="96">
+  <img alt="Logo" src="docs/static/preview.gif" height="96" width="640">
 </p>
 <p>‌</p>
 <h1 align="center">Animated hamburger menu icons for React</h1>
