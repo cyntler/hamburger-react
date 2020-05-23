@@ -173,9 +173,9 @@ export default () => {
               console.log('🍔 [hamburger-react] toggled:', toggled)
             }
           />
-          A callback which receives a single boolean argument, indicating if the
-          icon is toggled. Inspect your browser console after tapping/clicking
-          the example above.
+          An alternative to providing your own state is using a callback. It
+          receives a single boolean argument, indicating if the icon is toggled.
+          Inspect your browser console after tapping/clicking the example above.
           <>
             <div>
               {'<'}
