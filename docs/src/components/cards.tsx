@@ -1,18 +1,19 @@
-import { Cross } from '../../../src'
-import { Fade } from '../../../src'
-import { Pivot } from '../../../src'
-import { Rotate } from '../../../src'
-import { Slant } from '../../../src'
-import { Sling } from '../../../src'
-import { Spin } from '../../../src'
-import { Spiral } from '../../../src'
-import { Squash } from '../../../src'
-import { Squeeze } from '../../../src'
-import { Turn } from '../../../src'
-import { Twirl } from '../../../src'
-import Hamburger from '../../../src'
-import Card from './card'
 import React from 'react'
+import Hamburger, {
+  Cross,
+  Fade,
+  Pivot,
+  Rotate,
+  Slant,
+  Sling,
+  Spin,
+  Spiral,
+  Squash,
+  Squeeze,
+  Turn,
+  Twirl,
+} from 'hamburger-react'
+import Card from './card'
 
 export default () => (
   <>

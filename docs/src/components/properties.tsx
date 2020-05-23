@@ -1,5 +1,5 @@
 import Example from '../components/example'
-import Hamburger from '../../../src'
+import Hamburger from 'hamburger-react'
 import Heading from './heading'
 import Property from '../components/property'
 import React, { useState } from 'react'
