@@ -34,6 +34,14 @@ export default () => (
       </a>
       <a
         className="underline font-medium px-4"
+        href="https://yarnpkg.com/package/hamburger-react"
+        target="_blank"
+        rel="noopener"
+      >
+        Yarn
+      </a>
+      <a
+        className="underline font-medium px-4"
         href="https://github.com/luukdv/hamburger-react"
         target="_blank"
         rel="noopener"
