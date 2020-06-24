@@ -1,17 +1,17 @@
 {
   "private": true,
   "dependencies": {
-    "gatsby": "^2.23.3",
-    "gatsby-plugin-netlify": "^2.3.5",
+    "gatsby": "^2.23.11",
+    "gatsby-plugin-netlify": "^2.3.7",
     "hamburger-react": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
-    "gatsby-plugin-postcss": "^2.3.4",
+    "gatsby-plugin-postcss": "^2.3.6",
     "gatsby-plugin-purgecss": "^5.0.0",
-    "gatsby-plugin-typescript": "^2.4.6",
+    "gatsby-plugin-typescript": "^2.4.8",
     "postcss-discard-comments": "^4.0.2",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5"
