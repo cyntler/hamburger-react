@@ -7,7 +7,7 @@ export default () => (
     <p className="sm:text-lg leading-loose">
       Visit the{' '}
       <a
-        className="underline font-medium text-purple-400"
+        className="underline font-medium text-purple-400 hover:text-purple-600 transition-colors duration-300"
         href="https://github.com/luukdv/hamburger-react"
         target="_blank"
         rel="noopener"

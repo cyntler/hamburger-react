@@ -41,6 +41,9 @@ const Anchor = ({
         px-4
         lg:px-6
         outline-none
+        hover:text-purple-400
+        transition-colors
+        duration-300
       `}
       role="button"
       onKeyUp={(e) =>

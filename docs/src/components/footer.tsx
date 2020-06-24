@@ -5,7 +5,7 @@ export default () => (
     <p className="text-center sm:text-left mb-6 sm:mb-0">
       hamburger-react is a project by{' '}
       <a
-        className="underline font-medium"
+        className="underline font-semibold hover:text-purple-400 transition-colors duration-300"
         href="https://www.luuk.site"
         target="_blank"
         rel="noopener"
@@ -14,7 +14,7 @@ export default () => (
       </a>
       . Logo by{' '}
       <a
-        className="underline font-medium"
+        className="underline font-semibold hover:text-purple-400 transition-colors duration-300"
         href="https://www.stutpak.nl"
         target="_blank"
         rel="noopener"
@@ -25,7 +25,7 @@ export default () => (
     </p>
     <div className="flex justify-center">
       <a
-        className="underline font-medium px-4"
+        className="underline font-semibold px-4 hover:text-purple-400 transition-colors duration-300"
         href="https://www.npmjs.com/package/hamburger-react"
         target="_blank"
         rel="noopener"
@@ -33,7 +33,7 @@ export default () => (
         NPM
       </a>
       <a
-        className="underline font-medium px-4"
+        className="underline font-semibold px-4 hover:text-purple-400 transition-colors duration-300"
         href="https://yarnpkg.com/package/hamburger-react"
         target="_blank"
         rel="noopener"
@@ -41,7 +41,7 @@ export default () => (
         Yarn
       </a>
       <a
-        className="underline font-medium px-4"
+        className="underline font-semibold px-4 hover:text-purple-400 transition-colors duration-300"
         href="https://github.com/luukdv/hamburger-react"
         target="_blank"
         rel="noopener"
@@ -49,7 +49,7 @@ export default () => (
         GitHub
       </a>
       <a
-        className="underline font-medium px-4"
+        className="underline font-semibold px-4 hover:text-purple-400 transition-colors duration-300"
         href="https://www.luuk.site"
         target="_blank"
         rel="noopener"

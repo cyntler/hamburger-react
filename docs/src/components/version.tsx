@@ -21,6 +21,10 @@ export default () => (
       top-0
       right-0
       text-xs
+      hover:bg-purple-600
+      hover:border-purple-600
+      transition-colors
+      duration-300
   "
   >
     v2.1.0 (1.5 KB)
