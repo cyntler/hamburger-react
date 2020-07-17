@@ -1,26 +1,26 @@
 {
   "private": true,
   "dependencies": {
-    "gatsby": "^2.23.22",
-    "gatsby-plugin-netlify": "^2.3.10",
+    "gatsby": "^2.24.3",
+    "gatsby-plugin-netlify": "^2.3.11",
     "hamburger-react": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.5.1"
   },
   "devDependencies": {
-    "gatsby-plugin-postcss": "^2.3.9",
+    "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-purgecss": "^5.0.0",
-    "gatsby-plugin-typescript": "^2.4.13",
+    "gatsby-plugin-typescript": "^2.4.15",
     "postcss-discard-comments": "^4.0.2",
     "prettier": "^2.0.5",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "build": "gatsby build",
     "format": "prettier --write '**/*.{js,json,ts,tsx}'",
     "serve": "npm run build && gatsby serve",
     "start": "gatsby develop",
-    "typecheck": "tsc"
+    "ts": "tsc"
   }
 }
