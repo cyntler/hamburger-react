@@ -5,7 +5,7 @@ import Property from '../components/property'
 import React, { useState } from 'react'
 
 export default () => {
-  const [isOpen, setOpen] = useState(true)
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <>
@@ -30,7 +30,7 @@ export default () => {
             &nbsp;
             <span className="text-blue-400">useState</span>
             <span className="text-red-400">(</span>
-            <span className="text-red-300">true</span>
+            <span className="text-red-300">false</span>
             <span className="text-red-400">)</span>
             <br />
             <br />
