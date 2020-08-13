@@ -125,6 +125,45 @@ export default () => {
         </Example>
 
         <Example>
+          <Property name="onToggle" initial="undefined" type="function" />
+          <Hamburger
+            size={26}
+            onToggle={(toggled) =>
+              console.log('🍔 [hamburger-react] toggled:', toggled)
+            }
+          />
+          A callback which receives a single boolean argument, indicating if the
+          icon is toggled. This can be used to perform an action after toggling,
+          or as an alternative to providing your own state. Inspect your browser
+          console after tapping/clicking the example above.
+          <>
+            <div>
+              {'<'}
+              <span className="text-yellow-400">Hamburger</span>&nbsp;
+              <span className="text-purple-400">onToggle</span>={'{'}
+              <span className="text-orange-400">toggled</span>
+              &nbsp;{'=> {'}
+            </div>
+            <div>
+              &nbsp;&nbsp;if (<span className="text-orange-400">toggled</span>){' '}
+              {'{'}
+            </div>
+
+            <div className="text-indigo-400">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open a menu
+            </div>
+            <div>
+              &nbsp;&nbsp;{'}'} else {'{'}
+            </div>
+            <div className="text-indigo-400">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close a menu
+            </div>
+            <div>&nbsp;&nbsp;{'}'}</div>
+            <div>{'}} />'}</div>
+          </>
+        </Example>
+
+        <Example>
           <Property name="rounded" initial="false" type="boolean" />
           <Hamburger rounded size={42} />
           Specifies if the icon bars should be rounded.
@@ -151,7 +190,7 @@ export default () => {
           </div>
         </Example>
 
-        <Example>
+        <Example last>
           <Property name="hideOutline" initial="true" type="boolean" />
           <Hamburger hideOutline={false} size={30} />
           Hides the default browser focus style.
@@ -163,44 +202,6 @@ export default () => {
             <span className="text-green-400">false</span>
             {'} />'}
           </div>
-        </Example>
-
-        <Example last>
-          <Property name="onToggle" initial="undefined" type="function" />
-          <Hamburger
-            size={26}
-            onToggle={(toggled) =>
-              console.log('🍔 [hamburger-react] toggled:', toggled)
-            }
-          />
-          An alternative to providing your own state is using a callback. It
-          receives a single boolean argument, indicating if the icon is toggled.
-          Inspect your browser console after tapping/clicking the example above.
-          <>
-            <div>
-              {'<'}
-              <span className="text-yellow-400">Hamburger</span>&nbsp;
-              <span className="text-purple-400">onToggle</span>={'{'}
-              <span className="text-orange-400">toggled</span>
-              &nbsp;{'=> {'}
-            </div>
-            <div>
-              &nbsp;&nbsp;if (<span className="text-orange-400">toggled</span>){' '}
-              {'{'}
-            </div>
-
-            <div className="text-indigo-400">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open a menu
-            </div>
-            <div>
-              &nbsp;&nbsp;{'}'} else {'{'}
-            </div>
-            <div className="text-indigo-400">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close a menu
-            </div>
-            <div>&nbsp;&nbsp;{'}'}</div>
-            <div>{'}} />'}</div>
-          </>
         </Example>
       </div>
     </>
