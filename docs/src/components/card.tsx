@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 export default ({
   children,
@@ -6,8 +6,8 @@ export default ({
   last,
 }: {
   children:
-    | [React.ReactNode, React.ReactNode, React.ReactNode]
-    | [React.ReactNode, React.ReactNode]
+    | [ReactNode, ReactNode, ReactNode]
+    | [ReactNode, ReactNode]
   title: string
   last?: boolean
 }) => (
