@@ -113,7 +113,7 @@ export default () => {
         <Example>
           <Property name="color" initial="currentColor" type="string" />
           <Hamburger color="#4FD1C5" size={34} />
-          The color of the icon bars, accepts any CSS-parsable argument.
+          The color of the icon bars, accepts any CSS-parsable value.
           <div>
             {'<'}
             <span className="text-yellow-400">Hamburger</span>
@@ -125,9 +125,23 @@ export default () => {
         </Example>
 
         <Example>
+          <Property name="easing" initial="cubic-bezier(0, 0, 0, 1)" type="string" />
+          <Hamburger easing="ease-out" size={26} />
+          A valid `transition-timing-function` CSS value, for example 'ease-out'.
+          <div>
+            {'<'}
+            <span className="text-yellow-400">Hamburger</span>
+            &nbsp;
+            <span className="text-purple-400">easing</span>="
+            <span className="text-green-400">ease-out</span>
+            {'" />'}
+          </div>
+        </Example>
+
+        <Example>
           <Property name="onToggle" initial="undefined" type="function" />
           <Hamburger
-            size={26}
+            size={36}
             onToggle={(toggled) =>
               console.log('🍔 [hamburger-react] toggled:', toggled)
             }
