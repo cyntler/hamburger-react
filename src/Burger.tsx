@@ -2,13 +2,13 @@ import { CSSProperties, FunctionComponent, useState } from 'react'
 import { BurgerProps } from './'
 
 const area = 48
-const timing = 'cubic-bezier(0, 0, 0, 1)'
 
 export const Burger = (({
   color = 'currentColor',
   direction = 'left',
   distance = 'md',
   duration = 0.4,
+  easing = 'cubic-bezier(0, 0, 0, 1)',
   hideOutline = true,
   label,
   onToggle,
@@ -45,7 +45,7 @@ export const Burger = (({
     cursor: 'pointer',
     height: `${area}px`,
     position: 'relative',
-    transition: `${time}s ${timing}`,
+    transition: `${time}s ${easing}`,
     userSelect: 'none',
     width: `${area}px`,
   }
@@ -88,6 +88,7 @@ export const Burger = (({
     barHeight,
     barStyles,
     burgerStyles,
+    easing,
     handler,
     isLeft: (direction === 'left'),
     isToggled,
@@ -95,7 +96,6 @@ export const Burger = (({
     margin,
     move,
     time,
-    timing,
     topOffset,
   })
 }) as FunctionComponent<BurgerProps>

@@ -15,7 +15,7 @@ export const Squash = ((props) => (
       tabIndex={0}
     >
       <div data-testid="bar-wrap-one" style={{
-        transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -27,7 +27,7 @@ export const Squash = ((props) => (
         <div data-testid="bar-one" style={{
           ...o.barStyles,
           top: `${o.topOffset}px`,
-          transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,
@@ -39,7 +39,7 @@ export const Squash = ((props) => (
       </div>
 
       <div data-testid="bar-wrap-two" style={{
-        transition: `${o.time / 2}s ${o.timing}`,
+        transition: `${o.time / 2}s ${o.easing}`,
         opacity: `${o.isToggled
           ? '0'
           : '1'
@@ -48,12 +48,12 @@ export const Squash = ((props) => (
         <div data-testid="bar-two" style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
-          transition: `${o.time / 2}s ${o.timing}`,
+          transition: `${o.time / 2}s ${o.easing}`,
         }} />
       </div>
 
       <div data-testid="bar-wrap-three" style={{
-        transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -65,7 +65,7 @@ export const Squash = ((props) => (
         <div data-testid="bar-three" style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
-          transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,
