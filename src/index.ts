@@ -1,4 +1,4 @@
-import React, { CSSProperties, Dispatch, SetStateAction } from 'react'
+import { CSSProperties, Dispatch, SetStateAction, ReactNode } from 'react'
 import { Tilt as Hamburger } from './Tilt'
 
 import { Cross } from './Cross'
@@ -27,6 +27,8 @@ export interface CommonBurgerProps {
   distance?: 'sm' | 'md' | 'lg';
   /** The duration of the animation. Can be set to zero if no animation is desired. */
   duration?: number;
+  /** A valid `transition-timing-function` CSS value, for example 'ease-out'. */
+  easing?: string;
   /** Hides the default browser focus style. */
   hideOutline?: boolean;
   /** An ARIA label to improve accessibility. */
@@ -55,14 +57,11 @@ export interface RenderOptions {
   label: string | undefined;
   margin: number;
   move: number;
-  /** CSS transition-duration property (in seconds). */
   time: number;
-  /** CSS transition-timing-function property. */
-  timing: string;
-  /** CSS top property (in pixels). */
+  easing: string;
   topOffset: number;
 }
 
 export interface BurgerProps extends CommonBurgerProps {
-  render: (o: RenderOptions) => React.ReactNode;
+  render: (o: RenderOptions) => ReactNode;
 }

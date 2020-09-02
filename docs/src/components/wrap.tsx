@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 export default ({
   children,
   wide = false,
 }: {
-  children: React.ReactNode
+  children: ReactNode
   wide?: boolean
 }) => (
   <div

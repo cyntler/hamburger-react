@@ -21,7 +21,7 @@ export const Twirl = ((props) => (
       tabIndex={0}
     >
       <div style={{
-        transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -33,7 +33,7 @@ export const Twirl = ((props) => (
         <div style={{
           ...o.barStyles,
           top: `${o.topOffset}px`,
-          transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,
@@ -45,7 +45,7 @@ export const Twirl = ((props) => (
       </div>
 
       <div style={{
-        transition: `${o.time / 2}s ${o.timing}`,
+        transition: `${o.time / 2}s ${o.easing}`,
         opacity: `${o.isToggled
           ? '0'
           : '1'
@@ -54,12 +54,12 @@ export const Twirl = ((props) => (
         <div style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
-          transition: `${o.time / 2}s ${o.timing}`,
+          transition: `${o.time / 2}s ${o.easing}`,
         }} />
       </div>
 
       <div style={{
-        transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -71,7 +71,7 @@ export const Twirl = ((props) => (
         <div style={{
           ...o.barStyles,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
-          transition: `${o.time / 2}s ${o.timing} ${o.isToggled
+          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,

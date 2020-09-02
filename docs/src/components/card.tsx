@@ -1,13 +1,11 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 export default ({
   children,
   title,
   last,
 }: {
-  children:
-    | [React.ReactNode, React.ReactNode, React.ReactNode]
-    | [React.ReactNode, React.ReactNode]
+  children: [ReactNode, ReactNode, ReactNode] | [ReactNode, ReactNode]
   title: string
   last?: boolean
 }) => (

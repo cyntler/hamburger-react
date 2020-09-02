@@ -17,7 +17,7 @@ export const Cross = ((props) => (
       <div data-testid="bar-one" style={{
         ...o.barStyles,
         top: `${o.topOffset}px`,
-        transition: `${o.time}s ${o.timing}`,
+        transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move}px)`
           : 'none'
@@ -27,7 +27,7 @@ export const Cross = ((props) => (
       <div data-testid="bar-two" style={{
         ...o.barStyles,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
-        transition: `${o.time}s ${o.timing}`,
+        transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move * -1}px)`
           : 'none'

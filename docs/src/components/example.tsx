@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 export default ({
   children,
   last = false,
 }: {
-  children: [React.ReactNode, React.ReactNode, React.ReactNode, React.ReactNode]
+  children: [ReactNode, ReactNode, ReactNode, ReactNode]
   last?: boolean
 }) => (
   <div
@@ -13,10 +13,10 @@ export default ({
       (last ? '' : ' mb-6 sm:mb-8 pb-6 sm:pb-8 border-b-2 border-gray-700')
     }
   >
-    <div className="flex flex-col sm:flex-row sm:items-center mb-2 sm:mb-4 justify-between">
+    <div className="flex flex-col md:flex-row md:items-center mb-2 md:mb-4 justify-between">
       {children[0]}
-      <div className="flex items-center justify-end sm:justify-start">
-        <div className="font-medium text-gray-500 mr-4">Example:</div>
+      <div className="flex items-center justify-start">
+        <div className="font-medium text-gray-500 mr-2 sm:mr-4">Example:</div>
         {children[1]}
       </div>
     </div>

@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 export default (props: {
   body: string
-  headComponents: React.ReactNode
-  postBodyComponents: React.ReactNode
-  preBodyComponents: React.ReactNode
+  headComponents: ReactNode
+  postBodyComponents: ReactNode
+  preBodyComponents: ReactNode
 }) => (
   <html lang="en" className="antialiased">
     <head>
