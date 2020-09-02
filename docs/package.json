@@ -3,7 +3,7 @@
   "dependencies": {
     "gatsby": "^2.24.47",
     "gatsby-plugin-netlify": "^2.3.13",
-    "hamburger-react": "^2.1.1",
+    "hamburger-react": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tailwindcss": "^1.6.2"
