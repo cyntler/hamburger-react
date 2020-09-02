@@ -130,14 +130,14 @@ export default () => {
             initial="cubic-bezier(0, 0, 0, 1)"
             type="string"
           />
-          <Hamburger easing="ease-out" size={26} />A valid
+          <Hamburger easing="ease-in" size={26} />A valid
           `transition-timing-function` CSS value.
           <div>
             {'<'}
             <span className="text-yellow-400">Hamburger</span>
             &nbsp;
             <span className="text-purple-400">easing</span>="
-            <span className="text-green-400">ease-out</span>
+            <span className="text-green-400">ease-in</span>
             {'" />'}
           </div>
         </Example>
