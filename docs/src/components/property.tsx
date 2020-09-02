@@ -65,7 +65,7 @@ export default ({
         text-center
         sm:mr-6
         w-3/5
-        sm:w-48
+        sm:w-40
         border-solid
       "
       >
