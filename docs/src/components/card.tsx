@@ -5,9 +5,7 @@ export default ({
   title,
   last,
 }: {
-  children:
-    | [ReactNode, ReactNode, ReactNode]
-    | [ReactNode, ReactNode]
+  children: [ReactNode, ReactNode, ReactNode] | [ReactNode, ReactNode]
   title: string
   last?: boolean
 }) => (

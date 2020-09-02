@@ -4,19 +4,22 @@ export default ({
   name,
   initial,
   type,
-  smallType = '',
+  margin,
 }: {
   name: string
   initial: string
   type: string
-  smallType?: string
+  margin?: boolean
 }) => (
   <div
     className={`
+    ${margin ? 'mt-6 sm:mt-0' : ''}
     flex
+    flex-col
+    sm:flex-row
     mb-2
-    sm:mb-0
-    items-center
+    md:mb-0
+    sm:items-center
     sm:h-12
   `}
   >
@@ -34,7 +37,7 @@ export default ({
         flex
         items-center
         justify-center
-        w-24
+        w-2/5
         sm:w-32
         text-sm
         md:text-base
@@ -61,38 +64,24 @@ export default ({
         justify-center
         text-center
         sm:mr-6
-        w-24
+        w-3/5
+        sm:w-48
         border-solid
       "
       >
         {initial}
       </div>
     </div>
-    <div className="flex items-baseline flex-grow justify-end">
-      <div className="hidden sm:block font-medium text-gray-500 mr-2">
-        Type:
-      </div>
+    <div className="flex items-baseline flex-grow sm:justify-end">
+      <div className="font-medium text-gray-500 mt-4 sm:mt-0 mr-2">Type:</div>
       <div
         className={`
-        ${smallType && 'hidden'}
-        ${smallType && 'sm:block'}
         font-medium
         sm:text-lg
       `}
       >
         {type}
       </div>
-      {smallType && (
-        <div
-          className={`
-          sm:hidden
-          font-medium
-          sm:text-lg
-        `}
-        >
-          {smallType}
-        </div>
-      )}
     </div>
   </div>
 )

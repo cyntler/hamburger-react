@@ -11,11 +11,16 @@ export default () => {
     <>
       <Heading title="Properties & examples" />
 
-      <div className="w-full max-w-xl">
+      <div className="w-full max-w-2xl">
         <Example>
           <div>
             <Property name="toggled" initial="undefined" type="boolean" />
-            <Property name="toggle" initial="undefined" type="function" />
+            <Property
+              name="toggle"
+              initial="undefined"
+              type="function"
+              margin
+            />
           </div>
           <Hamburger size={34} toggled={isOpen} toggle={setOpen} />A way to
           provide your own state.
@@ -76,12 +81,7 @@ export default () => {
         </Example>
 
         <Example>
-          <Property
-            name="duration"
-            initial="0.4"
-            type="float / integer"
-            smallType="float / int"
-          />
+          <Property name="duration" initial="0.4" type="float / integer" />
           <Hamburger duration={0.8} size={26} />
           The duration of the animation. Can be set to zero if no animation is
           desired.
@@ -125,9 +125,13 @@ export default () => {
         </Example>
 
         <Example>
-          <Property name="easing" initial="cubic-bezier(0, 0, 0, 1)" type="string" />
-          <Hamburger easing="ease-out" size={26} />
-          A valid `transition-timing-function` CSS value, for example 'ease-out'.
+          <Property
+            name="easing"
+            initial="cubic-bezier(0, 0, 0, 1)"
+            type="string"
+          />
+          <Hamburger easing="ease-out" size={26} />A valid
+          `transition-timing-function` CSS value.
           <div>
             {'<'}
             <span className="text-yellow-400">Hamburger</span>
