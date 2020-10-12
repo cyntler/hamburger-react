@@ -1,12 +1,12 @@
 {
   "private": true,
   "dependencies": {
-    "gatsby": "^2.24.68",
+    "gatsby": "^2.24.73",
     "gatsby-plugin-netlify": "^2.3.17",
     "hamburger-react": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tailwindcss": "^1.8.10"
+    "tailwindcss": "^1.8.13"
   },
   "devDependencies": {
     "gatsby-plugin-postcss": "^3.0.1",
