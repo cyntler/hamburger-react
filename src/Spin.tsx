@@ -9,7 +9,7 @@ export const Spin = ((props) => (
       aria-label={o.label}
       data-testid="spin"
       onClick={o.handler}
-      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => e.key === 'Enter' && o.handler()}
       role="button"
       style={{
         ...o.burgerStyles,

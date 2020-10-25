@@ -9,7 +9,7 @@ export const Cross = ((props) => (
       aria-label={o.label}
       data-testid="cross"
       onClick={o.handler}
-      onKeyUp={(e) => (e.key === 'Enter' || e.keyCode === 13) && o.handler()}
+      onKeyUp={(e) => e.key === 'Enter' && o.handler()}
       role="button"
       style={o.burgerStyles}
       tabIndex={0}
