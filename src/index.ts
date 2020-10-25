@@ -62,5 +62,5 @@ export interface RenderOptions {
 
 export interface BurgerProps extends CommonBurgerProps {
   render: (o: RenderOptions) => ReactNode;
-  _lines?: number;
+  lines?: number;
 }

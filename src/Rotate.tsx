@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react'
 import { CommonBurgerProps } from './'
 
 export const Rotate = ((props) => (
-  <Burger {...props} _lines={2} render={(o) => (
+  <Burger {...props} lines={2} render={(o) => (
     <div
       className="hamburger-react"
       aria-label={o.label}
