@@ -13,14 +13,6 @@ it(`fires the callback with correct arguments`, () => {
   expect(onToggle).toHaveBeenCalledWith(false)
 })
 
-it(`doesn't fire when state value is provided without an action`, () => {
-  const onToggle = jest.fn()
-  render(<Hamburger toggled={false} onToggle={onToggle} />)
-
-  fireEvent.click(screen.getByTestId('tilt'))
-  expect(onToggle).not.toHaveBeenCalled()
-})
-
 it(`fires when state value and action are provided`, () => {
   const onToggle = jest.fn()
   render(<Hamburger toggled={true} toggle={jest.fn()} onToggle={onToggle} />)

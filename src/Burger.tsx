@@ -66,21 +66,14 @@ export const Burger = (({
     barStyles['borderRadius'] = '9em'
   }
 
-  const isExternal = typeof toggle === 'function' && typeof toggled === 'boolean'
-  const isInternal = typeof toggle !== 'function' && typeof toggled !== 'boolean'
-
-  const toggleFunction = isExternal ? toggle : (isInternal ? toggleInternal : undefined)
-  const toggleCallback = typeof onToggle === 'function' && (isExternal || isInternal) ? onToggle : undefined
-
-  const isToggled = typeof toggled === 'boolean' ? toggled : toggledInternal
+  const toggleFunction = toggle ? toggle : toggleInternal
+  const isToggled = toggled ? toggled : toggledInternal
 
   const handler = () => {
-    if (toggleCallback) {
-      toggleCallback(!isToggled)
-    }
+    toggleFunction(!isToggled)
 
-    if (toggleFunction) {
-      toggleFunction(!isToggled)
+    if (typeof onToggle === 'function') {
+      onToggle(!isToggled)
     }
   }
 
