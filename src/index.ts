@@ -43,8 +43,6 @@ export interface CommonBurgerProps {
   toggle?: Dispatch<SetStateAction<boolean>>
   /** A way to provide your own state value. Can be used together with a state action (the `toggle` prop). */
   toggled?: boolean;
-  /** Only for internal use. */
-  _lines?: number;
 }
 
 export interface RenderOptions {
@@ -64,4 +62,5 @@ export interface RenderOptions {
 
 export interface BurgerProps extends CommonBurgerProps {
   render: (o: RenderOptions) => ReactNode;
+  _lines?: number;
 }
