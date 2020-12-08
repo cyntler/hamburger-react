@@ -9,6 +9,7 @@ export const Burger = (({
   distance = 'md',
   duration = 0.4,
   easing = 'cubic-bezier(0, 0, 0, 1)',
+  halfBar,
   hideOutline = true,
   label,
   lines = 3,
@@ -55,7 +56,7 @@ export const Burger = (({
     height: `${barHeight}px`,
     left: `${room}px`,
     position: 'absolute',
-    width: `${width}px`,
+    width: `${halfBar ? width / 2 : width}px`,
   }
 
   if (hideOutline) {
