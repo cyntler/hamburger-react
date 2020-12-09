@@ -1,7 +1,7 @@
 import React from 'react'
 import Hamburger, {
   Cross,
-  Divided,
+  Divide,
   Fade,
   Pivot,
   Rotate,
@@ -100,11 +100,11 @@ export default () => (
         <Spiral size={36} />
       </Card>
 
-      <Card title="Divided">
-        <Divided size={36} />        
+      <Card title="Divide">
+        <Divide size={36} />        
         <div>
           import {'{'}
-          <span className="text-white"> Divided </span>
+          <span className="text-white"> Divide </span>
           as
           <span className="text-white"> Hamburger </span>
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
