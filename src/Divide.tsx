@@ -47,7 +47,7 @@ export const Divide = ((props) => (
         transition: `${o.time}s ${o.easing}`,
         opacity: o.isToggled ? 0 : 1,
         transform: `${o.isToggled
-          ? `translate(${-o.move * 1.5}px, 0)`
+          ? `translate(${-o.move * 1.25}px, 0)`
           : 'none'
           }`,
       }} />
@@ -61,7 +61,7 @@ export const Divide = ((props) => (
         transition: `${o.time}s ${o.easing}`,
         opacity: o.isToggled ? 0 : 1,
         transform: `${o.isToggled
-          ? `translate(${o.move * 1.5}px, 0)`
+          ? `translate(${o.move * 1.25}px, 0)`
           : 'none'
           }`,
       }} />
