@@ -100,6 +100,17 @@ export default () => (
         <Spiral size={36} />
       </Card>
 
+      <Card title="Divided">
+        <Divided size={36} />        
+        <div>
+          import {'{'}
+          <span className="text-white"> Divided </span>
+          as
+          <span className="text-white"> Hamburger </span>
+          {'}'} from '<span className="text-green-400">hamburger-react</span>'
+        </div>
+      </Card>
+
       <Card title="Turn">
         <Turn size={36} direction="right" />
         <div>
@@ -159,7 +170,7 @@ export default () => (
         <Spin size={36} />
       </Card>
 
-      <Card title="Rotate">
+      <Card title="Rotate" last>
         <Rotate size={36} direction="right" />
         <div>
           import {'{'}
@@ -169,17 +180,6 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Rotate size={36} />
-      </Card>
-
-      <Card title="Divided" last>
-        <Divided size={36} />
-        <div>
-          import {'{'}
-          <span className="text-white"> Divided </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
       </Card>
     </div>
   </>
