@@ -101,7 +101,7 @@ export default () => (
       </Card>
 
       <Card title="Divide">
-        <Divide size={36} />        
+        <Divide size={36} />
         <div>
           import {'{'}
           <span className="text-white"> Divide </span>
