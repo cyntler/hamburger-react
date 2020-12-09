@@ -16,6 +16,7 @@ export const Fade = ((props) => (
     >
       <div style={{
         ...o.barStyles,
+        width: `${o.width}px`,
         top: `${o.topOffset}px`,
         transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled
@@ -26,6 +27,7 @@ export const Fade = ((props) => (
 
       <div style={{
         ...o.barStyles,
+        width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.time}s ${o.easing}`,
         opacity: `${o.isToggled
@@ -36,6 +38,7 @@ export const Fade = ((props) => (
 
       <div style={{
         ...o.barStyles,
+        width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
         transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled

@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react'
 import { CommonBurgerProps } from './'
 
 export const Divided = ((props) => (
-  <Burger {...props} halfBar render={(o) => (
+  <Burger {...props} render={(o) => (
     <div
       className="hamburger-react"
       aria-label={o.label}
@@ -18,6 +18,7 @@ export const Divided = ((props) => (
     >
       <div style={{
         ...o.barStyles,
+        width: `${o.width / 2}px`,
         borderRadius: `${o.barStyles.borderRadius} 0 0 ${o.barStyles.borderRadius}`,
         top: `${o.topOffset}px`,
         transition: `${o.time}s ${o.easing}`,
@@ -29,6 +30,7 @@ export const Divided = ((props) => (
 
       <div style={{
         ...o.barStyles,
+        width: `${o.width / 2}px`,
         borderRadius: `0 ${o.barStyles.borderRadius} ${o.barStyles.borderRadius} 0`,
         left: '50%',
         top: `${o.topOffset}px`,
@@ -41,6 +43,7 @@ export const Divided = ((props) => (
 
       <div style={{
         ...o.barStyles,
+        width: `${o.width / 2}px`,
         borderRadius: `${o.barStyles.borderRadius} 0 0 ${o.barStyles.borderRadius}`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.time}s ${o.easing}`,
@@ -53,6 +56,7 @@ export const Divided = ((props) => (
 
       <div style={{
         ...o.barStyles,
+        width: `${o.width / 2}px`,
         borderRadius: `0 ${o.barStyles.borderRadius} ${o.barStyles.borderRadius} 0`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         left: '50%',
@@ -66,6 +70,7 @@ export const Divided = ((props) => (
 
       <div style={{
         ...o.barStyles,
+        width: `${o.width / 2}px`,
         borderRadius: `${o.barStyles.borderRadius} 0 0 ${o.barStyles.borderRadius}`,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
         transition: `${o.time}s ${o.easing}`,
@@ -77,6 +82,7 @@ export const Divided = ((props) => (
 
       <div style={{
         ...o.barStyles,
+        width: `${o.width / 2}px`,
         borderRadius: `0 ${o.barStyles.borderRadius} ${o.barStyles.borderRadius} 0`,
         left: '50%',
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,

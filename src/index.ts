@@ -30,8 +30,6 @@ export interface CommonBurgerProps {
   duration?: number;
   /** A valid `transition-timing-function` CSS value, for example 'ease-out'. */
   easing?: string;
-  /** Makes bars 50% wide. */
-  halfBar?: boolean;
   /** Hides the default browser focus style. */
   hideOutline?: boolean;
   /** An ARIA label to improve accessibility. */
@@ -61,6 +59,7 @@ export interface RenderOptions {
   time: number;
   easing: string;
   topOffset: number;
+  width: number;
 }
 
 export interface BurgerProps extends CommonBurgerProps {
