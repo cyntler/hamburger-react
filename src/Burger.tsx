@@ -55,7 +55,6 @@ export const Burger = (({
     height: `${barHeight}px`,
     left: `${room}px`,
     position: 'absolute',
-    width: `${width}px`,
   }
 
   if (hideOutline) {
@@ -90,5 +89,6 @@ export const Burger = (({
     move,
     time,
     topOffset,
+    width,
   })
 }) as FunctionComponent<BurgerProps>

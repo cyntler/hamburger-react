@@ -2,6 +2,7 @@ import { CSSProperties, Dispatch, SetStateAction, ReactNode } from 'react'
 import { Tilt as Hamburger } from './Tilt'
 
 import { Cross } from './Cross'
+import { Divide } from './Divide'
 import { Fade } from './Fade'
 import { Pivot } from './Pivot'
 import { Rotate } from './Rotate'
@@ -16,7 +17,7 @@ import { Twirl } from './Twirl'
 
 export default Hamburger
 
-export { Cross, Fade, Pivot, Rotate, Slant, Sling, Spin, Spiral, Squash, Squeeze, Turn, Twirl }
+export { Cross, Divide, Fade, Pivot, Rotate, Slant, Sling, Spin, Spiral, Squash, Squeeze, Turn, Twirl }
 
 export interface CommonBurgerProps {
   /** The color of the icon bars, accepts any CSS-parsable argument. */
@@ -58,6 +59,7 @@ export interface RenderOptions {
   time: number;
   easing: string;
   topOffset: number;
+  width: number;
 }
 
 export interface BurgerProps extends CommonBurgerProps {
