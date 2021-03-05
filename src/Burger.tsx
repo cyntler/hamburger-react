@@ -65,8 +65,8 @@ export const Burger = (({
     barStyles['borderRadius'] = '9em'
   }
 
-  const toggleFunction = toggle ?? toggleInternal
-  const isToggled = toggled ?? toggledInternal
+  const toggleFunction = toggle != null ? toggle : toggleInternal
+  const isToggled = toggled != null ? toggled : toggledInternal
 
   const handler = () => {
     toggleFunction(!isToggled)
