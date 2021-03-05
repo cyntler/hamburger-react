@@ -3,6 +3,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "jsx": "react",
+    "skipLibCheck": true,
     "moduleResolution": "Node",
     "outDir": "./dist-types",
     "strict": true,
