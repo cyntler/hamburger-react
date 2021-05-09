@@ -27,6 +27,6 @@ export default () => (
       duration-300
   "
   >
-    v2.4.0 (1.5 KB)
+    v2.4.1 (1.5 KB)
   </a>
 )
