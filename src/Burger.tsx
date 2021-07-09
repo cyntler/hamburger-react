@@ -68,10 +68,10 @@ export const Burger = (({
   const toggleFunction = toggle || toggleInternal
   const isToggled = toggled !== undefined ? toggled : toggledInternal
 
-  const handler = () => {
-    toggleFunction(!isToggled)
+  const handler = (e) => {
+    toggleFunction(!isToggled, e)
 
-    if (typeof onToggle === 'function') onToggle(!isToggled)
+    if (typeof onToggle === 'function') onToggle(!isToggled, e)
   }
 
   return render({
