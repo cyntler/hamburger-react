@@ -7,6 +7,7 @@ export const Spin = ((props) => (
     <div
       className="hamburger-react"
       aria-label={o.label}
+      aria-expanded={o.isToggled}
       data-testid="spin"
       onClick={o.handler}
       onKeyUp={(e) => e.key === 'Enter' && o.handler()}
