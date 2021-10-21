@@ -16,7 +16,7 @@ export const Squeeze = ((props) => (
       tabIndex={0}
     >
       <div data-testid="bar-wrap-one" style={{
-        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+        transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -29,7 +29,7 @@ export const Squeeze = ((props) => (
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset}px`,
-          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+          transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,
@@ -41,7 +41,7 @@ export const Squeeze = ((props) => (
       </div>
 
       <div data-testid="bar-wrap-three" style={{
-        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+        transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -54,7 +54,7 @@ export const Squeeze = ((props) => (
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
-          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+          transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,

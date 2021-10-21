@@ -19,7 +19,7 @@ export const Turn = ((props) => (
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset}px`,
-        transition: `${o.time}s ${o.easing}`,
+        transition: `transform ${o.time}s ${o.easing}`,
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move}px)`
           : 'none'
@@ -30,7 +30,7 @@ export const Turn = ((props) => (
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
-        transition: `${o.time / 2}s ${o.easing}`,
+        transition: `transform ${o.time / 2}s ${o.easing}`,
         transform: `${o.isToggled
           ? 'scaleX(0)'
           : 'none'
@@ -41,7 +41,7 @@ export const Turn = ((props) => (
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
-        transition: `${o.time}s ${o.easing}`,
+        transition: `transform ${o.time}s ${o.easing}`,
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move * -1}px)`
           : 'none'

@@ -45,7 +45,7 @@ export const Burger = (({
     cursor: 'pointer',
     height: `${area}px`,
     position: 'relative',
-    transition: `${time}s ${easing}`,
+    transition: `transform ${time}s ${easing}`,
     userSelect: 'none',
     width: `${area}px`,
   }

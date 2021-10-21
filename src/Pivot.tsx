@@ -22,7 +22,7 @@ export const Pivot = ((props) => (
       tabIndex={0}
     >
       <div data-testid="bar-wrap-one" style={{
-        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+        transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -35,7 +35,7 @@ export const Pivot = ((props) => (
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset}px`,
-          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+          transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,
@@ -47,7 +47,7 @@ export const Pivot = ((props) => (
       </div>
 
       <div data-testid="bar-wrap-two" style={{
-        transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+        transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
         }`,
@@ -60,7 +60,7 @@ export const Pivot = ((props) => (
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
-          transition: `${o.time / 2}s ${o.easing} ${o.isToggled
+          transition: `transform ${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
             : '0s'
           }`,

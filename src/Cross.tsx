@@ -19,7 +19,7 @@ export const Cross = ((props) => (
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset}px`,
-        transition: `${o.time}s ${o.easing}`,
+        transition: `transform ${o.time}s ${o.easing}`,
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move}px)`
           : 'none'
@@ -30,7 +30,7 @@ export const Cross = ((props) => (
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
-        transition: `${o.time}s ${o.easing}`,
+        transition: `transform ${o.time}s ${o.easing}`,
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move * -1}px)`
           : 'none'
