@@ -15,7 +15,7 @@ export const Divide = ((props) => (
       style={o.burgerStyles}
       tabIndex={0}
     >
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width / 2}px`,
         borderRadius: `${o.barStyles.borderRadius} 0 0 ${o.barStyles.borderRadius}`,
@@ -27,7 +27,7 @@ export const Divide = ((props) => (
           }`,
       }} />
 
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width / 2}px`,
         borderRadius: `0 ${o.barStyles.borderRadius} ${o.barStyles.borderRadius} 0`,
@@ -40,7 +40,7 @@ export const Divide = ((props) => (
           }`,
       }} />
 
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width / 2}px`,
         borderRadius: `${o.barStyles.borderRadius} 0 0 ${o.barStyles.borderRadius}`,
@@ -79,7 +79,7 @@ export const Divide = ((props) => (
           }`,
       }} />
 
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width / 2}px`,
         borderRadius: `0 ${o.barStyles.borderRadius} ${o.barStyles.borderRadius} 0`,

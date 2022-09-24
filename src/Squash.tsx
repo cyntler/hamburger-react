@@ -15,7 +15,7 @@ export const Squash = ((props) => (
       style={o.burgerStyles}
       tabIndex={0}
     >
-      <div data-testid="bar-wrap-one" style={{
+      <span data-testid="bar-wrap-one" style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -25,7 +25,7 @@ export const Squash = ((props) => (
           : 'none'
         }`,
       }}>
-        <div data-testid="bar-one" style={{
+        <span data-testid="bar-one" style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset}px`,
@@ -40,22 +40,22 @@ export const Squash = ((props) => (
         }} />
       </div>
 
-      <div data-testid="bar-wrap-two" style={{
+      <span data-testid="bar-wrap-two" style={{
         transition: `${o.time / 2}s ${o.easing}`,
         opacity: `${o.isToggled
           ? '0'
           : '1'
         }`,
       }}>
-        <div data-testid="bar-two" style={{
+        <span data-testid="bar-two" style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
           transition: `${o.time / 2}s ${o.easing}`,
         }} />
-      </div>
+      </span>
 
-      <div data-testid="bar-wrap-three" style={{
+      <span data-testid="bar-wrap-three" style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -65,7 +65,7 @@ export const Squash = ((props) => (
           : 'none'
         }`,
       }}>
-        <div data-testid="bar-three" style={{
+        <span data-testid="bar-three" style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
@@ -78,7 +78,7 @@ export const Squash = ((props) => (
             : 'none'
           }`,
         }} />
-      </div>
+      </span>
     </div>
   )} />
 )) as FunctionComponent<CommonBurgerProps>

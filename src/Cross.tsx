@@ -15,7 +15,7 @@ export const Cross = ((props) => (
       style={o.burgerStyles}
       tabIndex={0}
     >
-      <div data-testid="bar-one" style={{
+      <span data-testid="bar-one" style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset}px`,
@@ -23,10 +23,10 @@ export const Cross = ((props) => (
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? -1 : 1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move}px)`
           : 'none'
-        }`,
+          }`,
       }} />
 
-      <div data-testid="bar-two" style={{
+      <span data-testid="bar-two" style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
@@ -34,7 +34,7 @@ export const Cross = ((props) => (
         transform: `${o.isToggled
           ? `rotate(${45 * (o.isLeft ? 1 : -1)}deg) translate(${o.move * (o.isLeft ? -1 : 1)}px, ${o.move * -1}px)`
           : 'none'
-        }`,
+          }`,
       }} />
     </div>
   )} />

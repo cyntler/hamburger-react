@@ -21,7 +21,7 @@ export const Twirl = ((props) => (
       }}
       tabIndex={0}
     >
-      <div style={{
+      <span style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -31,7 +31,7 @@ export const Twirl = ((props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <span style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset}px`,
@@ -46,22 +46,22 @@ export const Twirl = ((props) => (
         }} />
       </div>
 
-      <div style={{
+      <span style={{
         transition: `${o.time / 2}s ${o.easing}`,
         opacity: `${o.isToggled
           ? '0'
           : '1'
         }`,
       }}>
-        <div style={{
+        <span style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
           transition: `${o.time / 2}s ${o.easing}`,
         }} />
-      </div>
+      </span>
 
-      <div style={{
+      <span style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -71,7 +71,7 @@ export const Twirl = ((props) => (
           : 'none'
         }`,
       }}>
-        <div style={{
+        <span style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
@@ -84,7 +84,7 @@ export const Twirl = ((props) => (
             : 'none'
           }`,
         }} />
-      </div>
+      </span>
     </div>
   )} />
 )) as FunctionComponent<CommonBurgerProps>

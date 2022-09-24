@@ -21,7 +21,7 @@ export const Spiral = ((props) => (
       }}
       tabIndex={0}
     >
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset}px`,
@@ -32,7 +32,7 @@ export const Spiral = ((props) => (
         }`,
       }} />
 
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,

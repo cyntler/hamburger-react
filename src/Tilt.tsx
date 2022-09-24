@@ -21,7 +21,7 @@ export const Tilt = ((props) => (
       }}
       tabIndex={0}
     >
-      <div data-testid="bar-one" style={{
+      <span data-testid="bar-one" style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset}px`,
@@ -32,7 +32,7 @@ export const Tilt = ((props) => (
         }`,
       }} />
 
-      <div data-testid="bar-two" style={{
+      <span data-testid="bar-two" style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
@@ -43,7 +43,7 @@ export const Tilt = ((props) => (
         }`,
       }} />
 
-      <div data-testid="bar-three" style={{
+      <span data-testid="bar-three" style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,

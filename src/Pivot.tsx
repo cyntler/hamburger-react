@@ -21,7 +21,7 @@ export const Pivot = ((props) => (
       }}
       tabIndex={0}
     >
-      <div data-testid="bar-wrap-one" style={{
+      <span data-testid="bar-wrap-one" style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -31,7 +31,7 @@ export const Pivot = ((props) => (
           : 'none'
         }`,
       }}>
-        <div data-testid="bar-one" style={{
+        <span data-testid="bar-one" style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset}px`,
@@ -46,7 +46,7 @@ export const Pivot = ((props) => (
         }} />
       </div>
 
-      <div data-testid="bar-wrap-two" style={{
+      <span data-testid="bar-wrap-two" style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
           ? '0s'
           : `${o.time / 2}s`
@@ -56,7 +56,7 @@ export const Pivot = ((props) => (
           : 'none'
         }`,
       }}>
-        <div data-testid="bar-two" style={{
+        <span data-testid="bar-two" style={{
           ...o.barStyles,
           width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
@@ -69,7 +69,7 @@ export const Pivot = ((props) => (
             : 'none'
           }`,
         }} />
-      </div>
+      </span>
     </div>
   )} />
 )) as FunctionComponent<CommonBurgerProps>

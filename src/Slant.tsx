@@ -21,7 +21,7 @@ export const Slant = ((props) => (
       }}
       tabIndex={0}
     >
-      <div data-testid="bar-one" style={{
+      <span data-testid="bar-one" style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset}px`,
@@ -32,7 +32,7 @@ export const Slant = ((props) => (
         }`,
       }} />
 
-      <div data-testid="bar-two" style={{
+      <span data-testid="bar-two" style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,

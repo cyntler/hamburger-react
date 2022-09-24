@@ -21,7 +21,7 @@ export const Sling = ((props) => (
       }}
       tabIndex={0}
     >
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset}px`,
@@ -32,7 +32,7 @@ export const Sling = ((props) => (
         }`,
       }} />
 
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
@@ -43,7 +43,7 @@ export const Sling = ((props) => (
         }`,
       }} />
 
-      <div style={{
+      <span style={{
         ...o.barStyles,
         width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
