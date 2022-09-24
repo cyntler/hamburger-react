@@ -44,7 +44,7 @@ export const Twirl = ((props) => (
             : 'none'
           }`,
         }} />
-      </div>
+      </span>
 
       <span style={{
         transition: `${o.time / 2}s ${o.easing}`,

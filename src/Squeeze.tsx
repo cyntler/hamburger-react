@@ -38,7 +38,7 @@ export const Squeeze = ((props) => (
             : 'none'
           }`,
         }} />
-      </div>
+      </span>
 
       <span data-testid="bar-wrap-three" style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled

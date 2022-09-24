@@ -44,7 +44,7 @@ export const Pivot = ((props) => (
             : 'none'
           }`,
         }} />
-      </div>
+      </span>
 
       <span data-testid="bar-wrap-two" style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
