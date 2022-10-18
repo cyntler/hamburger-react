@@ -1,5 +1,5 @@
 import { CSSProperties, FunctionComponent, useState } from 'react'
-import { BurgerProps } from './'
+import { BurgerProps } from '..'
 
 const area = 48
 
@@ -18,27 +18,38 @@ export const Burger = (({
   size = 32,
   toggle,
   toggled,
+  lineWidth
 }) => {
   const [toggledInternal, toggleInternal] = useState(false)
 
   const width = Math.max(12, Math.min(area, size))
   const room = Math.round((area - width) / 2)
 
-  const barHeightRaw = width / 12
+  const barHeightRaw = typeof lineWidth === 'number' ? lineWidth : width / 12
   const barHeight = Math.round(barHeightRaw)
 
   const space = distance === 'lg' ? 0.25 : distance === 'sm' ? 0.75 : 0.5
   const marginRaw = width / (lines * (space + (lines === 3 ? 1 : 1.25)))
   const margin = Math.round(marginRaw)
 
-  const height = (barHeight * lines) + margin * (lines - 1)
+  const height = barHeight * lines + margin * (lines - 1)
   const topOffset = Math.round((area - height) / 2)
 
-  const translate = lines === 3
-    ? distance === 'lg' ? 4.0425 : distance === 'sm' ? 5.1625 : 4.6325
-    : distance === 'lg' ? 6.7875 : distance === 'sm' ? 8.4875 : 7.6675
-  const deviation = ((barHeightRaw - barHeight) + (marginRaw - margin)) / (lines === 3 ? 1 : 2)
-  const move = parseFloat(((width / translate) - (deviation / (4 / 3))).toFixed(2))
+  const translate =
+    lines === 3
+      ? distance === 'lg'
+        ? 4.0425
+        : distance === 'sm'
+        ? 5.1625
+        : 4.6325
+      : distance === 'lg'
+      ? 6.7875
+      : distance === 'sm'
+      ? 8.4875
+      : 7.6675
+  const deviation =
+    (barHeightRaw - barHeight + (marginRaw - margin)) / (lines === 3 ? 1 : 2)
+  const move = parseFloat((width / translate - deviation / (4 / 3)).toFixed(2))
   const time = Math.max(0, duration)
 
   const burgerStyles: CSSProperties = {
@@ -47,14 +58,14 @@ export const Burger = (({
     position: 'relative',
     transition: `${time}s ${easing}`,
     userSelect: 'none',
-    width: `${area}px`,
+    width: `${area}px`
   }
 
   const barStyles: CSSProperties = {
     background: color,
     height: `${barHeight}px`,
     left: `${room}px`,
-    position: 'absolute',
+    position: 'absolute'
   }
 
   if (hideOutline) {
@@ -80,13 +91,13 @@ export const Burger = (({
     burgerStyles,
     easing,
     handler,
-    isLeft: (direction === 'left'),
+    isLeft: direction === 'left',
     isToggled,
     label,
     margin,
     move,
     time,
     topOffset,
-    width,
+    width
   })
 }) as FunctionComponent<BurgerProps>
