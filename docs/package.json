@@ -13,14 +13,12 @@
   "devDependencies": {
     "gatsby-plugin-postcss": "^3.7.0",
     "gatsby-plugin-typescript": "^2.12.1",
-    "prettier": "^2.2.1",
     "tailwindcss": "^2.0.4",
     "typescript": "^4.2.3"
   },
   "private": true,
   "scripts": {
     "build": "gatsby build",
-    "format": "prettier --write '**/*.{js,json,ts,tsx}'",
     "serve": "npm run build && gatsby serve",
     "start": "gatsby develop",
     "ts": "tsc"
