@@ -33,7 +33,6 @@ export const Twirl = ((props) => (
       }}>
         <div style={{
           ...o.barStyles,
-          width: `${o.width}px`,
           top: `${o.topOffset}px`,
           transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
@@ -55,7 +54,6 @@ export const Twirl = ((props) => (
       }}>
         <div style={{
           ...o.barStyles,
-          width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
           transition: `${o.time / 2}s ${o.easing}`,
         }} />
@@ -73,7 +71,6 @@ export const Twirl = ((props) => (
       }}>
         <div style={{
           ...o.barStyles,
-          width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
           transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`

@@ -1,7 +1,6 @@
 import React from 'react'
 import Hamburger, {
   Cross,
-  Divide,
   Fade,
   Pivot,
   Rotate,
@@ -98,17 +97,6 @@ export default () => (
           {'}'} from '<span className="text-green-400">hamburger-react</span>'
         </div>
         <Spiral size={36} />
-      </Card>
-
-      <Card title="Divide">
-        <Divide size={36} />
-        <div>
-          import {'{'}
-          <span className="text-white"> Divide </span>
-          as
-          <span className="text-white"> Hamburger </span>
-          {'}'} from '<span className="text-green-400">hamburger-react</span>'
-        </div>
       </Card>
 
       <Card title="Turn">

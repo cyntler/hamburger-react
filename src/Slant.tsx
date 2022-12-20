@@ -23,7 +23,6 @@ export const Slant = ((props) => (
     >
       <div data-testid="bar-one" style={{
         ...o.barStyles,
-        width: `${o.width}px`,
         top: `${o.topOffset}px`,
         transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled
@@ -34,7 +33,6 @@ export const Slant = ((props) => (
 
       <div data-testid="bar-two" style={{
         ...o.barStyles,
-        width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled

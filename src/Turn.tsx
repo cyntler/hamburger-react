@@ -17,7 +17,6 @@ export const Turn = ((props) => (
     >
       <div style={{
         ...o.barStyles,
-        width: `${o.width}px`,
         top: `${o.topOffset}px`,
         transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled
@@ -28,7 +27,6 @@ export const Turn = ((props) => (
 
       <div style={{
         ...o.barStyles,
-        width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight + o.margin}px`,
         transition: `${o.time / 2}s ${o.easing}`,
         transform: `${o.isToggled
@@ -39,7 +37,6 @@ export const Turn = ((props) => (
 
       <div style={{
         ...o.barStyles,
-        width: `${o.width}px`,
         top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
         transition: `${o.time}s ${o.easing}`,
         transform: `${o.isToggled

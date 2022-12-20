@@ -33,7 +33,6 @@ export const Pivot = ((props) => (
       }}>
         <div data-testid="bar-one" style={{
           ...o.barStyles,
-          width: `${o.width}px`,
           top: `${o.topOffset}px`,
           transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`
@@ -58,7 +57,6 @@ export const Pivot = ((props) => (
       }}>
         <div data-testid="bar-two" style={{
           ...o.barStyles,
-          width: `${o.width}px`,
           top: `${o.topOffset + o.barHeight + o.margin}px`,
           transition: `${o.time / 2}s ${o.easing} ${o.isToggled
             ? `${o.time / 2}s`

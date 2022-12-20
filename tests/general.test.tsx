@@ -13,7 +13,6 @@ import Hamburger, {
   Rotate,
   Pivot,
   Spiral,
-  Divide,
 } from '../src'
 
 it(`renders all versions`, () => {
@@ -21,7 +20,6 @@ it(`renders all versions`, () => {
     <>
       <Hamburger />
       <Cross />
-      <Divide />
       <Fade />
       <Pivot />
       <Rotate />
@@ -36,7 +34,6 @@ it(`renders all versions`, () => {
     </>
   )
 
-  expect(screen.getByTestId('divide')).toBeInTheDocument()
   expect(screen.getByTestId('fade')).toBeInTheDocument()
   expect(screen.getByTestId('sling')).toBeInTheDocument()
   expect(screen.getByTestId('spin')).toBeInTheDocument()

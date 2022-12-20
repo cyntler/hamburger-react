@@ -55,6 +55,7 @@ export const Burger = (({
     height: `${barHeight}px`,
     left: `${room}px`,
     position: 'absolute',
+    width: `${width}px`,
   }
 
   if (hideOutline) {
