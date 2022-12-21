@@ -1,0 +1,26 @@
+---
+import Menu from "./Menu.astro";
+---
+
+<div class="w-full flex justify-between items-center text-center sm:text-left">
+  <div class="w-full flex items-center flex-col sm:flex-row">
+    <div class="mb-4 sm:mb-0 sm:mr-6 w-16 lg:w-20">
+      <img
+        width="80"
+        height="65"
+        alt="Logo"
+        src="/logo.png"
+        srcSet="/logo@2x.png 2x"
+      />
+    </div>
+    <div>
+      <h1 class="leading-snug text-2xl sm:text-3xl xl:text-4xl font-medium">
+        Animated hamburger menu icons
+      </h1>
+      <div class="text-lg sm:text-xl lg:text-2xl text-gray-500">
+        Made for React
+      </div>
+    </div>
+  </div>
+  <Menu />
+</div>

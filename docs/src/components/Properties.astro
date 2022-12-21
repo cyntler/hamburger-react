@@ -1,0 +1,250 @@
+---
+import Example from "./Example.astro";
+import Hamburger from "../../../src";
+import Heading from "./Heading.astro";
+import Property from "./Property.astro";
+---
+
+<Heading title="Properties & examples" />
+<div class="w-full max-w-2xl">
+  <Example>
+    <div slot="property">
+      <Property name="toggled" initial="undefined" type="boolean" />
+      <Property name="toggle" initial="undefined" type="function" margin />
+    </div>
+    <Hamburger label="Hamburger icon" client:load slot="example" size={34} />
+    A way to provide your own state.
+    <div slot="code">
+      <span class="text-purple-300">const</span>
+      <span class="text-blue-300">[</span>isOpen<span class="text-blue-300"
+        >,</span
+      >
+      setOpen<span class="text-blue-300">] =</span>
+      <span class="text-blue-300">useState</span><span class="text-red-400"
+        >(</span
+      ><span class="text-red-300">false</span><span class="text-red-400">)</span
+      >
+      <br />
+      <br />
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">toggled</span>={"{"}<span
+        class="text-green-400">isOpen</span
+      >{"}"}
+      <span class="text-purple-300">toggle</span>={"{"}<span
+        class="text-green-400">setOpen</span
+      >{"} />"}
+    </div>
+  </Example>
+  <Example>
+    <Property name="size" initial="32" type="integer" slot="property" />
+    <Hamburger label="Hamburger icon" client:load slot="example" size={20} />
+    A number between 12 and 48, which sets the size of the icon.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">size</span>={"{"}<span
+        class="text-green-400">20</span
+      >{"} />"}
+    </div>
+  </Example>
+  <Example>
+    <Property name="direction" initial="left" type="string" slot="property" />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      direction="right"
+      size={26}
+    />
+    The animation direction of the icon, left or right.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">direction</span>="<span
+        class="text-green-400">right</span
+      >{'" />'}
+    </div>
+  </Example>
+  <Example>
+    <Property
+      name="duration"
+      initial="0.4"
+      type="float / integer"
+      slot="property"
+    />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      duration={0.8}
+      size={26}
+    />
+    The duration of the animation. Can be set to zero if no animation is desired.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">duration</span>={"{"}<span
+        class="text-green-400">0.8</span
+      >{"} />"}
+    </div>
+  </Example>
+  <Example>
+    <Property name="distance" initial="md" type="string" slot="property" />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      distance="lg"
+      size={32}
+    />
+    The vertical distance between the lines. Small (sm), medium (md) or large (lg).
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">distance</span>="<span
+        class="text-green-400">lg</span
+      >{'" />'}
+    </div>
+  </Example>
+  <Example>
+    <Property
+      name="color"
+      initial="currentColor"
+      type="string"
+      slot="property"
+    />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      color="#4FD1C5"
+      size={34}
+    />
+    The color of the icon bars, accepts any CSS-parsable value.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">color</span>="<span class="text-green-400"
+        >#4FD1C5</span
+      >{'" />'}
+    </div>
+  </Example>
+  <Example>
+    <Property
+      name="easing"
+      initial="cubic-bezier(0, 0, 0, 1)"
+      type="string"
+      slot="property"
+    />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      easing="ease-in"
+      size={26}
+    />
+    A valid `transition-timing-function` CSS value.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">easing</span>="<span class="text-green-400"
+        >ease-in</span
+      >{'" />'}
+    </div>
+  </Example>
+  <Example>
+    <Property
+      name="onToggle"
+      initial="undefined"
+      type="function"
+      slot="property"
+    />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      size={36}
+      onToggle={(toggled) =>
+        console.log("🍔 [hamburger-react] toggled:", toggled)}
+    />
+    A callback which receives a single boolean argument, indicating if the icon is
+    toggled. This can be used to perform an action after toggling, or as an alternative
+    to providing your own state. Inspect your browser console after tapping/clicking
+    the example above.
+    <Fragment slot="code">
+      <div>
+        {"<"}<span class="text-yellow-400">Hamburger</span>
+        <span class="text-purple-300">onToggle</span>={"{"}<span
+          class="text-orange-400">toggled</span
+        >
+        {"=> {"}
+      </div>
+      <div>
+        &nbsp;&nbsp;if (<span class="text-orange-400">toggled</span>){" "}
+        {"{"}
+      </div>
+
+      <div class="text-indigo-300">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// open a menu
+      </div>
+      <div>
+        &nbsp;&nbsp;{"}"} else {"{"}
+      </div>
+      <div class="text-indigo-300">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// close a menu
+      </div>
+      <div>&nbsp;&nbsp;{"}"}</div>
+      <div>{"}} />"}</div>
+    </Fragment>
+  </Example>
+  <Example>
+    <Property name="rounded" initial="false" type="boolean" slot="property" />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      rounded
+      size={42}
+    />
+    Specifies if the icon bars should be rounded.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">rounded</span>
+      {" />"}
+    </div>
+  </Example>
+  <Example>
+    <Property name="label" initial="undefined" type="string" slot="property" />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      color="white"
+      label="Show menu"
+      size={26}
+    />
+    An ARIA label to improve accessibility.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">label</span>="<span class="text-green-400"
+        >Show menu</span
+      >{'" />'}
+    </div>
+  </Example>
+  <Example last>
+    <Property
+      name="hideOutline"
+      initial="true"
+      type="boolean"
+      slot="property"
+    />
+    <Hamburger
+      label="Hamburger icon"
+      client:load
+      slot="example"
+      hideOutline={false}
+      size={30}
+    />
+    Hides the default browser focus style.
+    <div slot="code">
+      {"<"}<span class="text-yellow-400">Hamburger</span>
+      <span class="text-purple-300">hideOutline</span>={"{"}<span
+        class="text-green-400">false</span
+      >{"} />"}
+    </div>
+  </Example>
+</div>

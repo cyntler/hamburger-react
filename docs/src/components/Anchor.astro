@@ -1,0 +1,29 @@
+<script>
+  function scroll(to) {
+    document.getElementById(to)?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  document.querySelectorAll("[data-scroll-to]").forEach((node) => {
+    const to = node.dataset.scrollTo;
+
+    node.addEventListener("click", () => scroll(to));
+
+    node.addEventListener("keyup", (event) => {
+      if (event.key !== "Enter" && event.keyCode !== 13) return;
+      scroll(to);
+    });
+  });
+</script>
+
+<div
+  data-scroll-to={Astro.props.to}
+  class:list={[
+    "underline py-4 px-4 lg:px-6 outline-none hover:text-purple-400 transition-colors duration-300",
+    Astro.props.lgOnly && "hidden lg:block",
+    Astro.props.xlOnly && "hidden xl:block",
+  ]}
+  role="button"
+  tabIndex={0}
+>
+  {Astro.props.label}
+</div>

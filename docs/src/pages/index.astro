@@ -1,0 +1,54 @@
+---
+import Accessibility from "../components/Accessibility.astro";
+import Cards from "../components/Cards.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Information from "../components/Information.astro";
+import Installation from "../components/Installation.astro";
+import Layout from "../components/Layout.astro";
+import Properties from "../components/Properties.astro";
+import Version from "../components/Version.astro";
+import Wrap from "../components/Wrap.astro";
+---
+
+<Layout>
+  <Version />
+  <div class="mt-8 sm:mt-12 lg:mt-16 mb-12 sm:mb-16 lg:mb-20">
+    <Wrap wide>
+      <Header />
+    </Wrap>
+  </div>
+  <div class="mb-16 sm:mb-20 lg:mb-24">
+    <Wrap>
+      <Cards />
+    </Wrap>
+  </div>
+  <div id="installation" class="mb-16 sm:mb-20 lg:mb-24">
+    <Wrap>
+      <Installation />
+    </Wrap>
+  </div>
+  <div
+    id="properties"
+    class="pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24 mb-12 sm:mb-16 lg:mb-20 bg-gray-800"
+  >
+    <Wrap>
+      <Properties />
+    </Wrap>
+  </div>
+  <div class="mb-16 sm:mb-20 lg:mb-24">
+    <Wrap>
+      <Accessibility />
+    </Wrap>
+  </div>
+  <div class="pt-10 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24 bg-gray-800">
+    <Wrap>
+      <Information />
+    </Wrap>
+  </div>
+  <div class="pt-8 lg:pt-12 pb-12 lg:pb-16 bg-gray-700">
+    <Wrap>
+      <Footer />
+    </Wrap>
+  </div>
+</Layout>

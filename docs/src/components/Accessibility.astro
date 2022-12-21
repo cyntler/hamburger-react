@@ -1,0 +1,21 @@
+---
+import Heading from "./Heading.astro";
+---
+
+<div class="max-w-xl text-center">
+  <Heading title="Accessibility" />
+  <p class="sm:text-lg leading-loose mb-8 text-left">
+    It is recommended to have a tap/click area of at least <span
+      class="bg-gray-800 px-2 py-1 rounded">48x48</span
+    > pixels. Therefore, padding will be added around the icon to create a surface
+    of exactly this size.
+  </p>
+  <p class="sm:text-lg leading-loose text-left">
+    Keyboard interaction is provided with the <span
+      class="bg-gray-800 px-2 py-1 rounded">enter</span
+    > key, and the icon element has the recommended accessibility attributes (such
+    as <span class="bg-gray-800 px-2 py-1 rounded">role</span>). You can use the <span
+      class="bg-gray-800 px-2 py-1 rounded">label</span
+    > property to supply an ARIA label for the icon.
+  </p>
+</div>

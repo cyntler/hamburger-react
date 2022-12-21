@@ -1,0 +1,25 @@
+<div
+  class:list={[
+    "flex flex-col sm:flex-row mb-2 md:mb-0 sm:items-center sm:h-12",
+    Astro.props.margin && "mt-6 sm:mt-0",
+  ]}
+>
+  <div class="flex">
+    <div
+      class="border-b-2 border-t-2 border-l-2 bg-purple-900 border-purple-600 rounded h-8 sm:h-10 flex items-center justify-center w-2/5 sm:w-32 text-sm md:text-base rounded-tr-none rounded-br-none font-medium border-solid"
+    >
+      {Astro.props.name}
+    </div>
+    <div
+      class="border-2 rounded-tl-none rounded-bl-none border-purple-600 rounded text-xs h-8 sm:h-10 flex items-center justify-center text-center sm:mr-6 w-3/5 sm:w-40 border-solid"
+    >
+      {Astro.props.initial}
+    </div>
+  </div>
+  <div class="flex items-baseline flex-grow sm:justify-end">
+    <div class="font-medium text-gray-500 mt-4 sm:mt-0 mr-2">Type:</div>
+    <div class="font-medium sm:text-lg">
+      {Astro.props.type}
+    </div>
+  </div>
+</div>

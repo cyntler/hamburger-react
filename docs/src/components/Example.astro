@@ -1,0 +1,20 @@
+<div
+  class:list={[
+    "flex flex-col",
+    !Astro.props.last && "mb-6 sm:mb-8 pb-6 sm:pb-8 border-b-2 border-gray-700",
+  ]}
+>
+  <div
+    class="flex flex-col md:flex-row md:items-center mb-2 md:mb-4 justify-between"
+  >
+    <slot name="property" />
+    <div class="flex items-center justify-start">
+      <div class="font-medium text-gray-500 mr-2 sm:mr-4">Example:</div>
+      <slot name="example" />
+    </div>
+  </div>
+  <p class="text-sm mb-6"><slot /></p>
+  <code class="text-sm px-4 sm:px-6 py-4 rounded-md bg-indigo-800 shadow-inner">
+    <slot name="code" />
+  </code>
+</div>
