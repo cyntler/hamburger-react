@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   transparent: "transparent",
   current: "currentColor",
   black: "#000",

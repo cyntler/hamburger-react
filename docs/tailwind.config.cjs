@@ -1,6 +1,6 @@
-import colors from "./colors.js";
+const colors = require("./colors.cjs");
 
-export default {
+module.exports = {
   content: ["./**/*.{astro,jsx}"],
   theme: {
     colors,
