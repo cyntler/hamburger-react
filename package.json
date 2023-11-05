@@ -1,16 +1,23 @@
 {
   "name": "hamburger-react",
   "version": "2.5.0",
-  "description": "Animated hamburger menu icons for React",
+  "description": "Animated hamburger menu icons for React.js weighs only 1.5 KB.",
   "homepage": "https://hamburger-react.netlify.app",
-  "repository": "luukdv/hamburger-react",
-  "bugs": "https://github.com/luukdv/hamburger-react/issues",
+  "repository": "https://github.com/cyntler/hamburger-react",
+  "bugs": "https://github.com/cyntler/hamburger-react/issues",
   "license": "MIT",
-  "author": {
-    "name": "Luuk de Vlieger",
-    "email": "info@luuk.site",
-    "url": "https://www.luuk.site"
-  },
+  "contributors": [
+    {
+      "name": "Luuk de Vlieger",
+      "email": "info@luuk.site",
+      "url": "https://www.luuk.site"
+    },
+    {
+      "name": "Damian Cyntler",
+      "email": "damian@cyntler.com",
+      "url": "https://cyntler.com"
+    }
+  ],
   "files": [
     "dist-cjs",
     "dist-esm",
@@ -48,26 +55,27 @@
     "prepublishOnly": "npm test && npm run build",
     "test:watch": "jest --watch",
     "test": "jest",
-    "ts": "tsc --noEmit"
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
-  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.8",
-    "@babel/plugin-transform-modules-commonjs": "^7.17.7",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
-    "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^13.0.0",
-    "@types/react": "^17.0.43",
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.0",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.2",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.35",
     "babel-plugin-jsx-remove-data-test-id": "^3.0.0",
-    "jest": "^27.5.1",
+    "jest": "^29.7.0",
     "npm-run-all": "^4.1.5",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.6.3"
+    "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17 || ^18"

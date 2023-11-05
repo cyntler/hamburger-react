@@ -1,22 +1,35 @@
-import { CSSProperties, Dispatch, SetStateAction, ReactNode } from 'react'
-import { Tilt as Hamburger } from './Tilt'
+import { CSSProperties, Dispatch, SetStateAction, ReactNode } from 'react';
+import { Tilt as Hamburger } from './Tilt';
 
-import { Cross } from './Cross'
-import { Fade } from './Fade'
-import { Pivot } from './Pivot'
-import { Rotate } from './Rotate'
-import { Slant } from './Slant'
-import { Sling } from './Sling'
-import { Spin } from './Spin'
-import { Spiral } from './Spiral'
-import { Squash } from './Squash'
-import { Squeeze } from './Squeeze'
-import { Turn } from './Turn'
-import { Twirl } from './Twirl'
+import { Cross } from './Cross';
+import { Fade } from './Fade';
+import { Pivot } from './Pivot';
+import { Rotate } from './Rotate';
+import { Slant } from './Slant';
+import { Sling } from './Sling';
+import { Spin } from './Spin';
+import { Spiral } from './Spiral';
+import { Squash } from './Squash';
+import { Squeeze } from './Squeeze';
+import { Turn } from './Turn';
+import { Twirl } from './Twirl';
 
-export default Hamburger
+export default Hamburger;
 
-export { Cross, Fade, Pivot, Rotate, Slant, Sling, Spin, Spiral, Squash, Squeeze, Turn, Twirl }
+export {
+  Cross,
+  Fade,
+  Pivot,
+  Rotate,
+  Slant,
+  Sling,
+  Spin,
+  Spiral,
+  Squash,
+  Squeeze,
+  Turn,
+  Twirl,
+};
 
 export interface CommonBurgerProps {
   /** The color of the icon bars, accepts any CSS-parsable argument. */
@@ -40,7 +53,7 @@ export interface CommonBurgerProps {
   /** A number between 12 and 48, which sets the size of the icon. */
   size?: number;
   /** A way to provide your own state action. Has to be used together with a state value (the `toggled` prop). */
-  toggle?: Dispatch<SetStateAction<boolean>>
+  toggle?: Dispatch<SetStateAction<boolean>>;
   /** A way to provide your own state value. Can be used together with a state action (the `toggle` prop). */
   toggled?: boolean;
 }
