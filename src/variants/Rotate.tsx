@@ -1,6 +1,6 @@
-import { Burger } from './Burger';
+import { Burger } from '../Burger';
 import React, { FunctionComponent } from 'react';
-import { CommonBurgerProps } from './';
+import { CommonBurgerProps } from '..';
 
 export const Rotate = ((props) => (
   <Burger
@@ -37,7 +37,6 @@ export const Rotate = ((props) => (
             }`,
           }}
         />
-
         <div
           style={{
             ...o.barStyles,

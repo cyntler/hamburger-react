@@ -1,20 +1,26 @@
-import { Burger } from './Burger';
+import { Burger } from '../Burger';
 import React, { FunctionComponent } from 'react';
-import { CommonBurgerProps } from './';
+import { CommonBurgerProps } from '..';
 
-export const Turn = ((props) => (
+export const Spiral = ((props) => (
   <Burger
     {...props}
+    lines={2}
     render={(o) => (
       <div
         className="hamburger-react"
         aria-label={o.label}
         aria-expanded={o.isToggled}
-        data-testid="turn"
+        data-testid="spiral"
         onClick={o.handler}
         onKeyUp={(e) => e.key === 'Enter' && o.handler()}
         role="button"
-        style={o.burgerStyles}
+        style={{
+          ...o.burgerStyles,
+          transform: `${
+            o.isToggled ? `rotate(${180 * (o.isLeft ? -1 : 1)}deg)` : 'none'
+          }`,
+        }}
         tabIndex={0}
       >
         <div
@@ -36,15 +42,6 @@ export const Turn = ((props) => (
           style={{
             ...o.barStyles,
             top: `${o.topOffset + o.barHeight + o.margin}px`,
-            transition: `${o.time / 2}s ${o.easing}`,
-            transform: `${o.isToggled ? 'scaleX(0)' : 'none'}`,
-          }}
-        />
-
-        <div
-          style={{
-            ...o.barStyles,
-            top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
             transition: `${o.time}s ${o.easing}`,
             transform: `${
               o.isToggled
