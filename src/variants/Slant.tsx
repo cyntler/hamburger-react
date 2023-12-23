@@ -1,16 +1,17 @@
-import { Burger } from './Burger';
+import { Burger } from '../Burger';
 import React, { FunctionComponent } from 'react';
-import { CommonBurgerProps } from './';
+import { CommonBurgerProps } from '..';
 
-export const Tilt = ((props) => (
+export const Slant = ((props) => (
   <Burger
     {...props}
+    lines={2}
     render={(o) => (
       <div
         className="hamburger-react"
         aria-label={o.label}
         aria-expanded={o.isToggled}
-        data-testid="tilt"
+        data-testid="slant"
         onClick={o.handler}
         onKeyUp={(e) => e.key === 'Enter' && o.handler()}
         role="button"
@@ -43,16 +44,6 @@ export const Tilt = ((props) => (
           style={{
             ...o.barStyles,
             top: `${o.topOffset + o.barHeight + o.margin}px`,
-            transition: `${o.time}s ${o.easing}`,
-            transform: `${o.isToggled ? 'scaleX(0)' : 'none'}`,
-          }}
-        />
-
-        <div
-          data-testid="bar-three"
-          style={{
-            ...o.barStyles,
-            top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
             transition: `${o.time}s ${o.easing}`,
             transform: `${
               o.isToggled

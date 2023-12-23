@@ -24,7 +24,7 @@ it(`is medium by default`, () => {
 });
 
 it(`is medium when an invalid value is passed`, () => {
-  render(<Cross distance="just about right" />);
+  render(<Cross distance="md" />);
 
   expect(screen.getByTestId('bar-one')).toHaveStyle({ top: '17px' });
   expect(screen.getByTestId('bar-two')).toHaveStyle({ top: '29px' });

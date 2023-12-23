@@ -1,8 +1,8 @@
-import { Burger } from './Burger';
+import { Burger } from '../Burger';
 import React, { FunctionComponent } from 'react';
-import { CommonBurgerProps } from './';
+import { CommonBurgerProps } from '..';
 
-export const Fade = ((props) => (
+export const Sling = ((props) => (
   <Burger
     {...props}
     render={(o) => (
@@ -10,11 +10,16 @@ export const Fade = ((props) => (
         className="hamburger-react"
         aria-label={o.label}
         aria-expanded={o.isToggled}
-        data-testid="fade"
+        data-testid="sling"
         onClick={o.handler}
         onKeyUp={(e) => e.key === 'Enter' && o.handler()}
         role="button"
-        style={o.burgerStyles}
+        style={{
+          ...o.burgerStyles,
+          transform: `${
+            o.isToggled ? `rotateY(${180 * (o.isLeft ? -1 : 1)}deg)` : 'none'
+          }`,
+        }}
         tabIndex={0}
       >
         <div
@@ -37,7 +42,13 @@ export const Fade = ((props) => (
             ...o.barStyles,
             top: `${o.topOffset + o.barHeight + o.margin}px`,
             transition: `${o.time}s ${o.easing}`,
-            opacity: `${o.isToggled ? '0' : '1'}`,
+            transform: `${
+              o.isToggled
+                ? `scale(0, 1) translate(${
+                    o.move * 20 * (o.isLeft ? -1 : 1)
+                  }px, 0)`
+                : 'none'
+            }`,
           }}
         />
 

@@ -1,17 +1,16 @@
-import { Burger } from './Burger';
+import { Burger } from '../Burger';
 import React, { FunctionComponent } from 'react';
-import { CommonBurgerProps } from './';
+import { BurgerVariantComponent } from '..';
 
-export const Cross = ((props) => (
+export const Turn: BurgerVariantComponent = (props) => (
   <Burger
     {...props}
-    lines={2}
     render={(o) => (
       <div
         className="hamburger-react"
         aria-label={o.label}
         aria-expanded={o.isToggled}
-        data-testid="cross"
+        data-testid="turn"
         onClick={o.handler}
         onKeyUp={(e) => e.key === 'Enter' && o.handler()}
         role="button"
@@ -19,7 +18,6 @@ export const Cross = ((props) => (
         tabIndex={0}
       >
         <div
-          data-testid="bar-one"
           style={{
             ...o.barStyles,
             top: `${o.topOffset}px`,
@@ -33,11 +31,20 @@ export const Cross = ((props) => (
             }`,
           }}
         />
+
         <div
-          data-testid="bar-two"
           style={{
             ...o.barStyles,
             top: `${o.topOffset + o.barHeight + o.margin}px`,
+            transition: `${o.time / 2}s ${o.easing}`,
+            transform: `${o.isToggled ? 'scaleX(0)' : 'none'}`,
+          }}
+        />
+
+        <div
+          style={{
+            ...o.barStyles,
+            top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
             transition: `${o.time}s ${o.easing}`,
             transform: `${
               o.isToggled
@@ -51,4 +58,4 @@ export const Cross = ((props) => (
       </div>
     )}
   />
-)) as FunctionComponent<CommonBurgerProps>;
+);

@@ -1,9 +1,9 @@
 import { CSSProperties, FunctionComponent, useState } from 'react';
 import { BurgerProps } from './';
 
-const area = 48;
+const AREA = 48;
 
-export const Burger = (({
+export const Burger: FunctionComponent<BurgerProps> = ({
   color = 'currentColor',
   direction = 'left',
   distance = 'md',
@@ -21,8 +21,8 @@ export const Burger = (({
 }) => {
   const [toggledInternal, toggleInternal] = useState(false);
 
-  const width = Math.max(12, Math.min(area, size));
-  const room = Math.round((area - width) / 2);
+  const width = Math.max(12, Math.min(AREA, size));
+  const room = Math.round((AREA - width) / 2);
 
   const barHeightRaw = width / 12;
   const barHeight = Math.round(barHeightRaw);
@@ -32,7 +32,7 @@ export const Burger = (({
   const margin = Math.round(marginRaw);
 
   const height = barHeight * lines + margin * (lines - 1);
-  const topOffset = Math.round((area - height) / 2);
+  const topOffset = Math.round((AREA - height) / 2);
 
   const translate =
     lines === 3
@@ -53,11 +53,11 @@ export const Burger = (({
 
   const burgerStyles: CSSProperties = {
     cursor: 'pointer',
-    height: `${area}px`,
+    height: `${AREA}px`,
     position: 'relative',
     transition: `${time}s ${easing}`,
     userSelect: 'none',
-    width: `${area}px`,
+    width: `${AREA}px`,
   };
 
   const barStyles: CSSProperties = {
@@ -100,4 +100,4 @@ export const Burger = (({
     topOffset,
     width,
   });
-}) as FunctionComponent<BurgerProps>;
+};

@@ -1,26 +1,20 @@
-import { Burger } from './Burger';
+import { Burger } from '../Burger';
 import React, { FunctionComponent } from 'react';
-import { CommonBurgerProps } from './';
+import { CommonBurgerProps } from '..';
 
-export const Spiral = ((props) => (
+export const Fade = ((props) => (
   <Burger
     {...props}
-    lines={2}
     render={(o) => (
       <div
         className="hamburger-react"
         aria-label={o.label}
         aria-expanded={o.isToggled}
-        data-testid="spiral"
+        data-testid="fade"
         onClick={o.handler}
         onKeyUp={(e) => e.key === 'Enter' && o.handler()}
         role="button"
-        style={{
-          ...o.burgerStyles,
-          transform: `${
-            o.isToggled ? `rotate(${180 * (o.isLeft ? -1 : 1)}deg)` : 'none'
-          }`,
-        }}
+        style={o.burgerStyles}
         tabIndex={0}
       >
         <div
@@ -42,6 +36,15 @@ export const Spiral = ((props) => (
           style={{
             ...o.barStyles,
             top: `${o.topOffset + o.barHeight + o.margin}px`,
+            transition: `${o.time}s ${o.easing}`,
+            opacity: `${o.isToggled ? '0' : '1'}`,
+          }}
+        />
+
+        <div
+          style={{
+            ...o.barStyles,
+            top: `${o.topOffset + o.barHeight * 2 + o.margin * 2}px`,
             transition: `${o.time}s ${o.easing}`,
             transform: `${
               o.isToggled
