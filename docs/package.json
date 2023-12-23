@@ -7,9 +7,9 @@
     "serve": "npm run build && astro preview"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.4",
-    "@astrojs/tailwind": "^5.0.2",
-    "astro": "^3.4.3",
-    "tailwindcss": "^3.3.5"
+    "@astrojs/react": "^3.0.8",
+    "@astrojs/tailwind": "^5.0.4",
+    "astro": "^3.6.4",
+    "tailwindcss": "^3.4.0"
   }
 }
