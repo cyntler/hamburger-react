@@ -44,6 +44,8 @@ export interface CommonBurgerProps {
   toggle?: Dispatch<SetStateAction<boolean>>
   /** A way to provide your own state value. Can be used together with a state action (the `toggle` prop). */
   toggled?: boolean;
+  /** Specifies if the hamburger should be disabled. */
+  disabled?: boolean;
 }
 
 export interface RenderOptions {

@@ -18,6 +18,7 @@ export const Burger = (({
   size = 32,
   toggle,
   toggled,
+  disabled = false
 }) => {
   const [toggledInternal, toggleInternal] = useState(false)
 
@@ -42,7 +43,7 @@ export const Burger = (({
   const time = Math.max(0, duration)
 
   const burgerStyles: CSSProperties = {
-    cursor: 'pointer',
+    cursor: disabled ? 'not-allowed' : 'pointer',
     height: `${area}px`,
     position: 'relative',
     transition: `${time}s ${easing}`,

@@ -9,8 +9,8 @@ export const Sling = ((props) => (
       aria-label={o.label}
       aria-expanded={o.isToggled}
       data-testid="sling"
-      onClick={o.handler}
-      onKeyUp={(e) => e.key === 'Enter' && o.handler()}
+      onClick={props.disabled ? undefined : o.handler}
+      onKeyUp={props.disabled ? undefined : (e) => e.key === 'Enter' && o.handler()}
       role="button"
       style={{
         ...o.burgerStyles,

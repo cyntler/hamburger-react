@@ -9,8 +9,8 @@ export const Rotate = ((props) => (
       aria-label={o.label}
       aria-expanded={o.isToggled}
       data-testid="rotate"
-      onClick={o.handler}
-      onKeyUp={(e) => e.key === 'Enter' && o.handler()}
+      onClick={props.disabled ? undefined : o.handler}
+      onKeyUp={props.disabled ? undefined : (e) => e.key === 'Enter' && o.handler()}
       role="button"
       style={{
         ...o.burgerStyles,
