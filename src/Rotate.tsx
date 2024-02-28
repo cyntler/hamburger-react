@@ -20,6 +20,7 @@ export const Rotate = ((props) => (
         }`,
       }}
       tabIndex={0}
+      aria-controls={o.controls}
     >
       <div style={{
         ...o.barStyles,

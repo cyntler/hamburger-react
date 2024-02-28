@@ -20,6 +20,7 @@ export const Tilt = ((props) => (
         }`,
       }}
       tabIndex={0}
+      aria-controls={o.controls}
     >
       <div data-testid="bar-one" style={{
         ...o.barStyles,

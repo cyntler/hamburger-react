@@ -20,6 +20,7 @@ export const Pivot = ((props) => (
         }`,
       }}
       tabIndex={0}
+      aria-controls={o.controls}
     >
       <div data-testid="bar-wrap-one" style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled
