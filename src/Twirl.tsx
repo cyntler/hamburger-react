@@ -20,6 +20,7 @@ export const Twirl = ((props) => (
         }`,
       }}
       tabIndex={0}
+      aria-controls={o.controls}
     >
       <div style={{
         transition: `${o.time / 2}s ${o.easing} ${o.isToggled

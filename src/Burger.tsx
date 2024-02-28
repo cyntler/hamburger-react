@@ -18,7 +18,8 @@ export const Burger = (({
   size = 32,
   toggle,
   toggled,
-  disabled = false
+  disabled = false,
+  controls
 }) => {
   const [toggledInternal, toggleInternal] = useState(false)
 
@@ -89,5 +90,6 @@ export const Burger = (({
     time,
     topOffset,
     width,
+    controls
   })
 }) as FunctionComponent<BurgerProps>

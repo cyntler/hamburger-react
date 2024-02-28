@@ -46,6 +46,8 @@ export interface CommonBurgerProps {
   toggled?: boolean;
   /** Specifies if the hamburger should be disabled. */
   disabled?: boolean;
+  /** Specifies the id of the element the hamburger controls. */
+  controls?: string;
 }
 
 export interface RenderOptions {
@@ -62,6 +64,7 @@ export interface RenderOptions {
   easing: string;
   topOffset: number;
   width: number;
+  controls: string | undefined;
 }
 
 export interface BurgerProps extends CommonBurgerProps {
