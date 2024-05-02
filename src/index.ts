@@ -46,6 +46,8 @@ export interface CommonBurgerProps {
   toggled?: boolean;
   /** Specifies if the hamburger should be disabled. */
   disabled?: boolean;
+  /** Specifies if the hamburger should run animation when mounted. */
+  animateOnMount?: boolean;
 }
 
 export interface RenderOptions {

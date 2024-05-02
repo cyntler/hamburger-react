@@ -1,4 +1,4 @@
-import { CSSProperties, FunctionComponent, useState } from 'react'
+import { CSSProperties, FunctionComponent, useState, useEffect } from 'react'
 import { BurgerProps } from './'
 
 const area = 48
@@ -18,9 +18,15 @@ export const Burger = (({
   size = 32,
   toggle,
   toggled,
-  disabled = false
+  disabled = false,
+  animateOnMount = false,
 }) => {
   const [toggledInternal, toggleInternal] = useState(false)
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const width = Math.max(12, Math.min(area, size))
   const room = Math.round((area - width) / 2)
@@ -66,8 +72,13 @@ export const Burger = (({
     barStyles['borderRadius'] = '9em'
   }
 
+  const getIsToggled = () => {
+    const isToggled = toggled !== undefined ? toggled : toggledInternal;
+    return animateOnMount && !mounted ? !isToggled : isToggled;
+  }
+
   const toggleFunction = toggle || toggleInternal
-  const isToggled = toggled !== undefined ? toggled : toggledInternal
+  const isToggled = getIsToggled()
 
   const handler = () => {
     toggleFunction(!isToggled)
