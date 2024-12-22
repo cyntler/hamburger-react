@@ -1,6 +1,6 @@
 <p>‌</p>
 <p align="center">
-  <img alt="Preview" src="docs/static/preview.gif" height="96" width="640">
+  <img alt="Preview" src="docs/static/preview-no-bg.gif" height="96" width="640">
 </p>
 <p>‌</p>
 <p align="center">
